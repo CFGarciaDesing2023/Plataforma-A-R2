@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Plataforma AR</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      
+  
+    <nav class="navbar navbar-expand-lg navbar-light py-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://library.livecanvas.com/sections/">
+          <img class="img-fluid" src="formularios/AR.jpg" alt="" width="60px" height="60px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav_lc" aria-controls="nav_lc" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav_lc">
+          <ul class="navbar-nav my-3 my-lg-0 ms-lg-3 me-auto">
+            <li class="nav-item me-4"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item me-4"><a class="nav-link" href="Dashboar.html">Dashboar </a></li>
+            <li class="nav-item me-4"><a class="nav-link" href="#AcercaDeNosotros">Acerca de Nosotros</a></li>
+            <li class="nav-item me-4"><a class="nav-link" href="#Servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Vistos Recientemente</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Recomendados</a></li>
+          </ul>
+          <div><a class="btn btn-outline-secondary me-2" href="login.html"  target="_blank">Ingresar</a><a class="btn btn-primary" href="Login2.html" >Crear Cuenta</a></div>
+        </div>
+      </div>
+    </nav>
+     
+     
+      
+    </header>
+    <main>
+       
+  
+      
+  
+    <div class="container">
+     <div
+      class="row "
+     >
+     <div class="col-sm-12">
+      <div>
+        <div class="tm-section tm-bg-img" id="tm-section-1">
+          <div class="tm-bg-white ie-container-width-fix-2">
+              <div class="container ie-h-align-center-fix">
+                  <div class="row">
+                      <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
+                          <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                              <div class="form-row tm-search-form-row">
+                                  <div class="form-group tm-form-element tm-form-element-100">
+                                      <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
+                                      <input name="city" type="text" class="form-control" id="inputCity" placeholder="Buscar Alojamiento...">
+                                  </div>
+                                  <label for="">ENTRADA</label>
+                                  <div class="form-group tm-form-element tm-form-element-50">
+                                      <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                                      <input name="check-in" type="date" class="form-control" id="inputCheckIn" placeholder="Ingreso">
+                                  </div>
+                                  <label for="">SALIDA</label>
+                                  <div class="form-group tm-form-element tm-form-element-50">
+                                      <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                                      <input name="check-out" type="date" class="form-control" id="inputCheckOut" placeholder="Salida ">
+                                  </div>
+                              </div>
+                              <div class="form-row tm-search-form-row">
+                                  <div class="form-group tm-form-element tm-form-element-2">                                            
+                                      <select name="adult" class="form-control tm-select" id="adult">
+                                          <option value="">Adultos</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                          <option value="9">9</option>
+                                          <option value="10">10</option>
+                                      </select>
+                                      <i class="fa fa-2x fa-user tm-form-element-icon"></i>
+                                  </div>
+                                  <div class="form-group tm-form-element tm-form-element-2">                                            
+                                      <select name="children" class="form-control tm-select" id="children">
+                                          <option value="">Niños</option>
+                                          <option value="0">0</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                          <option value="9">9</option>
+                                          <option value="10">10</option>
+                                      </select>
+                                      <i class="fa fa-user tm-form-element-icon tm-form-element-icon-small"></i>
+                                  </div>
+                                  <div class="form-group tm-form-element tm-form-element-2">
+                                      <select name="room" class="form-control tm-select" id="room">
+                                          <option value="">Habitaciones</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                          <option value="9">9</option>
+                                          <option value="10">10</option>
+                                      </select>
+                                      <i class="fa fa-2x fa-bed tm-form-element-icon"></i>
+                                  </div>
+                                  <div class="form-group tm-form-element tm-form-element-2">
+                                      <button type="submit" class="btn btn-primary tm-btn-search">Buscar</button>
+                                  </div>
+                                </div>
+                                <div class="form-row clearfix pl-2 pr-2 tm-fx-col-xs">
+                                    
+                                </div>
+                                <style>
+                                   
+                                </style>
+                                <div clase="selectores1">
+                                  <label for="">Precio: Por noche</label>
+                                  <input type="text" value="$5.000-$2.000.000">
+                  
+                                  <!-- The second value will be selected initially -->
+                                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ Tipos de alojamiento
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Seleccionar Tipo de Alojamiento.</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="" />
+          <label class="form-check-label" for=""> Hoteles </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="" />
+          <label class="form-check-label" for=""> Residencias </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="" />
+          <label class="form-check-label" for=""> Hostal </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="" />
+          <label class="form-check-label" for=""> Motel </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="" />
+          <label class="form-check-label" for=""> Casa/Apartamento</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="" />
+          <label class="form-check-label" for=""> Camping </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="" />
+          <label class="form-check-label" for=""> Albergue </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id=""
+            checked
+          />
+          <label class="form-check-label" for=""> Moteles </label>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+                  
+                                  <!-- The second value will be selected initially -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                  Filtros
+                                 </button>
+                                 
+                                 <!-- Modal -->
+                                 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                   <div class="modal-dialog">
+                                     <div class="modal-content">
+                                       <div class="modal-header">
+                                         <h5 class="modal-title" id="exampleModalLabel">Seleccionar Mas filtros</h5>
+                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                       </div>
+                                       <div class="modal-body">
+                                         <div class="form-check">
+                                           <input class="form-check-input" type="checkbox" value="" id="" />
+                                           <label class="form-check-label" for=""> Cancelacion Gratuita </label>
+                                         </div>
+                                         <div class="form-check">
+                                           <input class="form-check-input" type="checkbox" value="" id="" />
+                                           <label class="form-check-label" for=""> Desayuno Gratis </label>
+                                         </div>
+                                         <div class="form-check">
+                                           <input class="form-check-input" type="checkbox" value="" id="" />
+                                           <label class="form-check-label" for=""> Todo Incluido </label>
+                                         </div>
+                                         <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="" />
+                                          <label class="form-check-label" for=""> Wifi+Tv </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="" />
+                                          <label class="form-check-label" for=""> Aire acondicionado </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="" />
+                                          <label class="form-check-label" for=""> Restaurante </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="" />
+                                          <label class="form-check-label" for=""> Picina </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="" />
+                                          <label class="form-check-label" for=""> Bar </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="" />
+                                          <label class="form-check-label" for=""> Parqueadero </label>
+                                        </div>
+                                         
+                                         
+                                       </div>
+                                       <div class="modal-footer">
+                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                         <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                                       </div>
+                                     </div>
+                                   </div>
+                                 </div>
+
+                                                   
+                                  <!-- The second value will be selected initially -->
+                                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+  Ubicacion
+ </button>
+ 
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Seleccionar  Ubicacion.</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <div class="form-check">
+           <input class="form-check-input" type="checkbox" value="" id="" />
+           <label class="form-check-label" for=""> Centro </label>
+         </div>
+         <div class="form-check">
+           <input class="form-check-input" type="checkbox" value="" id="" />
+           <label class="form-check-label" for=""> Zona Norte </label>
+         </div>
+         <div class="form-check">
+           <input class="form-check-input" type="checkbox" value="" id="" />
+           <label class="form-check-label" for=""> Zona Sur</label>
+         </div>
+         <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="" />
+          <label class="form-check-label" for=""> Zona oriental</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="" />
+          <label class="form-check-label" for=""> Zona Ocidental</label>
+        </div>
+         <div class="form-check">
+           <input
+             class="form-check-input"
+             type="checkbox"
+             value=""
+             id=""
+             checked
+           />
+           <label class="form-check-label" for=""> Todas las Zonas </label>
+         </div>
+         
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+         <button type="button" class="btn btn-primary">Guardar Cambios</button>
+       </div>
+     </div>
+   </div>
+ </div>
+                   
+                                  <!-- The second value will be selected initially -->
+                                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+  Puntuacion
+ </button>
+ 
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Selecionar Puntuacion</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <div class="form-check">
+           <input class="form-check-input" type="checkbox" value="" id="" />
+           <label class="form-check-label" for=""> 8.5 a 9 </label>
+         </div>
+         <div class="form-check">
+           <input class="form-check-input" type="checkbox" value="" id="" />
+           <label class="form-check-label" for=""> 7.5-8.0 </label>
+         </div>
+         <div class="form-check">
+           <input class="form-check-input" type="checkbox" value="" id="" />
+           <label class="form-check-label" for=""> 5.0-7.0 </label>
+         </div>
+        
+         
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+         <button type="button" class="btn btn-primary">Guardar Cambios</button>
+       </div>
+     </div>
+   </div>
+ </div>
+                                  
+                                </div>
+                                
+                          </form>
+                      </div>                        
+                  </div>      
+              </div>
+          </div>                  
+      </div>
+      </div>
+    </div> 
+     <div class="col-sm-8">
+       
+  
+    
+ <!-- lazily load the Swiper CSS file -->
+<link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<!-- lazily load the Swiper JS file -->
+<script defer="defer" src="https://unpkg.com/swiper@8/swiper-bundle.min.js" onload="initializeSwiperRANDOMID();"></script>
+
+<!-- lc-needs-hard-refresh -->
+
+<script>
+    	function initializeSwiperRANDOMID(){
+        const swiper = new Swiper(".mySwiper-RANDOMID", {
+            slidesPerView: 1,
+            grabCursor: true,
+            spaceBetween: 30,
+            
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    }
+ </script>
+
+ <style>
+	.mySwiper-RANDOMID .card {max-width:21rem}
+ </style>
+
+ <div class="container py-6"><!-- Slider main container -->
+	<div class="swiper mySwiper-RANDOMID">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper"><!-- Slides -->
+			<div class="swiper-slide h-100">
+				<div class="card shadow mx-auto">
+					<div class="card-body">
+						<div class="lc-block">
+							<img class="img-fluid" src="formularios/granS.jpeg" sizes="" width="" height="" alt="Photo by Marla Gottschalk" loading="lazy">
+						</div>
+						<div class="card-body">
+							<div class="lc-block mb-3">
+								<div editable="rich">
+
+									<h2 class="h5">Hotel Gran Star</h2>
+
+									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
+								</div>
+							</div>
+							<div class="lc-block">
+								<button
+                          type="button"
+                          class="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#basicModal"
+                        >
+                          Ver
+                        </button>
+                        <!-- Modal -->
+                        <!-- Text alignment -->
+             
+             
+              
+                        
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide h-100">
+				<div class="card shadow mx-auto">
+					<div class="card-body">
+						<div class="lc-block">
+							<img class="img-fluid" src="formularios/CUP.jpeg" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Jon Tyson" loading="lazy">
+						</div>
+						<div class="card-body">
+							<div class="lc-block mb-3">
+								<div editable="rich">
+
+									<h2 class="h5">Hotel Plaza Centro</h2>
+
+									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
+								</div>
+							</div>
+							<div class="lc-block">
+								<a class="btn btn-primary" href="#" role="button">Ver</a>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide h-100">
+				<div class="card shadow mx-auto">
+					<div class="card-body">
+						<div class="lc-block">
+							<img class="img-fluid" src="formularios/CAQr.jpg"(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Vianney CAHEN" loading="lazy">
+						</div>
+						<div class="card-body">
+							<div class="lc-block mb-3">
+								<div editable="rich">
+
+									<h2 class="h5">Hotel Caqueta Real</h2>
+
+									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
+								</div>
+							</div>
+							<div class="lc-block">
+								<a class="btn btn-primary" href="#" role="button">Ver</a>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		
+	</div>
+ </div>
+  
+  
+    
+ <!-- lazily load the Swiper CSS file -->
+ <link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+ <!-- lazily load the Swiper JS file -->
+ <script defer="defer" src="https://unpkg.com/swiper@8/swiper-bundle.min.js" onload="initializeSwiperRANDOMID();"></script>
+
+ <!-- lc-needs-hard-refresh -->
+
+ <script>
+    	function initializeSwiperRANDOMID(){
+        const swiper = new Swiper(".mySwiper-RANDOMID", {
+            slidesPerView: 1,
+            grabCursor: true,
+            spaceBetween: 30,
+            
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    }
+  </script>
+
+ <style>
+	.mySwiper-RANDOMID .card {max-width:21rem}
+ </style>
+
+ <div class="container py-6"><!-- Slider main container -->
+	<div class="swiper mySwiper-RANDOMID">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper"><!-- Slides -->
+			<div class="swiper-slide h-100">
+				<div class="card shadow mx-auto">
+					<div class="card-body">
+						<div class="lc-block">
+							<img class="img-fluid" src="formularios/CUP.jpeg" sizes="" width="" height="" alt="Photo by Marla Gottschalk" loading="lazy">
+						</div>
+						<div class="card-body">
+							<div class="lc-block mb-3">
+								<div editable="rich">
+
+									<h2 class="h5">Motel Cupido</h2>
+
+									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
+								</div>
+							</div>
+							<div class="lc-block">
+								<a class="btn btn-primary" href="#" role="button">Ver</a>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide h-100">
+				<div class="card shadow mx-auto">
+					<div class="card-body">
+						<div class="lc-block">
+							<img class="img-fluid" src="formularios/hotel SOHO.jpeg" sizes="(max-width: 720px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Jon Tyson" loading="lazy">
+						</div>
+						<div class="card-body">
+							<div class="lc-block mb-3">
+								<div editable="rich">
+
+									<h2 class="h5">Hotel Royal PLAZACENTRO</h2>
+
+									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
+								</div>
+							</div>
+							<div class="lc-block">
+								<a class="btn btn-primary" href="#" role="button">Ver</a>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide h-100">
+				<div class="card shadow mx-auto">
+					<div class="card-body">
+						<div class="lc-block">
+							<img class="img-fluid" src="formularios/hotel SOHO.jpeg" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Vianney CAHEN" loading="lazy">
+						</div>
+						<div class="card-body">
+							<div class="lc-block mb-3">
+								<div editable="rich">
+
+									<h2 class="h5">Hotel Soho</h2>
+
+									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
+								</div>
+							</div>
+							<div class="lc-block">
+								<a class="btn btn-primary" href="#" role="button">Ver</a>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide h-100">
+				<div class="card shadow mx-auto">
+					<div class="card-body">
+						<div class="lc-block">
+							<img class="img-fluid" src="https://images.unsplash.com/photo-1597489276008-79951d6be8bb?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8N3x8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1597489276008-79951d6be8bb?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8N3x8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1597489276008-79951d6be8bb??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8N3x8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1597489276008-79951d6be8bb??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8N3x8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1597489276008-79951d6be8bb??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8N3x8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1597489276008-79951d6be8bb??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8N3x8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Cherry Lin" loading="lazy">
+						</div>
+						<div class="card-body">
+							<div class="lc-block mb-3">
+								<div editable="rich">
+
+									<h2 class="h5">Residencia Central</h2>
+
+									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
+								</div>
+							</div>
+							<div class="lc-block">
+								<a class="btn btn-primary" href="#" role="button">Ver</a>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide h-100">
+				<div class="card shadow mx-auto">
+					<div class="card-body">
+						<div class="lc-block">
+							<img class="img-fluid" src="https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Grant Durr" loading="lazy">
+						</div>
+						<div class="card-body">
+							<div class="lc-block mb-3">
+								<div editable="rich">
+
+									<h2 class="h5">Hotel Florencia</h2>
+
+									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
+								</div>
+							</div>
+							<div class="lc-block">
+								<a class="btn btn-primary" href="#" role="button">Ver</a>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<!-- If we need pagination -->
+		<div class="swiper-pagination position-relative pt-5 bottom-0"></div>
+	 </div>
+ </div>
+ 
+ 
+  
+ 
+   
+    </div>
+      <div class="col-sm-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15952.904426592564!2d-75.6200440242235!3d1.6187366194343495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shoteles%20florencia%20caqueta!5e0!3m2!1ses-419!2sco!4v1708650888559!5m2!1ses-419!2sco" width="360" height="860" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-sm-12">
+        <section class="d-flex bg-dark text-light">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="lc-block mb-4">
+                  <img class="img-fluid" alt="logo" src="formularios/AR.jpg" style="max-height:15vh">
+                </div>
+                <div class="lc-block small">
+                  <div editable="rich">
+                    <p>PLATAFORMA DE ADMINISTRACION Y RESERVAS DE LUGARES DE ALOJAMENTO A-R
+                    </p>
+                  </div>
+                </div>
+                <!-- /lc-block -->
+                <div class="lc-block py-2">
+                  <a class="text-decoration-none" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="1em" height="1em" lc-helper="svg-icon" fill="var(--bs-light)">
+                      <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                    </svg>
+                  </a>
+                  <a class="text-decoration-none" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" lc-helper="svg-icon" fill="var(--bs-light)">
+                      <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                    </svg>
+                  </a>
+                  <a class="text-decoration-none" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1em" height="1em" lc-helper="svg-icon" fill="var(--bs-light)">
+                      <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                    </svg>
+                  </a>
+                  <a class="text-decoration-none" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="1em" height="1em" lc-helper="svg-icon" fill="var(--bs-light)">
+                      <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                    </svg>
+                  </a>
+                  <a class="text-decoration-none" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1em" height="1em" lc-helper="svg-icon" fill="var(--bs-light)">
+                      <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                    </svg>
+                  </a>
+                </div>
+        
+              </div>
+              <div class="col-lg-2 offset-lg-1">
+                <div class="lc-block mb-3" id="Servicios">
+                  <div editable="rich">
+                    <h4>Servicios</h4>
+                  </div>
+                </div>
+                <!-- /lc-block -->
+                <div class="lc-block small">
+                  <div editable="rich">
+                    <p>Ayuda</p>
+                    <p>Como Utilizar la Plataforma
+                      <br>
+                    </p>
+                    <p>Terminos y Condiciones</p>
+                    <p>Informacion Legal</p>
+                   
+                  </div>
+                </div>
+                <!-- /lc-block -->
+              </div>
+              <div class="col-lg-2 offset-lg-1">
+                <div class="lc-block mb-3" id="AcercaDeNosotros">
+                  <div editable="rich">
+                    <h4>Acerca de nosotros</h4>
+                    <label for="">  A través de la playaforma de reservas, los huéspedes pueden seleccionar el tipo de alojamiento, la duración de su estancia, el tipo de habitación deseada, obtener complementos y pagar de forma segura a través de una plataforma de pago en línea. .</label>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="col ">
+                <div class="lc-block " id="Contacto">
+                  <div editable="rich">
+                    <h4>Contacto</h4>
+                  </div>
+                </div>
+                <!-- /lc-block -->
+                <div class="lc-block fw-medium">
+                  <div editable="rich">
+                    <p>FLORENCIA,CAQUETA </p>
+                    <p>Email:AR@info.com</p>
+                    <p>Celular: 3158796422</p>
+                  </div>
+                </div>
+                <!-- /lc-block -->
+              </div>
+            </div>
+          </div>
+        
+                <!-- /lc-block -->
+              </div>
+              <div class="col-6 text-end small">
+                <div class="lc-block">
+                  <div editable="rich">
+                    <p>
+                      <a class="text-decoration-none" href="#">Detalles Licencia</a> -
+                      <a class="text-decoration-none" href="#">Terminos &amp; Condiciones</a>
+                    </p>
+                  </div>
+                </div>
+                <!-- /lc-block -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+     
+     </div>
+     
+    
+    </div>
+     
+     
+      
+     
+      
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
