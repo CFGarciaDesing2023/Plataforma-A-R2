@@ -68,7 +68,6 @@
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
         <!-- Menu -->
-
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
@@ -127,7 +126,7 @@
                   </g>
                 </svg>
               </span>
-              <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">DashBoar</span>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -155,36 +154,82 @@
 
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="pages-account-settings-account.html" class="menu-link">
+                  <a href="OpcionesPerfil.html" class="menu-link">
                     <div data-i18n="Without menu">Usuario</div>
                   </a>
                 </li>
             
                
                 <li class="menu-item">
-                  <a href="auth-login-basic.html" class="menu-link">
-                    <div data-i18n="Blank">Log Acceso</div>
+                  <a href="login.html" class="menu-link">
+                    <div data-i18n="Blank">Cerrar Sesion</div>
                   </a>
                 </li>
               </ul>
             </li>
 
             <li class="menu-header small text-uppercase">
-              <span class="menu-header-text">Configuracion</span>
+              <span class="menu-header-text">ADMINISTRACION Y RESERVAS DE LUGARES DE ALOJAMEINTO</span>
+            </li><li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <div data-i18n="Account Settings">Usuario</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="RegistroUsuario.html" class="menu-link">
+                    <div data-i18n="Account">Registrar Usuario</div>
+                  </a>
+                  <a href="ConsultarUsuarios.html" class="menu-link">
+                    <div data-i18n="Account">Consultar Usuario</div>
+                  </a>
+                  <a href="EditarRegistroUsuario.html" class="menu-link">
+                    <div data-i18n="Account">Editar Usuario</div>
+                  </a>
+                </li>
+              
+              </ul>
+            </li><li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <div data-i18n="Account Settings">Alojamiento</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="RegistroAlojamiento.html" class="menu-link">
+                    <div data-i18n="Account">Registrar Alojamientos</div>
+                  </a>
+                  <a href="ConsultarAlojamiento.html" class="menu-link">
+                    <div data-i18n="Account">Consultar Alojamientos</div>
+                  </a>
+                  <a href="EditarRegistroAlojamiento.html" class="menu-link">
+                    <div data-i18n="Account">Editar Alojamientos</div>
+                  </a>
+                </li>
+              
+              </ul>
             </li>
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Account Settings">Habitaciones</div>
               </a>
+
               <ul class="menu-sub">
-                
                 <li class="menu-item">
-                  <a href="Registro de Habitaciones.html" class="menu-link">
-                    <div data-i18n="Notifications">RegistroHabitaciones</div>
+                  <a href="RegistroHabitacion.html" class="menu-link">
+                    <div data-i18n="Account">Registrar Habitaciones</div>
+                  </a>
+                  <a href="ConsultarHabitacion.html" class="menu-link">
+                    <div data-i18n="Account">Consultar Habitaciones</div>
+                  </a>
+                  <a href="EditarRegistroHabitacion.html" class="menu-link">
+                    <div data-i18n="Account">Editar Habitaciones</div>
                   </a>
                 </li>
-                
+              
               </ul>
             </li>
             <li class="menu-item">
@@ -194,13 +239,18 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="Reserva02.html" class="menu-link" target="_blank">
-                    <div data-i18n="Basic">Reserva Online</div>
+                  <a href="RegistroReservas.html" class="menu-link" target="_blank">
+                    <div data-i18n="Basic">Registro Reservas</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="Reserva02.html" class="menu-link" target="_blank">
-                    <div data-i18n="Basic">Reservas</div>
+                  <a href="ConsultarReservas.html" class="menu-link" target="_blank">
+                    <div data-i18n="Basic">Consultar Reserva</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="EditarRegistroReservas.html" class="menu-link" target="_blank">
+                    <div data-i18n="Basic">Ediar Reserva</div>
                   </a>
                 </li>
                 
@@ -208,73 +258,28 @@
             </li>
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
-                <div data-i18n="Misc">Logistica hotel</div>
+                <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                <div data-i18n="Authentications">Ventas</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="RegistroEntrada.html" class="menu-link">
-                    <div data-i18n="Error">Registro Entrada</div>
+                  <a href="RegistroVentas.html" class="menu-link" target="_blank">
+                    <div data-i18n="Basic">Registro Ventas</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="RegistroSalida.html" class="menu-link">
-                    <div data-i18n="Under Maintenance">Registro Salida</div>
+                  <a href="ConsultarVentas.html" class="menu-link" target="_blank">
+                    <div data-i18n="Basic">Consultar Ventas</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="EditarRegistrarVenta.html" class="menu-link" target="_blank">
+                    <div data-i18n="Basic">Ediar Ventas</div>
                   </a>
                 </li>
                 
               </ul>
             </li>
-            
-            <!-- Components -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li>
-            <!-- Cards -->
-            <li class="menu-item">
-              <a href="RegistroCliente.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Basic">RegistroClientes</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="RegistroEmpleado.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Basic">RegistroEmpleados</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
-                <div data-i18n="Misc">Caja</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="CajaApertura.html" class="menu-link">
-                    <div data-i18n="Error">Apertura de Caja</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="Caja.html" class="menu-link">
-                    <div data-i18n="Under Maintenance">Cierre de Caja</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <!-- User interface -->
-            <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
-                <div data-i18n="Misc">Ventas</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="Ventas.html" class="menu-link">
-                    <div data-i18n="Error">RegistroVentas</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-              
             
             
         </aside>
