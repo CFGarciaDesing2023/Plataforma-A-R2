@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const registrar = document.getElementById("registrar");
 
     registrar.addEventListener("click", (e) => {
-        const AlojamientoID = document.getElementById("NumeroDocumento").value;
-        const AdministradorID = document.getElementById("Email").value;
-        const TipoAlojamiento = document.getElementById("Contraseña").value;
-        const Nombre = document.getElementById("TipoUsuario").value;
-        const Ubicacion = document.getElementById("TipoDocumento").value;
-        const Telefono= document.getElementById("NumeroDocumento").value;
-        const DescripcionInstalaciones = document.getElementById("Nombres").value;
+        const AlojamientoID = document.getElementById("AlojamientoID").value;
+        const AdministradorID = document.getElementById("AdministradorID").value;
+        const TipoAlojamiento = document.getElementById("TipoAlojamiento").value;
+        const Nombre = document.getElementById("Nombre").value;
+        const Ubicacion = document.getElementById("Ubicacion").value;
+        const Telefono = document.getElementById("Telefono").value;
+        const DescripcionInstalaciones = document.getElementById("DescripcionInstalaciones").value;
        
       
     

@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
+        AlojamientoID.value = user.AlojamientoID;
         AdministradorID.value = user.AdministradorID;
         TipoAlojamiento.value = user.TipoAlojamiento;
         Nombre.value = user.Nombre;
@@ -34,7 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
   btnEditar.addEventListener("click", () => {
 
     const data = {
-      "UsuarioID": UsuarioID,
+      "AlojamientoID": AlojamientoID.value,
+      "AdministradorID": AdministradorID.value,
       "Email": Email.value,
       "Contraseña": Contraseña.value,
       "TipoUsuario": TipoUsuario.value,
