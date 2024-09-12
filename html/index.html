@@ -375,319 +375,39 @@
       </div>
       </div>
     </div> 
-     <div class="col-sm-8">
+     <div class="col-sm-18">
        
   
+      <br><h1 class="text-center" >BUSQUEDA ALOJAMIENTOS</h1><br>
+
     
- <!-- lazily load the Swiper CSS file -->
-<link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-<!-- lazily load the Swiper JS file -->
-<script defer="defer" src="https://unpkg.com/swiper@8/swiper-bundle.min.js" onload="initializeSwiperRANDOMID();"></script>
-
-<!-- lc-needs-hard-refresh -->
-
-<script>
-    	function initializeSwiperRANDOMID(){
-        const swiper = new Swiper(".mySwiper-RANDOMID", {
-            slidesPerView: 1,
-            grabCursor: true,
-            spaceBetween: 30,
-            
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                },
-                992: {
-                    slidesPerView: 3,
-                },
-            },
-        });
-    }
- </script>
-
- <style>
-	.mySwiper-RANDOMID .card {max-width:21rem}
- </style>
-
- <div class="container py-6"><!-- Slider main container -->
-	<div class="swiper mySwiper-RANDOMID">
-		<!-- Additional required wrapper -->
-		<div class="swiper-wrapper"><!-- Slides -->
-			<div class="swiper-slide h-100">
-				<div class="card shadow mx-auto">
-					<div class="card-body">
-						<div class="lc-block">
-							<img class="img-fluid" src="formularios/granS.jpeg" sizes="" width="" height="" alt="Photo by Marla Gottschalk" loading="lazy">
-						</div>
-						<div class="card-body">
-							<div class="lc-block mb-3">
-								<div editable="rich">
-
-									<h2 class="h5">Hotel Gran Star</h2>
-
-									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
-								</div>
-							</div>
-							<div class="lc-block">
-								<button
-                          type="button"
-                          class="btn btn-primary"
-                          data-bs-toggle="modal"
-                          data-bs-target="#basicModal"
-                        >
-                          Ver
-                        </button>
-                        <!-- Modal -->
-                        <!-- Text alignment -->
-             
-             
+      <div class="display-fluid  table-responsive  " >
+  
+  
+          <table class="table  " id="tablaDatos">
+              <thead>
+                  <tr>
+                    <th class="text-center" >TipoAlojamiento</th>
+                    <th class="text-center" >Nombre</th>
+                    <th class="text-center" >Ubicacion</th>
+                    <th class="text-center" >Telefono</th>
+                    <th class="text-center" >DescripcionInstalaciones</th>
+                    <th colspan="2"class="text-center" >operaciones</th>
+                  </tr>
+              </thead>
+      
+              <tbody id="cuerpoTabla"></tbody>
               
-                        
-							</div>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide h-100">
-				<div class="card shadow mx-auto">
-					<div class="card-body">
-						<div class="lc-block">
-							<img class="img-fluid" src="formularios/CUP.jpeg" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Jon Tyson" loading="lazy">
-						</div>
-						<div class="card-body">
-							<div class="lc-block mb-3">
-								<div editable="rich">
-
-									<h2 class="h5">Hotel Plaza Centro</h2>
-
-									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
-								</div>
-							</div>
-							<div class="lc-block">
-								<a class="btn btn-primary" href="#" role="button">Ver</a>
-							</div>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide h-100">
-				<div class="card shadow mx-auto">
-					<div class="card-body">
-						<div class="lc-block">
-							<img class="img-fluid" src="formularios/CAQr.jpg"(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Vianney CAHEN" loading="lazy">
-						</div>
-						<div class="card-body">
-							<div class="lc-block mb-3">
-								<div editable="rich">
-
-									<h2 class="h5">Hotel Caqueta Real</h2>
-
-									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
-								</div>
-							</div>
-							<div class="lc-block">
-								<a class="btn btn-primary" href="#" role="button">Ver</a>
-							</div>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			
-			
-		</div>
-		
-	</div>
- </div>
+              
   
-  
-    
- <!-- lazily load the Swiper CSS file -->
- <link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
- <!-- lazily load the Swiper JS file -->
- <script defer="defer" src="https://unpkg.com/swiper@8/swiper-bundle.min.js" onload="initializeSwiperRANDOMID();"></script>
-
- <!-- lc-needs-hard-refresh -->
-
- <script>
-    	function initializeSwiperRANDOMID(){
-        const swiper = new Swiper(".mySwiper-RANDOMID", {
-            slidesPerView: 1,
-            grabCursor: true,
-            spaceBetween: 30,
-            
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                },
-                992: {
-                    slidesPerView: 3,
-                },
-            },
-        });
-    }
-  </script>
-
- <style>
-	.mySwiper-RANDOMID .card {max-width:21rem}
- </style>
-
- <div class="container py-6"><!-- Slider main container -->
-	<div class="swiper mySwiper-RANDOMID">
-		<!-- Additional required wrapper -->
-		<div class="swiper-wrapper"><!-- Slides -->
-			<div class="swiper-slide h-100">
-				<div class="card shadow mx-auto">
-					<div class="card-body">
-						<div class="lc-block">
-							<img class="img-fluid" src="formularios/CUP.jpeg" sizes="" width="" height="" alt="Photo by Marla Gottschalk" loading="lazy">
-						</div>
-						<div class="card-body">
-							<div class="lc-block mb-3">
-								<div editable="rich">
-
-									<h2 class="h5">Motel Cupido</h2>
-
-									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
-								</div>
-							</div>
-							<div class="lc-block">
-								<a class="btn btn-primary" href="#" role="button">Ver</a>
-							</div>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide h-100">
-				<div class="card shadow mx-auto">
-					<div class="card-body">
-						<div class="lc-block">
-							<img class="img-fluid" src="formularios/hotel SOHO.jpeg" sizes="(max-width: 720px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Jon Tyson" loading="lazy">
-						</div>
-						<div class="card-body">
-							<div class="lc-block mb-3">
-								<div editable="rich">
-
-									<h2 class="h5">Hotel Royal PLAZACENTRO</h2>
-
-									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
-								</div>
-							</div>
-							<div class="lc-block">
-								<a class="btn btn-primary" href="#" role="button">Ver</a>
-							</div>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide h-100">
-				<div class="card shadow mx-auto">
-					<div class="card-body">
-						<div class="lc-block">
-							<img class="img-fluid" src="formularios/hotel SOHO.jpeg" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Vianney CAHEN" loading="lazy">
-						</div>
-						<div class="card-body">
-							<div class="lc-block mb-3">
-								<div editable="rich">
-
-									<h2 class="h5">Hotel Soho</h2>
-
-									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
-								</div>
-							</div>
-							<div class="lc-block">
-								<a class="btn btn-primary" href="#" role="button">Ver</a>
-							</div>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide h-100">
-				<div class="card shadow mx-auto">
-					<div class="card-body">
-						<div class="lc-block">
-							<img class="img-fluid" src="https://images.unsplash.com/photo-1597489276008-79951d6be8bb?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8N3x8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1597489276008-79951d6be8bb?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8N3x8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1597489276008-79951d6be8bb??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8N3x8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1597489276008-79951d6be8bb??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8N3x8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1597489276008-79951d6be8bb??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8N3x8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1597489276008-79951d6be8bb??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8N3x8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Cherry Lin" loading="lazy">
-						</div>
-						<div class="card-body">
-							<div class="lc-block mb-3">
-								<div editable="rich">
-
-									<h2 class="h5">Residencia Central</h2>
-
-									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
-								</div>
-							</div>
-							<div class="lc-block">
-								<a class="btn btn-primary" href="#" role="button">Ver</a>
-							</div>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide h-100">
-				<div class="card shadow mx-auto">
-					<div class="card-body">
-						<div class="lc-block">
-							<img class="img-fluid" src="https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Grant Durr" loading="lazy">
-						</div>
-						<div class="card-body">
-							<div class="lc-block mb-3">
-								<div editable="rich">
-
-									<h2 class="h5">Hotel Florencia</h2>
-
-									<p>Some quick example text to build on the card title and make up the bulk of the card's content..</p>
-								</div>
-							</div>
-							<div class="lc-block">
-								<a class="btn btn-primary" href="#" role="button">Ver</a>
-							</div>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			
-		</div>
-		<!-- If we need pagination -->
-		<div class="swiper-pagination position-relative pt-5 bottom-0"></div>
-	 </div>
- </div>
+          </table>
+ 
  
  
   
  
    
     </div>
-      <div class="col-sm-4">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15952.904426592564!2d-75.6200440242235!3d1.6187366194343495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shoteles%20florencia%20caqueta!5e0!3m2!1ses-419!2sco!4v1708650888559!5m2!1ses-419!2sco" width="360" height="860" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
       <div class="col-sm-12">
         <section class="d-flex bg-dark text-light">
           <div class="container py-5">
@@ -812,6 +532,7 @@
       <!-- place footer here -->
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
+    <script src="../js/getRegistroAlojamientos.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
