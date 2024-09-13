@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const urlParams = new URLSearchParams(window.location.search);
   const UsuarioID = urlParams.get("UsuarioID");
- 
+
+
   const Email = document.getElementById("Email");
   const Contraseña = document.getElementById("Contraseña");
   const TipoUsuario = document.getElementById("TipoUsuario ");
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
-        UsuarioID.value = user.UsuarioID;
+        UsuarioID.value = user.UsuarioID
         Email.value = user.Email;
         Contraseña.value = user.Contraseña;
         TipoUsuario.value = user.TipoUsuario;
