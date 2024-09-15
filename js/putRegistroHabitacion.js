@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnEditar = document.getElementById("editar");
 
   const urlParams = new URLSearchParams(window.location.search);
-  const HabitacionID = urlParams.get("HabitacionID");
+  const id = urlParams.get("id");
   const AlojamientoID= document.getElementById("AlojamientoID");
   const TipoHabitacion = document.getElementById("TipoHabitacion");
   const Descripcion = document.getElementById("Descripcion");
@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const Estado = document.getElementById("Estado");
 
 
-  fetch("http://ApiSENAProyect2024.somee.com/api/RegistroHabitacion/" + AlojamientoID)
+  fetch("http://ApiSENAProyect2024.somee.com/api/RegistroHabitacion/" + id)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
-        HabitacionID.value = user.HabitacionID;
+        
         AlojamientoID.value = user.AlojamientoID;
         TipoHabitacion.value = user.TipoHabitacion;
         Descripcion.value = user.Descripcion;
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   btnEditar.addEventListener("click", () => {
 
     const data = {
-      "HabitacionID": HabitacionID,
+      "HabitacionID": id,
       "AlojamientoID": AlojamientoID.value,
       "TipoHabitacion": TipoHabitacion.value,
       "Descripcion": Descripcion.value,

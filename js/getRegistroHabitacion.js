@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .catch((error) => console.error("Error al eliminar Habitacion:", error));
       }
     } else if (event.target.id == "editar") {
-      window.location.href = "../view/editar.html?id=" + event.target.value; // Agrega el parámetro a la URL
+      window.location.href = "../html/EditarRegistroHabitacion.html?id=" + event.target.value; // Agrega el parámetro a la URL
     }
     
     

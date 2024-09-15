@@ -27,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Dashboard |Proyecto-PAR - Bootstrap 5 HTML Admin Template 2024</title>
+    <title>Perfil del Alojamiento | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
 
     <meta name="description" content="" />
 
@@ -53,8 +53,6 @@
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
-    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
-
     <!-- Page CSS -->
 
     <!-- Helpers -->
@@ -70,7 +68,6 @@
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
         <!-- Menu -->
-
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
@@ -157,7 +154,7 @@
 
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="PerfilUsuario.html" class="menu-link">
+                  <a href="OpcionesPerfil.html" class="menu-link">
                     <div data-i18n="Without menu">Usuario</div>
                   </a>
                 </li>
@@ -310,8 +307,8 @@
                   <input
                     type="text"
                     class="form-control border-0 shadow-none"
-                    placeholder="Search..."
-                    aria-label="Search..."
+                    placeholder="Buscar..."
+                    aria-label="Buscar..."
                   />
                 </div>
               </div>
@@ -320,19 +317,11 @@
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
                 <li class="nav-item lh-1 me-3">
-                  <a
-                    class="github-button"
-                    href="https://github.com/themeselection/sneat-html-admin-template-free"
-                    data-icon="octicon-star"
-                    data-size="large"
-                    data-show-count="true"
-                    aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
-                    >Star</a
-                  >
+                  
                 </li>
 
-                <!-- User -->
-                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                 <!-- User -->
+                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
                   <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
                       <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
@@ -348,8 +337,8 @@
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
-                            <small class="text-muted">Admin</small>
+                            <span class="fw-semibold d-block">Real Caqueta</span>
+                            <small class="text-muted">Hotel</small>
                           </div>
                         </div>
                       </a>
@@ -401,90 +390,122 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Opciones Perfil /</span> Del Alojamiento</h4>
+
               <div class="row">
-                <div class="col-lg-8 mb-4 order-0">
+                <div class="col-md-12">
+                  <ul class="nav nav-pills flex-column flex-md-row mb-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="javascript:void(0);"><i class="bx bx-user me-1"></i>Perfil</a>
+                    </li>
+                    
+                  </ul>
+                  <div class="card mb-4">
+                    <h5 class="card-header">Informacion Del Alojamiento</h5>
+                    <!-- Account -->
+                    <div class="card-body">
+                      <div class="d-flex align-items-start align-items-sm-center gap-4">
+                        <img
+                          src="../assets/img/avatars/1.png"
+                          alt="user-avatar"
+                          class="d-block rounded"
+                          height="100"
+                          width="100"
+                          id="uploadedAvatar"
+                        />
+                        <div class="button-wrapper">
+                          <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
+                            <span class="d-none d-sm-block">Cargar Foto</span>
+                            <i class="bx bx-upload d-block d-sm-none"></i>
+                            <input
+                              type="file"
+                              id="upload"
+                              class="account-file-input"
+                              hidden
+                              accept="image/png, image/jpeg"
+                            />
+                          </label>
+                          <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                            <i class="bx bx-reset d-block d-sm-none"></i>
+                            <span class="d-none d-sm-block">Reiniciar</span>
+                          </button>
+
+                          <p class="text-muted mb-0">JPG, GIF o PNG permitidos. Tamaño máximo de JPG, GIF o PNG permitido. Tamaño máximo de 800K</p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-0" />
+                    <div class="card-body">
+                      <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <div class="row">
+                          <div class="mb-3 col-md-6">
+                            <label for="Nombre" class="form-label">Nombre</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="Nombre"
+                              name="Nombre"
+                              value="RealCaqueta"
+                              autofocus
+                            />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="lastName" class="form-label">Direccion</label>
+                            <input class="form-control" type="text" name="lastName" id="lastName" value="Doe" />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="email" class="form-label">DescripcionInstalaciones</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="email"
+                              name="email"
+                              value="3 Pisos con parqueadero y picisna"
+                              placeholder="3 Pisos con parqueadero y picisna"
+                            />
+                          </div>
+                        
+                         
+                          <div class="mb-3 col-md-6">
+                            <label for="state" class="form-label">Fecha Registro</label>
+                            <input class="form-control" type="text" id="state" name="Fecha Registro" placeholder="2024/06/15" />
+                          </div>
+                         
+                        <div class="mt-2">
+                          <button type="submit" class="btn btn-primary me-2">Guardar Cambios</button>
+                          <button type="reset" class="btn btn-outline-secondary">Cancelar</button>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- /Account -->
+                  </div>
                   <div class="card">
-                    <div class="d-flex align-items-end row">
-                      <!-- Earnings (Monthly) Card Example -->
-  <div class="col-xl-3 col-md-6 mb-4">
-    <div class="card border-left-dark shadow h-100 py-2">
-        <div class="card-body">
-            <div class="row no-gutters align-items-center">
-                <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
-                        Total Habitaciones
+                    <h5 class="card-header">Eliminar Perfil Alojamiento</h5>
+                    <div class="card-body">
+                      <div class="mb-3 col-12 mb-0">
+                        <div class="alert alert-warning">
+                          <h6 class="alert-heading fw-bold mb-1">Estas seguro de Eliminar, tu Peril de Alojamiento?</h6>
+                          <p class="mb-0">Una vez que eliminas tu cuenta, no hay vuelta atrás. Por favor asegúrese.</p>
+                        </div>
+                      </div>
+                      <form id="formAccountDeactivation" onsubmit="return false">
+                        <div class="form-check mb-3">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="accountActivation"
+                            id="accountActivation"
+                          />
+                          <label class="form-check-label" for="accountActivation"
+                            >Confirmar Desactivacion</label
+                          >
+                        </div>
+                        <button type="submit" class="btn btn-danger deactivate-account">Eliminar Cuenta</button>
+                      </form>
                     </div>
-                    <div class="h5 mb-0 font-weight-bold text-dark text-center" id="totalhabitaciones">0</div>
+                  </div>
                 </div>
-                <div class="col-auto">
-                    <i class="fas fa-clipboard-list fa-2x text-black-50"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Earnings (Monthly) Card Example -->
-<div class="col-xl-3 col-md-6 mb-4">
-    <div class="card border-left-primary shadow h-100 py-2">
-        <div class="card-body">
-            <div class="row no-gutters align-items-center">
-                <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                        Habitaciones Disponibles
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-primary text-center" id="habitacionesdisponibles">0</div>
-                </div>
-                <div class="col-auto">
-                    <i class="fas fa-box fa-2x text-primary"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Earnings (Monthly) Card Example -->
-<div class="col-xl-3 col-md-6 mb-4">
-    <div class="card border-left-danger shadow h-100 py-2">
-        <div class="card-body">
-            <div class="row no-gutters align-items-center">
-                <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                        Habitaciones Ocupadas
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-danger text-center" id="habitacionesocupadas">0</div>
-                </div>
-                <div class="col-auto">
-                    <i class="fas fa-bed fa-2x text-danger"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Pending Requests Card Example -->
-<div class="col-xl-3 col-md-6 mb-4">
-    <div class="card border-left-info shadow h-100 py-2">
-        <div class="card-body">
-            <div class="row no-gutters align-items-center">
-                <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                        Habitaciones en Limpieza
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-info text-center" id="habitacioneslimpieza">0</div>
-                </div>
-                <div class="col-auto">
-                    <i class="fas fa-air-freshener fa-2x text-info"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-          
-        </div>
-         <!-- Style variation -->
-                          
+              </div>
             </div>
             <!-- / Content -->
 
@@ -492,16 +513,30 @@
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
                 <div class="mb-2 mb-md-0">
-                 CFGARCIA-DESING ©
+                  ©
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
-                   ||Plataforma de Administracion y Reservas||
-                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">De Lugares de Alojamiento</a>
+                  , made with ❤️ by
+                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
                 </div>
                 <div>
-                  
+                  <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                  <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
 
+                  <a
+                    href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
+                    target="_blank"
+                    class="footer-link me-4"
+                    >Documentation</a
+                  >
+
+                  <a
+                    href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
+                    target="_blank"
+                    class="footer-link me-4"
+                    >Support</a
+                  >
                 </div>
               </div>
             </footer>
@@ -531,13 +566,12 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="../assets/js/dashboards-analytics.js"></script>
+    <script src="../assets/js/pages-account-settings-account.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>

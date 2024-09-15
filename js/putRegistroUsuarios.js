@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnEditar = document.getElementById("editar");
 
   const urlParams = new URLSearchParams(window.location.search);
-  const UsuarioID = urlParams.get("UsuarioID");
+  const id = urlParams.get("id");
 
 
   const Email = document.getElementById("Email");
@@ -12,13 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const NumeroDocumento = document.getElementById("NumeroDocumento");
   const Nombres = document.getElementById("Nombres");
   const Apellidos = document.getElementById("Apellidos");
-  const FechaRegistro = document.getElementById("FechaRegistro");
 
-  fetch("http://ApiSENAProyect2024.somee.com/api/RegistroUsuario/" + UsuarioID)
+
+  fetch("http://ApiSENAProyect2024.somee.com/api/RegistroUsuario/" + id)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
-        UsuarioID.value = user.UsuarioID
+       
         Email.value = user.Email;
         Contraseña.value = user.Contraseña;
         TipoUsuario.value = user.TipoUsuario;
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         NumeroDocumento.value = user.NumeroDocumento;
         Nombres.value = user.Nombres;
         Apellidos.value = user.Apellidos;
-        FechaRegistro.value = user.FechaRegistro;
+        
 
       });
     })
@@ -37,15 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
   btnEditar.addEventListener("click", () => {
 
     const data = {
-      "UsuarioID": UsuarioID,
+      "UsuarioID": id,
       "Email": Email.value,
       "Contraseña": Contraseña.value,
       "TipoUsuario": TipoUsuario.value,
       "TipoDocumento": TipoDocumento.value,
       "NumeroDocumento": NumeroDocumento.value,
       "Nombres": Nombres.value,
-      "Apellidos": Apellidos.value,
-      "FechaRegistro": FechaRegistro.value
+      "Apellidos": Apellidos.value
+    
   }
 
 

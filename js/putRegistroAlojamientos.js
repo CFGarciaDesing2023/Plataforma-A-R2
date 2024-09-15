@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnEditar = document.getElementById("editar");
 
   const urlParams = new URLSearchParams(window.location.search);
-  const AlojamientoID = urlParams.get("AlojamientoID");
+  const id = urlParams.get("id");
  
   const AdministradorID = document.getElementById("AdministradorID");
   const TipoAlojamiento= document.getElementById("TipoAlojamiento");
@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const FechaRegistro = document.getElementById("FechaRegistro");
 
 
-  fetch("http://ApiSENAProyect2024.somee.com/api/RegistroAlojamientos/" + AlojamientoID)
+  fetch("http://ApiSENAProyect2024.somee.com/api/RegistroAlojamientos/" + id)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
-        AlojamientoID.value = user.AlojamientoID;
+        
         AdministradorID.value = user.AdministradorID;
         TipoAlojamiento.value = user.TipoAlojamiento;
         Nombre.value = user.Nombre;
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   btnEditar.addEventListener("click", () => {
 
     const data = {
-      "AlojamientoID": AlojamientoID.value,
+      "AlojamientoID": id,
       "AdministradorID": AdministradorID.value,
       "Email": Email.value,
       "Contraseña": Contraseña.value,

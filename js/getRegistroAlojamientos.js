@@ -36,19 +36,19 @@ document.addEventListener("DOMContentLoaded", () => {
        .then((response) => response.json())
        .then((data) => {
          tabla.innerHTML = ""; 
-         data.forEach((Alojamiento) => {
+         data.forEach((user) => {
            const row = document.createElement("tr");
            row.innerHTML = `
-                   <td class="text-center" >${Alojamiento.AlojamientoID}</td>
-                   <td class="text-center" >${Alojamiento.AdministradorID}</td>
-                   <td class="text-center" >${Alojamiento.TipoAlojamiento}</td>
-                   <td class="text-center" >${Alojamiento.Nombre}</td>
-                   <td class="text-center" >${Alojamiento.Ubicacion}</td>
-                   <td class="text-center" >${Alojamiento.Telefono}</td>
-                   <td class="text-center" >${Alojamiento.DescripcionInstalaciones}</td>
-                   <td class="text-center" >${Alojamiento.FechaRegistro}</td>
-                   <td> <button id="editar"  value=${Alojamiento.AlojamientoID} class="btn btn-warning" >editar</button> </td>
-                   <td> <button id="borrar"  value=${Alojamiento.AlojamientoID} class="btn btn-danger" >eliminar</button> </td>
+                   <td class="text-center" >${user.AlojamientoID}</td>
+                   <td class="text-center" >${user.AdministradorID}</td>
+                   <td class="text-center" >${user.TipoAlojamiento}</td>
+                   <td class="text-center" >${user.Nombre}</td>
+                   <td class="text-center" >${user.Ubicacion}</td>
+                   <td class="text-center" >${user.Telefono}</td>
+                   <td class="text-center" >${user.DescripcionInstalaciones}</td>
+                   <td class="text-center" >${user.FechaRegistro}</td>
+                   <td> <button id="editar"  value=${user.AlojamientoID} class="btn btn-warning" >editar</button> </td>
+                   <td> <button id="borrar"  value=${user.AlojamientoID} class="btn btn-danger" >eliminar</button> </td>
                `;
  
            tabla.appendChild(row);
