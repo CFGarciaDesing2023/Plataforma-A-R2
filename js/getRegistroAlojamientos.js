@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   **/
   function obtenerUsuarios(inicioRegistros) {
-    fetch(`http://www.pruebasena202414.somee.com/api/RegistroAlojamientos `  )
+    fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroAlojamientos `  )
        .then((response) => response.json())
        .then((data) => {
          tabla.innerHTML = ""; 

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Ubicacion = document.getElementById("Ubicacion");
   const Telefono = document.getElementById("Telefono");
   const DescripcionInstalaciones = document.getElementById("DescripcionInstalaciones");
-  const FechaRegistro = document.getElementById("FechaRegistro");
+
 
 
   fetch("http://ApiSENAProyect2024.somee.com/api/RegistroAlojamientos/" + id)
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Ubicacion.value = user.Ubicacion;
         Telefono.value = user.Telefono;
         DescripcionInstalaciones.value = user.DescripcionInstalaciones;
-        FechaRegistro.value = user.FechaRegistro;
+        
 
       });
     })
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (response.ok) {
           console.log("Datos enviados correctamente");
-          window.location.href = "../view/index.html"
+          window.location.href = "../view/RegiatroAlojamiento.html"
           
         } else {
           console.error("Error al enviar la solicitud:", response.status);
