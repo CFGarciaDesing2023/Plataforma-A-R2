@@ -39,14 +39,13 @@ document.addEventListener("DOMContentLoaded", () => {
          data.forEach((user) => {
            const row = document.createElement("tr");
            row.innerHTML = `
-                   <td class="text-center" >${user.AlojamientoID}</td>
-                   <td class="text-center" >${user.AdministradorID}</td>
+                  
                    <td class="text-center" >${user.TipoAlojamiento}</td>
                    <td class="text-center" >${user.Nombre}</td>
                    <td class="text-center" >${user.Ubicacion}</td>
                    <td class="text-center" >${user.Telefono}</td>
                    <td class="text-center" >${user.DescripcionInstalaciones}</td>
-                   <td class="text-center" >${user.FechaRegistro}</td>
+          
                 
                `;
  

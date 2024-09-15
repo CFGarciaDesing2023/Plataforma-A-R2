@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const Email = document.getElementById("Email");
   const Contraseña = document.getElementById("Contraseña");
-  const TipoUsuario = document.getElementById("TipoUsuario ");
+  const TipoUsuario = document.getElementById("TipoUsuario");
   const TipoDocumento = document.getElementById("TipoDocumento");
   const NumeroDocumento = document.getElementById("NumeroDocumento");
   const Nombres = document.getElementById("Nombres");
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (response.ok) {
           console.log("Datos enviados correctamente");
-          window.location.href = "../view/index.html"
+          window.location.href = "html/ConsultarUsuario.html"
           
         } else {
           console.error("Error al enviar la solicitud:", response.status);

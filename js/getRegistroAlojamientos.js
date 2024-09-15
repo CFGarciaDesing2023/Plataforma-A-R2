@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
   }
   **/
-  function obtenerUsuarios(inicioRegistros) {
+  function ObtenerUsuarios(inicioRegistros) {
     fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroAlojamientos `  )
        .then((response) => response.json())
        .then((data) => {
@@ -61,20 +61,20 @@ document.addEventListener("DOMContentLoaded", () => {
        );
    }
 
-  obtenerUsuarios(inicioRegistros);
+  ObtenerUsuarios(inicioRegistros);
 
   //-----------------------------------------------------------------------------------------------------//
   document.getElementById("paginaAnterior").addEventListener("click", () => {
     if (inicioRegistros > 1) {
       inicioRegistros--;
-      obtenerUsuarios(inicioRegistros);
+      ObtenerUsuarios(inicioRegistros);
     }
   });
   //-----------------------------------------------------------------------------------------------------//
 
   document.getElementById("paginaSiguiente").addEventListener("click", () => {
     inicioRegistros++;
-    obtenerUsuarios(inicioRegistros);
+    ObtenerUsuarios(inicioRegistros);
   });
 
   //-----------------------------------------------------------------------------------------------------//
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (confirmacion == true) {
-        fetch(`http://www.pruebasena202414.somee.com/api/RegistroAlojamientos/${event.target.value}`, {
+        fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroAlojamientos/${event.target.value}`, {
           method: "DELETE",
         })
           .then((response) => {
