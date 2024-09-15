@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const data = {
       "AlojamientoID": id,
       "AdministradorID": AdministradorID.value,
+      "TipoAlojamiento": TipoAlojamiento.value,
       "Nombre": Nombre.value,
       "Ubicacion": Ubicacion.value,
       "Telefono": Telefono.value,
