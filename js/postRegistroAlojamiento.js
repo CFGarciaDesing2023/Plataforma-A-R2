@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
           Nombre:Nombre,
           Ubicacion:Ubicacion,
           Telefono:Telefono,
-          DescripcionInstalaciones: DescripcionInstalaciones,
+          DescripcionInstalaciones: DescripcionInstalaciones
          
     
             
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (response.ok) {
               console.log("Datos enviados correctamente");
 
-              window.location.href = "../view/index.html"
+              window.location.href = "../html/ConsultaRegistroAlojamiento.html"
 
             } else {
               console.error("Error al enviar la solicitud:", response.status);

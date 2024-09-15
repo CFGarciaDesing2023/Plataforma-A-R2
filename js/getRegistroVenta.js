@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   **/
   function obtenerUsuarios(inicioRegistros) {
-    fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroVenta `  )
+    fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroVentas `  )
        .then((response) => response.json())
        .then((data) => {
          tabla.innerHTML = ""; 
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (confirmacion == true) {
-        fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroVenta/${event.target.value}`, {
+        fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroVentas/${event.target.value}`, {
           method: "DELETE",
         })
           .then((response) => {
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .catch((error) => console.error("Error al eliminar Venta:", error));
       }
     } else if (event.target.id == "editar") {
-      window.location.href = "../view/editar.html?id=" + event.target.value; // Agrega el parámetro a la URL
+      window.location.href = "../html/EditarRegistrarVenta.html?id=" + event.target.value; // Agrega el parámetro a la URL
     }
     
     

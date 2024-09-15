@@ -37,18 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const data = {
       "AlojamientoID": id,
       "AdministradorID": AdministradorID.value,
-      "Email": Email.value,
-      "Contraseña": Contraseña.value,
-      "TipoUsuario": TipoUsuario.value,
-      "TipoDocumento": TipoDocumento.value,
-      "NumeroDocumento": NumeroDocumento.value,
-      "Nombres": Nombres.value,
-      "Apellidos": Apellidos.value,
-      "FechaRegistro": FechaRegistro.value
+      "Nombre": Nombre.value,
+      "Ubicacion": Ubicacion.value,
+      "Telefono": Telefono.value,
+      "DescripcionInstalaciones": DescripcionInstalaciones.value
+ 
+ 
   }
 
 
-    fetch("http://ApiSENAProyect2024.somee.com/api/RegistroUsuario/", {
+    fetch("http://ApiSENAProyect2024.somee.com/api/RegistroAlojamientos/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -59,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (response.ok) {
           console.log("Datos enviados correctamente");
-          window.location.href = "../view/RegiatroAlojamiento.html"
+          window.location.href = "../html/ConsultaRegistroAlojamiento.html"
           
         } else {
           console.error("Error al enviar la solicitud:", response.status);
