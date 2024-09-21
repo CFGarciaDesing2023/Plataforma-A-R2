@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Estado = document.getElementById("Estado");
 
 
-  fetch("http://ApiSENAProyect2024.somee.com/api/RegistroReserva/" + id)
+  fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroReserva/" + id)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-    fetch("http://ApiSENAProyect2024.somee.com/api/RegistroReserva/", {
+    fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroReserva/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

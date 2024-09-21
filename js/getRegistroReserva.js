@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   **/
   function obtenerUsuarios(inicioRegistros) {
-    fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroReserva `  )
+    fetch(`http://www.PlataformaAR-2721501.somee.com/api/RegistroReserva `  )
        .then((response) => response.json())
        .then((data) => {
          tabla.innerHTML = ""; 
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (confirmacion == true) {
-        fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroReserva/${event.target.value}`, {
+        fetch(`http://www.PlataformaAR-2721501.somee.com/api/RegistroReserva/${event.target.value}`, {
           method: "DELETE",
         })
           .then((response) => {

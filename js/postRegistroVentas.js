@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
         }
         
-        fetch("http://ApiSENAProyect2024.somee.com/api/RegistroVentas", {
+        fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroVentas", {
             method: "POST",
             headers:{
                 "Content-Type": "application/json"

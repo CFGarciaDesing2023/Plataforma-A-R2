@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   **/
   function ObtenerUsuarios(inicioRegistros) {
-    fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroAlojamientos `  )
+    fetch(`http://www.PlataformaAR-2721501.somee.com/api/RegistroAlojamientos `  )
        .then((response) => response.json())
        .then((data) => {
          tabla.innerHTML = ""; 
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (confirmacion == true) {
-        fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroAlojamientos/${event.target.value}`, {
+        fetch(`http://www.PlataformaAR-2721501.somee.com/api/RegistroAlojamientos/${event.target.value}`, {
           method: "DELETE",
         })
           .then((response) => {

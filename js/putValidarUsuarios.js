@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Apellidos = document.getElementById("Apellidos");
 
 
-  fetch("http://ApiSENAProyect2024.somee.com/api/RegistroUsuario/" + Email, Contraseña)
+  fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroUsuario/" + Email, Contraseña)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-    fetch("http://ApiSENAProyect2024.somee.com/api/RegistroUsuario/", {
+    fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroUsuario/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
