@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   **/
   function obtenerUsuarios(inicioRegistros) {
-    fetch(`http://www.ApiSENAProyect2024.somee.com/api/Producto `  )
+    fetch(`http://www.PlataformaAR-2721501.somee.com/api/Producto `  )
        .then((response) => response.json())
        .then((data) => {
          tabla.innerHTML = ""; 
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (confirmacion == true) {
-        fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroHabitacion/${event.target.value}`, {
+        fetch(`http://www.PlataformaAR-2721501.somee.com/api/RegistroHabitacion/${event.target.value}`, {
           method: "DELETE",
         })
           .then((response) => {
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .catch((error) => console.error("Error al eliminar Habitacion:", error));
       }
     } else if (event.target.id == "editar") {
-      window.location.href = "../html/EditarRegistroHabitacion.html?id=" + event.target.value; // Agrega el parámetro a la URL
+      window.location.href = "../html/EditarProducto.html?id=" + event.target.value; // Agrega el parámetro a la URL
     }
     
     

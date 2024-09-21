@@ -39,14 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
          data.forEach((user) => {
            const row = document.createElement("tr");
            row.innerHTML = `
-                  
+                  <td class="text-center" >${user.AlojamientoID}</td>
                    <td class="text-center" >${user.TipoAlojamiento}</td>
                    <td class="text-center" >${user.Nombre}</td>
                    <td class="text-center" >${user.Ubicacion}</td>
-                   <td class="text-center" >${user.Telefono}</td>
                    <td class="text-center" >${user.DescripcionInstalaciones}</td>
           
-                
+                 <td> <button id="editar"  value=${user.AlojamientoID} class="btn btn-warning" >editar</button> </td>
+  
                `;
  
            tabla.appendChild(row);
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .catch((error) => console.error("Error al eliminar Alojamiento:", error));
       }
     } else if (event.target.id == "editar") {
-      window.location.href = "../html/EditarRegistroAlojamiento.html?id=" + event.target.value; // Agrega el parámetro a la URL
+      window.location.href = "../html/ConsultarHabitaciones.html?id=" + event.target.value; // Agrega el parámetro a la URL
     }
     
     

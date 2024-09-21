@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (response.ok) {
           console.log("Datos enviados correctamente");
-          window.location.href = "ConsultarUsuario.html"
+          window.location.href = "ConsultarUsuarios.html"
           
         } else {
           console.error("Error al enviar la solicitud:", response.status);

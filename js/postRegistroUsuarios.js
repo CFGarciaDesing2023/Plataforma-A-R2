@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (response.ok) {
               console.log("Datos enviados correctamente");
 
-              window.location.href = "../html/ConsultaRegistroUsuario.html"
+              window.location.href = "../html/ConsultarUsuarios.html"
 
             } else {
               console.error("Error al enviar la solicitud:", response.status);
