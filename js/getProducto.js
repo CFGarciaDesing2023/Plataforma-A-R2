@@ -32,26 +32,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   **/
   function obtenerUsuarios(inicioRegistros) {
-    fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroReserva `  )
+    fetch(`http://www.ApiSENAProyect2024.somee.com/api/Producto `  )
        .then((response) => response.json())
        .then((data) => {
          tabla.innerHTML = ""; 
          data.forEach((user) => {
            const row = document.createElement("tr");
            row.innerHTML = `
-                   <td class="text-center" >${user.ReservaID}</td>
-                   <td class="text-center" >${user.ClienteID}</td>
-                   <td class="text-center" >${user.AlojamientoID}</td>
-                   <td class="text-center" >${user.FechaIngreso}</td>
-                   <td class="text-center" >${user.FechaSalida}</td>
-                   <td class="text-center" >${user.TipoHabitacion}</td>
-                   <td class="text-center" >${user.HabitacionID}</td>
-                   <td class="text-center" >${user.NumeroPersonas}</td>
-                   <td class="text-center" >${user.ValorTotal}</td>
+                   <td class="text-center" >${user.ProductoID}</td>
+                   <td class="text-center" >${user.Nombre}</td>
+                   <td class="text-center" >${user.Descripcion}</td>
+                   <td class="text-center" >${user.Precio}</td>
+                   <td class="text-center" >${user.CantidadDisponible}</td>
                    <td class="text-center" >${user.Estado}</td>
-                   <td> <button id="editar"  value=${user.ReservaID} class="btn btn-warning" >editar</button> </td>
-                   <td> <button id="borrar"  value=${user.ReservaID} class="btn btn-danger" >eliminar</button> </td>
-                   
+                  <td> <button id="editar"  value=${user.ProductoID} class="btn btn-warning" >editar</button> </td>
+                   <td> <button id="borrar"  value=${user.ProductoID} class="btn btn-danger" >eliminar</button> </td>
                    
                 `;
            tabla.appendChild(row);
@@ -84,24 +79,24 @@ document.addEventListener("DOMContentLoaded", () => {
   tabla.addEventListener("click", (event) => {
     if (event.target.id == "borrar") {
       const confirmacion = confirm(
-        "¿Estás seguro de que deseas eliminar este registro de Reserva?"
+        "¿Estás seguro de que deseas eliminar este registro?"
       );
 
       if (confirmacion == true) {
-        fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroReserva/${event.target.value}`, {
+        fetch(`http://www.ApiSENAProyect2024.somee.com/api/RegistroHabitacion/${event.target.value}`, {
           method: "DELETE",
         })
           .then((response) => {
             if (!response.ok) {
-              throw new Error("Error al eliminar el Reserva");
+              throw new Error("Error al eliminar el Habitacion");
             }
 
             event.target.closest("tr").remove();
           })
-          .catch((error) => console.error("Error al eliminar Reserva:", error));
+          .catch((error) => console.error("Error al eliminar Habitacion:", error));
       }
     } else if (event.target.id == "editar") {
-      window.location.href = "../html/EditarRegistroReservas.html?id=" + event.target.value; // Agrega el parámetro a la URL
+      window.location.href = "../html/EditarRegistroHabitacion.html?id=" + event.target.value; // Agrega el parámetro a la URL
     }
     
     

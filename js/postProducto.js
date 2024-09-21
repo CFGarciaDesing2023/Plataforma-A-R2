@@ -3,25 +3,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const registrar = document.getElementById("registrar");
 
     registrar.addEventListener("click", (e) => {
-        const UsuarioID = document.getElementById("UsuarioID").value;
-        const Email  = document.getElementById("Email").value;
-        const Contraseña = document.getElementById("Contraseña").value;
-        const TipoUsuario= document.getElementById("TipoUsuario").value;
-        const TipoDocumento = document.getElementById("TipoDocumento").value;
-        const NumeroDocumento = document.getElementById("NumeroDocumento").value;
-        const Nombres = document.getElementById("Nombres").value;
-        const Apellidos = document.getElementById("Apellidos").value;
+      const Nombre= document.getElementById("Nombre");
+      const Descripcion = document.getElementById("Descripcion");
+      const Precio = document.getElementById("Precio");
+      const CantidadDisponible = document.getElementById("CantidadDisponible");
+      const Estado = document.getElementById("Estado");
+  
       
     
         const data = {
-            UsuarioID:UsuarioID,
-            Email:Email,
-            Contraseña:Contraseña,
-            TipoUsuario:TipoUsuario,
-            TipoDocumento:TipoDocumento,
-            NumeroDocumento:NumeroDocumento,
-            Nombres: Nombres,
-            Apellidos:Apellidos
+          Nombre:Nombre ,
+          Descripcion:Descripcion,
+          Precio:Precio,
+          CantidadDisponible:CantidadDisponible,
+          Estado:Estado
+          
     
             
         }
@@ -38,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (response.ok) {
               console.log("Datos enviados correctamente");
 
-              window.location.href = "../html/ConsultaRegistroUsuario.html"
+              window.location.href = "../html/ConsultarHabitacion.html"
 
             } else {
               console.error("Error al enviar la solicitud:", response.status);

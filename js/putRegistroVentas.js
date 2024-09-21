@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnEditar = document.getElementById("editar");
 
   const urlParams = new URLSearchParams(window.location.search);
-  const VentaID = urlParams.get("VentaID");
+  const id = urlParams.get("id");
  
   const ClienteID = document.getElementById("ClienteID");
   const AlojamientoID = document.getElementById("AlojamientoID ");
@@ -18,11 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
-        VentaID.value = user.VentaID;
+       
         ClienteID.value = user.ClienteID;
         AlojamientoID.value = user.AlojamientoID;
         FechaVenta.value = user.FechaVenta;
-
         TipoVenta .value = user.TipoVenta ;
         Nombre.value = user.Nombre;
         ValorAPagar.value = user.ValorAPagar;
@@ -39,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   btnEditar.addEventListener("click", () => {
 
     const data = {
-      "VentaID": VentaID,
+      "VentaID": id,
       "ClienteID": ClienteID.value,
       "AlojamientoID": AlojamientoID.value,
       "FechaVenta": FechaVenta.value,

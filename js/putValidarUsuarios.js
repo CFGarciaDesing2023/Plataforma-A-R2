@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const btnEditar = document.getElementById("editar");
+  const btnIngresar= document.getElementById("Ingresar");
 
   const urlParams = new URLSearchParams(window.location.search);
-  const id = urlParams.get("id");
+  const id = urlParams.get("Email"+"Contraseña");
 
 
   const Email = document.getElementById("Email");
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Apellidos = document.getElementById("Apellidos");
 
 
-  fetch("http://ApiSENAProyect2024.somee.com/api/RegistroUsuario/" + id)
+  fetch("http://ApiSENAProyect2024.somee.com/api/RegistroUsuario/" + Email, Contraseña)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error al obtener datos de la API:", error)
     );
 
-  btnEditar.addEventListener("click", () => {
+  Ingresar.addEventListener("click", () => {
 
     const data = {
       "UsuarioID": id,

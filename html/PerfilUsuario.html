@@ -446,66 +446,63 @@
                     <div class="card-body">
                       <form id="formAccountSettings" method="POST" onsubmit="return false">
                         <div class="row">
-                          <div class="mb-3 col-md-6">
-                            <label for="firstName" class="form-label">Nombres</label>
-                            <input
-                              class="form-control"
-                              type="text"
-                              id="firstName"
-                              name="firstName"
-                              value="John"
-                              autofocus
-                            />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="lastName" class="form-label">Apellidos</label>
-                            <input class="form-control" type="text" name="lastName" id="lastName" value="Doe" />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="email" class="form-label">E-mail</label>
+                          <div class="mb-3 col-md-6"></div>
+                            <label for="email" class="form-label">Email</label>
                             <input
                               class="form-control"
                               type="text"
                               id="email"
                               name="email"
-                              value="john.doe@example.com"
-                              placeholder="john.doe@example.com"
                             />
                           </div>
                           <div class="mb-3 col-md-6">
                             <label for="contraseña" class="form-label">Contraseña</label>
                             <input
-                              type="password"
+                              type="text"
                               class="form-control"
-                              id="organization"
-                              name="organization"
-                              value="Contraseña"
+                              id="Contraseña"
+                              name="Contraseña"
+
+                            />
+                          <div class="mb-3 col-md-6">
+                            <label for="Nombres" class="form-label">Nombres</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="Nombres"
+                              name="firstName"
+                              autofocus
                             />
                           </div>
                           <div class="mb-3 col-md-6">
-                            <label class="form-label" for="phoneNumber">Tipo Documento</label>
+                            <label for="Apellidos" class="form-label">Apellidos</label>
+                            <input class="form-control" type="text" name="lastName" id="Apellidos"  />
+                          </div>
+                          
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label class="form-label" for="TipoDocumento">TipoDocumento</label>
                             <div class="input-group input-group-merge">
-                              <span class="input-group-text">C.C</span>
                               <input
                                 type="text"
-                                id="phoneNumber"
+                                id="TipoDocumento"
                                 name="TipoDocumento"
                                 class="form-control"
-                                placeholder="Cedula Ciudadania"
+                                
                               />
                             </div>
                           </div>
                           <div class="mb-3 col-md-6">
-                            <label for="address" class="form-label">NumeroDocumento</label>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="1008502191" />
+                            <label for="NumeroDocumento" class="form-label">NumeroDocumento</label>
+                            <input type="text" class="form-control" id="NumeroDocumento" name="NumeroDocumento"  />
                           </div>
                           <div class="mb-3 col-md-6">
-                            <label for="state" class="form-label">Fecha Registro</label>
-                            <input class="form-control" type="text" id="state" name="state" placeholder="2024/06/15" />
+                            <label for="FechaRegistro" class="form-label">FechaRegistro</label>
+                            <input class="form-control" type="date" id="FechaRegistro" name="FechaRegistro" />
                           </div>
                          
                         <div class="mt-2">
-                          <button type="submit" class="btn btn-primary me-2">Guardar Cambios</button>
+                          <button type="submit" id="editar" class="btn btn-primary me-2">Guardar Cambios</button>
                           <button type="reset" class="btn btn-outline-secondary">Cancelar</button>
                         </div>
                       </form>
@@ -587,7 +584,7 @@
     </div>
     <!-- / Layout wrapper -->
 
-
+    <script src="../js/putValidarUsuarios.js"></script>
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>

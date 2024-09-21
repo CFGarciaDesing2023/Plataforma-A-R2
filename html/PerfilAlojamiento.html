@@ -437,39 +437,32 @@
                     <hr class="my-0" />
                     <div class="card-body">
                       <form id="formAccountSettings" method="POST" onsubmit="return false">
-                        <div class="row">
-                          <div class="mb-3 col-md-6">
-                            <label for="Nombre" class="form-label">Nombre</label>
-                            <input
-                              class="form-control"
-                              type="text"
-                              id="Nombre"
-                              name="Nombre"
-                              value="RealCaqueta"
-                              autofocus
-                            />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="lastName" class="form-label">Direccion</label>
-                            <input class="form-control" type="text" name="lastName" id="lastName" value="Doe" />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="email" class="form-label">DescripcionInstalaciones</label>
-                            <input
-                              class="form-control"
-                              type="text"
-                              id="email"
-                              name="email"
-                              value="3 Pisos con parqueadero y picisna"
-                              placeholder="3 Pisos con parqueadero y picisna"
-                            />
-                          </div>
-                        
-                         
-                          <div class="mb-3 col-md-6">
-                            <label for="state" class="form-label">Fecha Registro</label>
-                            <input class="form-control" type="text" id="state" name="Fecha Registro" placeholder="2024/06/15" />
-                          </div>
+            
+                        <div class="mb-3">
+                          <label for="AdministradorID" class="form-label">AdministradorID</label>
+                          <input type="number" class="form-control" id="AdministradorID" >
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="TipoAlojamiento" class="form-label">TipoAlojamiento</label>
+                          <input type="text" class="form-control" id="TipoAlojamiento" >
+                        </div>
+            
+            
+                        <div class="mb-3">
+                          <label for="Nombre" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="Nombre">
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="Ubicacion" class="form-label">Direccion</label>
+                          <input type="text" class="form-control" id="Ubicacion">
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for=">DescripcionInstalaciones" class="form-label">DescripcionInstalaciones</label>
+                          <input type="text" class="form-control" id=">DescripcionInstalaciones">
+                        </div>
                          
                         <div class="mt-2">
                           <button type="submit" class="btn btn-primary me-2">Guardar Cambios</button>
@@ -554,7 +547,7 @@
     </div>
     <!-- / Layout wrapper -->
 
-
+    <script src="../js/putRegistroAlojamientos.js"></script>
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>

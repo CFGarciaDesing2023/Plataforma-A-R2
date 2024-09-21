@@ -3,22 +3,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const urlParams = new URLSearchParams(window.location.search);
   const id = urlParams.get("id");
-  const AlojamientoID= document.getElementById("AlojamientoID");
-  const TipoHabitacion = document.getElementById("TipoHabitacion");
+  const Nombre= document.getElementById("Nombre");
   const Descripcion = document.getElementById("Descripcion");
-  const Costo = document.getElementById("Costo");
+  const Precio = document.getElementById("Precio");
+  const CantidadDisponible = document.getElementById("CantidadDisponible");
   const Estado = document.getElementById("Estado");
 
 
-  fetch("http://ApiSENAProyect2024.somee.com/api/RegistroHabitacion/" + id)
+  fetch("http://ApiSENAProyect2024.somee.com/api/Producto/" + id)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
         
-        AlojamientoID.value = user.AlojamientoID;
-        TipoHabitacion.value = user.TipoHabitacion;
+        Nombre.value = user.Nombre;
         Descripcion.value = user.Descripcion;
-        Costo.value = user.Costo;
+        Precio.value = user.Precio;
+        CantidadDisponible.value = user.CantidadDisponible;
         Estado.value = user.Estado;
 
       });
@@ -30,17 +30,17 @@ document.addEventListener("DOMContentLoaded", () => {
   btnEditar.addEventListener("click", () => {
 
     const data = {
-      "HabitacionID": id,
-      "AlojamientoID": AlojamientoID.value,
-      "TipoHabitacion": TipoHabitacion.value,
+      "ProductoID": id,
+      "Nombre": Nombre.value,
       "Descripcion": Descripcion.value,
-      "Costo": Costo.value,
+      "Precio": Precio.value,
+      "CantidadDisponible": CantidadDisponible.value,
       "Estado": Estado.value
       
   }
 
 
-    fetch("http://ApiSENAProyect2024.somee.com/api/RegistroHabitacion/", {
+    fetch("http://ApiSENAProyect2024.somee.com/api/RegistroProducto/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (response.ok) {
           console.log("Datos enviados correctamente");
-          window.location.href = "../html/ConsultarHabitacion.html"
+          window.location.href = "../html/ConsultarProducto.html"
           
         } else {
           console.error("Error al enviar la solicitud:", response.status);

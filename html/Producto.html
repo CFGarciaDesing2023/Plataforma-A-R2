@@ -27,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Dashboard |Proyecto-PAR - Bootstrap 5 HTML Admin Template 2024</title>
+    <title>Dashboard | Proyecto-PAR - Bootstrap 5 HTML Admin Template </title>
 
     <meta name="description" content="" />
 
@@ -157,18 +157,10 @@
 
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="PerfilUsuario.html" class="menu-link">
+                  <a href="OpcionesPerfil.html" class="menu-link">
                     <div data-i18n="Without menu">Usuario</div>
                   </a>
-              
                 </li>
-                <li class="menu-item"></li>
-                  <a href="PerfilAlojamiento.html" class="menu-link">
-                    <div data-i18n="Without menu">Alojamiento</div>
-                  </a>
-              
-                </li>
-                
             
                
                 <li class="menu-item">
@@ -318,7 +310,7 @@
                   <input
                     type="text"
                     class="form-control border-0 shadow-none"
-                    placeholder="Search..."
+                    placeholder="Buscar Cliente..."
                     aria-label="Search..."
                   />
                 </div>
@@ -339,8 +331,8 @@
                   >
                 </li>
 
-                <!-- User -->
-                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                 <!-- User -->
+                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
                   <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
                       <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
@@ -410,90 +402,50 @@
 
             <div class="container-xxl flex-grow-1 container-p-y">
               <div class="row">
-                <div class="col-lg-8 mb-4 order-0">
-                  <div class="card">
-                    <div class="d-flex align-items-end row">
-                      <!-- Earnings (Monthly) Card Example -->
-  <div class="col-xl-3 col-md-6 mb-4">
-    <div class="card border-left-dark shadow h-100 py-2">
-        <div class="card-body">
-            <div class="row no-gutters align-items-center">
-                <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
-                        Total Habitaciones
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-dark text-center" id="totalhabitaciones">0</div>
-                </div>
-                <div class="col-auto">
-                    <i class="fas fa-clipboard-list fa-2x text-black-50"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                <div class="col-lg-12 mb-lg-1 order-0">
+                  
+                        <div class="card-body">
+            
+            <form  >
+            
+              <div class="" >
+                  <h5 class="text-center" >Formulario de registro de Producto</h5> 
+                   <hr class="" >
+              </div>
+  
+              <div class="mb-3">
+                <label for="AlojamientoID" class="form-label">ProductoID</label>
+                <input type="number" class="form-control" id="AlojamientoID" >
+              </div>
+              <div class="mb-3">
+                <label for="Nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="Nombre" >
+              </div>
+  
+              <div class="mb-3">
+                <label for="Descripcion" class="form-label">Descripcion</label>
+                <input type="text" class="form-control" id="Descripcion" >
+              </div>
+  
+  
+              <div class="mb-3">
+                <label for="Precio" class="form-label">Precio</label>
+                <input type="number" class="form-control" id="Precio">
+              </div>
 
-<!-- Earnings (Monthly) Card Example -->
-<div class="col-xl-3 col-md-6 mb-4">
-    <div class="card border-left-primary shadow h-100 py-2">
-        <div class="card-body">
-            <div class="row no-gutters align-items-center">
-                <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                        Habitaciones Disponibles
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-primary text-center" id="habitacionesdisponibles">0</div>
-                </div>
-                <div class="col-auto">
-                    <i class="fas fa-box fa-2x text-primary"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+              <div class="mb-3"></div>
+                <label for="CantidadDisponible" class="form-label">CantidadDisponible</label>
+                <input type="number" class="form-control" id="CantidadDisponible">
+              </div>
 
-<!-- Earnings (Monthly) Card Example -->
-<div class="col-xl-3 col-md-6 mb-4">
-    <div class="card border-left-danger shadow h-100 py-2">
-        <div class="card-body">
-            <div class="row no-gutters align-items-center">
-                <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                        Habitaciones Ocupadas
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-danger text-center" id="habitacionesocupadas">0</div>
-                </div>
-                <div class="col-auto">
-                    <i class="fas fa-bed fa-2x text-danger"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Pending Requests Card Example -->
-<div class="col-xl-3 col-md-6 mb-4">
-    <div class="card border-left-info shadow h-100 py-2">
-        <div class="card-body">
-            <div class="row no-gutters align-items-center">
-                <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                        Habitaciones en Limpieza
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-info text-center" id="habitacioneslimpieza">0</div>
-                </div>
-                <div class="col-auto">
-                    <i class="fas fa-air-freshener fa-2x text-info"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-          
-        </div>
-         <!-- Style variation -->
-                          
-            </div>
+              <div class="mb-3"></div>
+                <label for="Estado" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="Estado">
+              </div>
+  
+              <button type="button" id="registrar" class="btn btn-success ">Registrar</button>
+              <a href="index.html" class="btn btn-primary ms-5 ">Regresar</a>
+            </form>
             <!-- / Content -->
 
             <!-- Footer -->
@@ -527,7 +479,7 @@
     </div>
     <!-- / Layout wrapper -->
 
-
+    <script src="../js//postProducto.js"></script>
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
