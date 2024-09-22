@@ -5,22 +5,20 @@ document.addEventListener("DOMContentLoaded", () => {
     registrar.addEventListener("click", (e) => {
         const ClienteID  = document.getElementById("ClienteID").value;
         const AlojamientoID = document.getElementById("AlojamientoID").value;
-        const FechaVenta= document.getElementById("FechaVenta").value;
-        const TipoVenta = document.getElementById("TipoVenta").value;
-        const Nombre = document.getElementById("Nombre").value;
-        const ValorAPagar = document.getElementById("ValorAPagar").value;
-        const Cantidad = document.getElementById("Cantidad").value;
+        const EmpleadoID = document.getElementById("EmpleadoID").value;
+        const ProductoID = document.getElementById("ProductoID").value;
+        const CantidadVendida = document.getElementById("CantidadVendida").value;
+        const Precio_Unitario = document.getElementById("Precio_Unitario").value;
         const EstadoVenta  = document.getElementById("EstadoVenta").value;
       
     
         const data = {
           ClienteID :ClienteID ,
           AlojamientoID:AlojamientoID,
-          FechaVenta:FechaVenta,
-          TipoVenta:TipoVenta,
-          Nombre:Nombre,
-          ValorAPagar:ValorAPagar,
-          Cantidad:Cantidad ,
+          EmpleadoID:EmpleadoID,
+          ProductoID:ProductoID,
+          CantidadVendida:CantidadVendida,
+          Precio_Unitario:Precio_Unitario,
           EstadoVenta :EstadoVenta
     
             
@@ -38,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (response.ok) {
               console.log("Datos enviados correctamente");
 
-              window.location.href = "../view/index.html"
+              window.location.href = "../html/ConsultarVentas.html"
 
             } else {
               console.error("Error al enviar la solicitud:", response.status);

@@ -42,11 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
                    <td class="text-center" >${user.VentaID}</td>
                    <td class="text-center" >${user.ClienteID}</td>
                    <td class="text-center" >${user.AlojamientoID}</td>
-                   <td class="text-center" >${user.FechaVenta}</td>
-                   <td class="text-center" >${user.TipoVenta}</td>
-                   <td class="text-center" >${user.Nombre}</td>
-                   <td class="text-center" >${user.ValorAPagar}</td>
-                   <td class="text-center" >${user.Cantidad}</td>
+                   <td class="text-center" >${user.EmpleadoID}</td>
+                   <td class="text-center" >${user.ProductoID}</td>
+                   <td class="text-center" >${user.CantidadVendida}</td>
+                   <td class="text-center" >${user.Precio_Unitario}</td>
+                   <td class="text-center" >${user.Total}</td>
                    <td class="text-center" >${user.EstadoVenta}</td>
                    <td> <button id="editar"  value=${user.VentaID} class="btn btn-warning" >editar</button> </td>
                    <td> <button id="borrar"  value=${user.VentaID} class="btn btn-danger" >eliminar</button> </td>
