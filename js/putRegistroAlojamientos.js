@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const TipoAlojamiento= document.getElementById("TipoAlojamiento");
   const Nombre = document.getElementById("Nombre");
   const Ubicacion = document.getElementById("Ubicacion");
-  const Telefono = document.getElementById("Telefono");
   const DescripcionInstalaciones = document.getElementById("DescripcionInstalaciones");
 
 
@@ -22,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
         TipoAlojamiento.value = user.TipoAlojamiento;
         Nombre.value = user.Nombre;
         Ubicacion.value = user.Ubicacion;
-        Telefono.value = user.Telefono;
         DescripcionInstalaciones.value = user.DescripcionInstalaciones;
         
 
@@ -40,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
       "TipoAlojamiento": TipoAlojamiento.value,
       "Nombre": Nombre.value,
       "Ubicacion": Ubicacion.value,
-      "Telefono": Telefono.value,
       "DescripcionInstalaciones": DescripcionInstalaciones.value
  
  
