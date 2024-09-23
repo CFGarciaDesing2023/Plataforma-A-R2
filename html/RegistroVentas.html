@@ -331,65 +331,65 @@
                   >
                 </li>
 
-                <!-- User -->
-                <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                    <div class="avatar avatar-online">
-                      <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
-                    </div>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar avatar-online">
-                              <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                  <!-- User -->
+                  <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                    <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                      <div class="avatar avatar-online">
+                        <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                      </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar avatar-online">
+                                <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <span class="fw-semibold d-block">John Doe</span>
+                              <small class="text-muted">Admin</small>
                             </div>
                           </div>
-                          <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
-                            <small class="text-muted">Admin</small>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-user me-2"></i>
-                        <span class="align-middle">Mi perfil</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-cog me-2"></i>
-                        <span class="align-middle">Opciones</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <span class="d-flex align-items-center align-middle">
-                          <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                          <span class="flex-grow-1 align-middle">Pagos</span>
-                          <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="login.html">
-                        <i class="nav-link"></i>
-                        <span class="align-middle">Cerrar Sesion</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <!--/ User -->
+                        </a>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bx bx-user me-2"></i>
+                          <span class="align-middle">Mi perfil</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bx bx-cog me-2"></i>
+                          <span class="align-middle">Opciones</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <span class="d-flex align-items-center align-middle">
+                            <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                            <span class="flex-grow-1 align-middle">Pagos</span>
+                            <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="login.html">
+                          <i class="nav-link"></i>
+                          <span class="align-middle">Cerrar Sesion</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--/ User -->
               </ul>
             </div>
           </nav>
@@ -409,10 +409,10 @@
                           <form  >
             
                             <div class="" >
-                                <h5 class="text-center" >Formulario Actualizar Reserva</h5> 
+                                <h5 class="text-center" >Formulario de registro de Venta</h5> 
                                  <hr class="" >
                             </div>
-                        
+                
                     
                             <div class="mb-3">
                               <label for="ClienteID" class="form-label">ClienteID</label>
@@ -426,38 +426,28 @@
                 
                 
                             <div class="mb-3">
-                              <label for="FechaIngreso" class="form-label">FechaIngreso</label>
-                              <input type="date" class="form-control" id="FechaIngreso">
+                              <label for="EmpleadoID" class="form-label">EmpleadoID</label>
+                              <input type="number" class="form-control" id="EmpleadoID">
+                            </div>
+                            <div class="mb-3">
+                              <label for="ProductoID" class="form-label">ProductoID</label>
+                              <input type="number" class="form-control" id="ProductoID">
+                            </div>
+                            <div class="mb-3">
+                              <label for="CantidadVendida" class="form-label">CantidadVendida</label>
+                              <input type="number" class="form-control" id="CantidadVendida">
+                            </div>
+                            <div class="mb-3">
+                              <label for="Precio_Unitario" class="form-label">Precio_Unitario</label>
+                              <input type="number" class="form-control" id="Precio_Unitario">
+                            </div>
+                            <div class="mb-3">
+                              <label for="EstadoVenta" class="form-label">EstadoVenta</label>
+                              <input type="text" class="form-control" id="EstadoVenta">
                             </div>
                 
-                            <div class="mb-3">
-                              <label for="FechaSalida" class="form-label">FechaSalida</label>
-                              <input type="date" class="form-control" id="FechaSalida">
-                            </div>
-                
-                            <div class="mb-3">
-                              <label for="TipoHabitacion" class="form-label">TipoHabitacion</label>
-                              <input type="text" class="form-control" id="TipoHabitacion">
-                            </div>
-                            <div class="mb-3">
-                              <label for="HabitacionID" class="form-label">HabitacionID</label>
-                              <input type="number" class="form-control" id="HabitacionID">
-                            </div>
-                            <div class="mb-3">
-                              <label for="NumeroPersonas" class="form-label">NumeroPersonas</label>
-                              <input type="number" class="form-control" id="HabitacionID">
-                            </div>
-                            <div class="mb-3">
-                              <label for="ValorTotal" class="form-label">ValorTotal</label>
-                              <input type="number" class="form-control" id="ValorTotal">
-                            </div>
-                            <div class="mb-3">
-                              <label for="Estado" class="form-label">Estado</label>
-                              <input type="text" class="form-control" id="Estado">
-                            </div>
-                
-                            <button type="button" id="editar" class="btn btn-success ">Actualizar</button>
-                              <a href="index.html" class="btn btn-primary ms-5 ">Regresar</a>
+                            <button type="button" id="registrar" class="btn btn-success ">Registrar</button>
+                            <a href="index.html" class="btn btn-primary ms-5 ">Regresar</a>
                           </form>
             <!-- / Content -->
 
@@ -491,7 +481,8 @@
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
-    <script src="../js/putRegistroVentas.js"></script>
+   
+    <script src="../js//postRegistroVentas.js"></script>
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -499,7 +490,7 @@
     <script src="../assets/vendor/libs/popper/popper.js"></script>
     <script src="../assets/vendor/js/bootstrap.js"></script>
     <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-
+    
     <script src="../assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
 

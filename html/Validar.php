@@ -1,11 +1,11 @@
 <?php
     
     $Email=$_POST['Email'];
-    $Password=$_POST['Password'];
+    $Password=$_POST['Contraseña'];
 
     //conectar a base de datos
     $conexion=mysqli_connect("localhost", "CompletoProjectoAR");
-    $consulta="SELECT * FROM RegistroUsuarios WHERE Email='$Email' and Coontraseña ='$Coontraseña'";
+    $consulta="SELECT * FROM RegistroUsuarios WHERE Email='$Email' and Contraseña ='$Contraseña'";
  
     $Result=mysqli_query($conexion, $consulta);
 

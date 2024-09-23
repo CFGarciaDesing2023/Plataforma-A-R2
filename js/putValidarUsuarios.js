@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnIngresar= document.getElementById("Ingresar");
 
   const urlParams = new URLSearchParams(window.location.search);
-  const id = urlParams.get("Email"+"Contraseña");
+  const id = urlParams.get("id");
 
 
   const Email = document.getElementById("Email");
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Apellidos = document.getElementById("Apellidos");
 
 
-  fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroUsuario/" + Email, Contraseña)
+  fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroUsuario/" + id)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (response.ok) {
           console.log("Datos enviados correctamente");
-          window.location.href = "ConsultarUsuario.html"
+          window.location.href = "PerfilUsuario.html"
           
         } else {
           console.error("Error al enviar la solicitud:", response.status);
