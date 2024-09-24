@@ -3,26 +3,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const registrar = document.getElementById("registrar");
 
     registrar.addEventListener("click", (e) => {
-      const Nombre= document.getElementById("Nombre");
+      const Nombre = document.getElementById("Nombre");
       const Descripcion = document.getElementById("Descripcion");
-      const Precio = document.getElementById("Precio");
       const CantidadDisponible = document.getElementById("CantidadDisponible");
       const Estado = document.getElementById("Estado");
   
       
     
         const data = {
-          Nombre:Nombre ,
+          Nombre:Nombre,
           Descripcion:Descripcion,
-          Precio:Precio,
           CantidadDisponible:CantidadDisponible,
-          Estado:Estado
-          
-    
-            
+          Estado:Estado    
         }
         
-        fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroUsuario", {
+        fetch("http://www.PlataformaAR-2721501.somee.com/api/Producto", {
             method: "POST",
             headers:{
                 "Content-Type": "application/json"

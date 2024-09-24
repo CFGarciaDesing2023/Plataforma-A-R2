@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const id = urlParams.get("id");
   const Nombre= document.getElementById("Nombre");
   const Descripcion = document.getElementById("Descripcion");
-  const Precio = document.getElementById("Precio");
   const CantidadDisponible = document.getElementById("CantidadDisponible");
   const Estado = document.getElementById("Estado");
 
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         
         Nombre.value = user.Nombre;
         Descripcion.value = user.Descripcion;
-        Precio.value = user.Precio;
         CantidadDisponible.value = user.CantidadDisponible;
         Estado.value = user.Estado;
 
@@ -33,14 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
       "ProductoID": id,
       "Nombre": Nombre.value,
       "Descripcion": Descripcion.value,
-      "Precio": Precio.value,
       "CantidadDisponible": CantidadDisponible.value,
       "Estado": Estado.value
       
   }
 
 
-    fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroProducto/", {
+    fetch("http://www.PlataformaAR-2721501.somee.com/api/Producto/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

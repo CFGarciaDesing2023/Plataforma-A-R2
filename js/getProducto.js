@@ -41,11 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
            row.innerHTML = `
                    <td class="text-center" >${user.ProductoID}</td>
                    <td class="text-center" >${user.Nombre}</td>
-                   <td class="text-center" >${user.Descripcion}</td>
-                   <td class="text-center" >${user.Precio}</td>
+                   <td class="text-center" >${user.Descripcion}</td
                    <td class="text-center" >${user.CantidadDisponible}</td>
                    <td class="text-center" >${user.Estado}</td>
-                  <td> <button id="editar"  value=${user.ProductoID} class="btn btn-warning" >editar</button> </td>
+                   <td> <button id="editar"  value=${user.ProductoID} class="btn btn-warning" >editar</button> </td>
                    <td> <button id="borrar"  value=${user.ProductoID} class="btn btn-danger" >eliminar</button> </td>
                    
                 `;
@@ -83,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (confirmacion == true) {
-        fetch(`http://www.PlataformaAR-2721501.somee.com/api/RegistroHabitacion/${event.target.value}`, {
+        fetch(`http://www.PlataformaAR-2721501.somee.com/api/Producto/${event.target.value}`, {
           method: "DELETE",
         })
           .then((response) => {
