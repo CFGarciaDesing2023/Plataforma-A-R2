@@ -42,9 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
       "Ubicacion": Ubicacion.value,
       "DescripcionInstalaciones": DescripcionInstalaciones.value,
       "Capacidad_Habitaciones": Capacidad_Habitaciones.value
-
- 
- 
   }
 
 
