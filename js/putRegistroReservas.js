@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const id = urlParams.get("id");
  
   const ClienteID = document.getElementById("ClienteID");
-  const AlojamientoID = document.getElementById("AlojamientoID ");
+  const AlojamientoID = document.getElementById("AlojamientoID");
   const FechaIngreso = document.getElementById("FechaIngreso");
   const FechaSalida = document.getElementById("FechaSalida");
   const TipoHabitacion = document.getElementById("TipoHabitacion");
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ClienteID.value = user.ClienteID;
         AlojamientoID.value = user.AlojamientoID;
         FechaIngreso.value = user.FechaIngreso;
-        FechaSalida.value = user.FechaSalida ;
+        FechaSalida.value = user.FechaSalida;
         TipoHabitacion.value = user.TipoHabitacion;
         HabitacionID.value = user.HabitacionID;
         NumeroPersonas.value = user.NumeroPersonas;
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (response.ok) {
           console.log("Datos enviados correctamente");
-          window.location.href = "../html/ConsultarReserva.html"
+          window.location.href = "../html/ConsultarReservas.html"
           
         } else {
           console.error("Error al enviar la solicitud:", response.status);

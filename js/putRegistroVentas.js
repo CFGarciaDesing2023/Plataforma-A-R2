@@ -5,27 +5,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const id = urlParams.get("id");
  
   const ClienteID = document.getElementById("ClienteID");
-  const AlojamientoID = document.getElementById("AlojamientoID ");
-  const FechaVenta = document.getElementById("FechaVenta");
-  const TipoVenta = document.getElementById("TipoVenta");
-  const Nombre = document.getElementById("Nombre");
-  const ValorAPagar = document.getElementById("ValorAPagar");
-  const Cantidad = document.getElementById("Cantidad");
+  const AlojamientoID = document.getElementById("AlojamientoID");
+  const EmpleadoID = document.getElementById("EmpleadoID");
+  const ProductoID = document.getElementById("ProductoID");
+  const CantidadVendida = document.getElementById("CantidadVendida");
+  const Precio_Unitario = document.getElementById("Precio_Unitario");
+  const Total = document.getElementById("Total");
   const EstadoVenta = document.getElementById("EstadoVenta");
 
 
-  fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroVentas/" + AlojamientoID)
+  fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroVentas/" + id)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
        
         ClienteID.value = user.ClienteID;
         AlojamientoID.value = user.AlojamientoID;
-        FechaVenta.value = user.FechaVenta;
-        TipoVenta .value = user.TipoVenta ;
-        Nombre.value = user.Nombre;
-        ValorAPagar.value = user.ValorAPagar;
-        Cantidad.value = user.Cantidad;
+        EmpleadoID.value = user.EmpleadoID;
+        ProductoID.value = user.ProductoID;
+        CantidadVendida .value = user.CantidadVendida;
+        Precio_Unitario.value = user.Precio_Unitario;
+        Total.value= user.Total;
         EstadoVenta.value = user.EstadoVenta;
         
 
@@ -41,12 +41,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "VentaID": id,
       "ClienteID": ClienteID.value,
       "AlojamientoID": AlojamientoID.value,
-      "FechaVenta": FechaVenta.value,
-      "TipoVenta": TipoVenta.value,
-      "Nombre": Nombre.value,
-      "ValorAPagar": ValorAPagar.value,
-      "Cantidad": Cantidad.value,
-      "FechaVenta": FechaVenta.value
+      "EmpleadoID": EmpleadoID.value,
+      "ProductoID": ProductoID.value,
+      "CantidadVendida": CantidadVendida.value,
+      "Precio_Unitario": Precio_Unitario.value,
+      "Total": Total.value,
+      "EstadoVenta": EstadoVenta.value
+  
+      
   }
 
 

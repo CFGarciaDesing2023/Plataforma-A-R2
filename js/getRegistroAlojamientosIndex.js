@@ -43,8 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
                    <td class="text-center" >${user.TipoAlojamiento}</td>
                    <td class="text-center" >${user.Nombre}</td>
                    <td class="text-center" >${user.Ubicacion}</td>
-                   <td class="text-center" >${user.DescripcionInstalaciones}</td>
-          
+                   <td class="text-center" >${user.DescripcionInstalaciones}</td>       
                  <td> <button id="editar"  value=${user.AlojamientoID} class="btn btn-warning" >editar</button> </td>
   
                `;
@@ -96,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .catch((error) => console.error("Error al eliminar Alojamiento:", error));
       }
     } else if (event.target.id == "editar") {
-      window.location.href = "../html/ConsultarHabitaciones.html?id=" + event.target.value; // Agrega el parámetro a la URL
+      window.location.href = "../html/ConsultarAlojamiento.html?id=" + event.target.value; // Agrega el parámetro a la URL
     }
     
     

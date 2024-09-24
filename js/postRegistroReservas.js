@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const registrar = document.getElementById("registrar");
 
     registrar.addEventListener("click", (e) => {
-        const ClienteID  = document.getElementById("ClienteID").value;
+        const ClienteID = document.getElementById("ClienteID").value;
         const AlojamientoID = document.getElementById("AlojamientoID").value;
         const FechaIngreso= document.getElementById("FechaIngreso").value;
         const FechaSalida = document.getElementById("FechaSalida").value;
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const HabitacionID = document.getElementById("HabitacionID").value;
         const NumeroPersonas = document.getElementById("NumeroPersonas").value;
         const ValorTotal = document.getElementById("ValorTotal").value;
-        const Estado  = document.getElementById("Estado").value;
+        const Estado = document.getElementById("Estado").value;
       
     
         const data = {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
           TipoHabitacion:TipoHabitacion,
           HabitacionID:HabitacionID,
           NumeroPersonas:NumeroPersonas,
-          ValorTotal:ValorTotal ,
+          ValorTotal:ValorTotal,
           Estado:Estado 
     
             
