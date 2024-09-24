@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
     
         const data = {
           ClienteID :ClienteID ,
-          AlojamientoID :AlojamientoID,
-          EmpleadoID :EmpleadoID,
-          ProductoID :ProductoID,
-          CantidadVendida :CantidadVendida,
+          AlojamientoID:AlojamientoID,
+          EmpleadoID:EmpleadoID,
+          ProductoID:ProductoID,
+          CantidadVendida:CantidadVendida,
           Precio_Unitario:Precio_Unitario,
-          EstadoVenta:EstadoVenta
+          EstadoVenta :EstadoVenta
     
             
         }

@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const TipoAlojamiento = document.getElementById("TipoAlojamiento").value;
         const Nombre = document.getElementById("Nombre").value;
         const Ubicacion = document.getElementById("Ubicacion").value;
+        const Telefono = document.getElementById("Telefono").value;
         const DescripcionInstalaciones = document.getElementById("DescripcionInstalaciones").value;
        
       
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
           TipoAlojamiento:TipoAlojamiento,
           Nombre:Nombre,
           Ubicacion:Ubicacion,
+          Telefono:Telefono,
           DescripcionInstalaciones: DescripcionInstalaciones
          
     

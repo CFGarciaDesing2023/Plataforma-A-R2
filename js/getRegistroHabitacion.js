@@ -43,7 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
                    <td class="text-center" >${user.AlojamientoID}</td>
                    <td class="text-center" >${user.TipoHabitacion}</td>
                    <td class="text-center" >${user.Descripcion}</td>
-                   <td class="text-center" >${user.PrecioNoche}</td>
+                   <td class="text-center" >${user.Costo}</td>
+                   <td class="text-center" >${user.FechaRegistro}</td>
                    <td class="text-center" >${user.Estado}</td>
                   <td> <button id="editar"  value=${user.HabitacionID} class="btn btn-warning" >editar</button> </td>
                    <td> <button id="borrar"  value=${user.HabitacionID} class="btn btn-danger" >eliminar</button> </td>

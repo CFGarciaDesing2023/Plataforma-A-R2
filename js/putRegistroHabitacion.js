@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const AlojamientoID= document.getElementById("AlojamientoID");
   const TipoHabitacion = document.getElementById("TipoHabitacion");
   const Descripcion = document.getElementById("Descripcion");
-  const PrecioNoche = document.getElementById("PrecioNoche");
+  const Costo = document.getElementById("Costo");
   const Estado = document.getElementById("Estado");
 
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         AlojamientoID.value = user.AlojamientoID;
         TipoHabitacion.value = user.TipoHabitacion;
         Descripcion.value = user.Descripcion;
-        PrecioNoche.value = user.PrecioNoche;
+        Costo.value = user.Costo;
         Estado.value = user.Estado;
 
       });
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "AlojamientoID": AlojamientoID.value,
       "TipoHabitacion": TipoHabitacion.value,
       "Descripcion": Descripcion.value,
-      "PrecioNoche": PrecioNoche.value,
+      "Costo": Costo.value,
       "Estado": Estado.value
       
   }

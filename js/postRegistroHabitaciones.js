@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const AlojamientoID = document.getElementById("AlojamientoID").value;
         const TipoHabitacion = document.getElementById("TipoHabitacion").value;
         const Descripcion = document.getElementById("Descripcion").value;
-        const PrecioNoche = document.getElementById("PrecioNoche").value;
+        const Costo = document.getElementById("Costo").value;
         const Estado = document.getElementById("Estado").value;
   
       
@@ -15,8 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
           AlojamientoID:AlojamientoID ,
           TipoHabitacion:TipoHabitacion,
           Descripcion:Descripcion,
-          PrecioNoche:PrecioNoche,
-          Estado:Estado
+          Costo:Costo,
+          Estado:Estado,
+          
+    
             
         }
         
