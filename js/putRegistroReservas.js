@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const id = urlParams.get("id");
  
   const ClienteID = document.getElementById("ClienteID");
-  const AlojamientoID = document.getElementById("AlojamientoID ");
+  const AlojamientoID = document.getElementById("AlojamientoID");
   const FechaIngreso = document.getElementById("FechaIngreso");
   const FechaSalida = document.getElementById("FechaSalida");
   const TipoHabitacion = document.getElementById("TipoHabitacion");

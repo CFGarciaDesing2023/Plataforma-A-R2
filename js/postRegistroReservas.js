@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
       
     
         const data = {
-          ClienteID:ClienteID ,
+          ClienteID:ClienteID,
           AlojamientoID:AlojamientoID,
           FechaIngreso:FechaIngreso,
           FechaSalida:FechaSalida,
           TipoHabitacion:TipoHabitacion,
           HabitacionID:HabitacionID,
           NumeroPersonas:NumeroPersonas,
-          ValorTotal:ValorTotal ,
+          ValorTotal:ValorTotal,
           Estado:Estado 
     
             
