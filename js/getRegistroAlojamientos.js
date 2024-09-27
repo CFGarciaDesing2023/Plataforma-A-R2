@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   **/
   function ObtenerUsuarios(inicioRegistros) {
-    fetch(`http://www.PlataformaAR-2721501.somee.com/api/RegistroAlojamientos `  )
+    fetch(`http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroAlojamientos `  )
        .then((response) => response.json())
        .then((data) => {
          tabla.innerHTML = ""; 
@@ -45,10 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
                    <td class="text-center" >${user.Nombre}</td>
                    <td class="text-center" >${user.Ubicacion}</td>
                    <td class="text-center" >${user.DescripcionInstalaciones}</td>
-                   <td class="text-center" >${user.Capacidad_Habitaciones}</td>
                    <td class="text-center" >${user.FechaRegistro}</td>
-                   <td> <button id="editar"  value=${user.AlojamientoID} class="btn btn-warning" >editar</button> </td>
-                   <td> <button id="borrar"  value=${user.AlojamientoID} class="btn btn-danger" >eliminar</button> </td>
+                  <td> <button id="editar"  value=${user.AlojamientoID} class="btn btn-warning" >editar</button> </td>
+                  <td> <button id="borrar"  value=${user.AlojamientoID} class="btn btn-danger" >eliminar</button> </td>
                `;
  
            tabla.appendChild(row);
@@ -85,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (confirmacion == true) {
-        fetch(`http://www.PlataformaAR-2721501.somee.com/api/RegistroAlojamientos/${event.target.value}`, {
+        fetch(`http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroAlojamientos/${event.target.value}`, {
           method: "DELETE",
         })
           .then((response) => {

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const AlojamientoID = document.getElementById("AlojamientoID").value;
         const TipoHabitacion = document.getElementById("TipoHabitacion").value;
         const Descripcion = document.getElementById("Descripcion").value;
-        const Costo = document.getElementById("Costo").value;
+        const PrecioNoche = document.getElementById("PrecioNoche").value;
         const Estado = document.getElementById("Estado").value;
   
       
@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
           AlojamientoID:AlojamientoID ,
           TipoHabitacion:TipoHabitacion,
           Descripcion:Descripcion,
-          Costo:Costo,
+          PrecioNoche:PrecioNoche,
           Estado:Estado,
           
     
             
         }
         
-        fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroHabitacion", {
+        fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroHabitacion", {
             method: "POST",
             headers:{
                 "Content-Type": "application/json"

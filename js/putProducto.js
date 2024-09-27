@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Estado = document.getElementById("Estado");
 
 
-  fetch("http://www.PlataformaAR-2721501.somee.com/api/Producto/" + id)
+  fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/Producto/" + id)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-    fetch("http://www.PlataformaAR-2721501.somee.com/api/Producto/", {
+    fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/Producto/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

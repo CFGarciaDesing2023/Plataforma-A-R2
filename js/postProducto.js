@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
           Estado:Estado    
         }
         
-        fetch("http://www.PlataformaAR-2721501.somee.com/api/Producto", {
+        fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/Producto", {
             method: "POST",
             headers:{
                 "Content-Type": "application/json"

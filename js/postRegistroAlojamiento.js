@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
         }
         
-        fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroAlojamientos", {
+        fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroAlojamientos", {
             method: "POST",
             headers:{
                 "Content-Type": "application/json"

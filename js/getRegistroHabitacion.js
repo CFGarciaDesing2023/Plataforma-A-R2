@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   **/
   function obtenerUsuarios(inicioRegistros) {
-    fetch(`http://www.PlataformaAR-2721501.somee.com/api/RegistroHabitacion `  )
+    fetch(`http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroHabitacion `  )
        .then((response) => response.json())
        .then((data) => {
          tabla.innerHTML = ""; 
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
                    <td class="text-center" >${user.AlojamientoID}</td>
                    <td class="text-center" >${user.TipoHabitacion}</td>
                    <td class="text-center" >${user.Descripcion}</td>
-                   <td class="text-center" >${user.Costo}</td>
+                   <td class="text-center" >${user.PrecioNoche}</td>
                    <td class="text-center" >${user.FechaRegistro}</td>
                    <td class="text-center" >${user.Estado}</td>
                   <td> <button id="editar"  value=${user.HabitacionID} class="btn btn-warning" >editar</button> </td>
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (confirmacion == true) {
-        fetch(`http://www.PlataformaAR-2721501.somee.com/api/RegistroHabitacion/${event.target.value}`, {
+        fetch(`http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroHabitacion/${event.target.value}`, {
           method: "DELETE",
         })
           .then((response) => {

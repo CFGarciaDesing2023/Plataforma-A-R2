@@ -9,11 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const Nombre = document.getElementById("Nombre");
   const Ubicacion = document.getElementById("Ubicacion");
   const DescripcionInstalaciones = document.getElementById("DescripcionInstalaciones");
-  const Capacidad_Habitaciones = document.getElementById("Capacidad_Habitaciones");
 
 
 
-  fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroAlojamientos/" + id)
+  fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroAlojamientos/" + id)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
@@ -23,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Nombre.value = user.Nombre;
         Ubicacion.value = user.Ubicacion;
         DescripcionInstalaciones.value = user.DescripcionInstalaciones;
-        Capacidad_Habitaciones.value = user.Capacidad_Habitaciones;
+     
         
 
       });
@@ -41,14 +40,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "Nombre": Nombre.value,
       "Ubicacion": Ubicacion.value,
       "DescripcionInstalaciones": DescripcionInstalaciones.value,
-      "Capacidad_Habitaciones": Capacidad_Habitaciones.value
+      
 
  
  
   }
 
 
-    fetch("http://www.PlataformaAR-2721501.somee.com/api/RegistroAlojamientos/", {
+    fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroAlojamientos/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

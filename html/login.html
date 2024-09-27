@@ -56,6 +56,11 @@
                         <div class="card-body p-5 text-center">
               
                           <h3 class="mb-5">Inicio Sesion</h3>
+
+                          <div class="form-outline mb-4"></div>
+                            <input type="text" id="TipoUsuario" class="form-control form-control-lg" />
+                            <label class="form-label" for="TipoUsuario">TipoUsuario</label>
+                          </div>
               
                           <div class="form-outline mb-4">
                             <input type="text" id="Email" class="form-control form-control-lg" />
@@ -73,7 +78,7 @@
                             <label class="form-check-label" for="form1Example3"> Recordar Contraseña </label>
                           </div>
               
-                          <button class="btn btn-primary btn-lg btn-block" name="Ingresar" id="Ingresar" type="submit">Ingresar</button>
+                          <button  for="Ingresar"class="btn btn-primary btn-lg btn-block"  name="Ingresar" id="Ingresar"type="submit">Ingresar</button>
               
                           <hr class="my-4">
             
@@ -203,6 +208,7 @@
        
       
       </div>
+      <script src="../js/postValidarUsuarios.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

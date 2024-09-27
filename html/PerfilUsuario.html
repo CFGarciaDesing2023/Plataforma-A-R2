@@ -444,7 +444,7 @@
                     </div>
                     <hr class="my-0" />
                     <div class="card-body">
-                      <form id="formAccountSettings" method="POST" onsubmit="return false">
+                      <form id="formAccountSettings" method="PUT" onsubmit="return false">
                         <div class="row">
                           <div class="mb-3 col-md-6"></div>
                             <label for="email" class="form-label">Email</label>
@@ -470,7 +470,6 @@
                               class="form-control"
                               type="text"
                               id="Nombres"
-                              name="firstName"
                               autofocus
                             />
                           </div>
@@ -498,7 +497,7 @@
                           </div>
                           <div class="mb-3 col-md-6">
                             <label for="FechaRegistro" class="form-label">FechaRegistro</label>
-                            <input class="form-control" type="date" id="FechaRegistro" name="FechaRegistro" />
+                            <input class="form-control" type="text" id="FechaRegistro" name="FechaRegistro" />
                           </div>
                          
                         <div class="mt-2">
