@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-    fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroUsuario/", {
+    fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroUsuario/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

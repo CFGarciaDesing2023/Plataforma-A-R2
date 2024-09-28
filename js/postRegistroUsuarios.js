@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     registrar.addEventListener("click", (e) => {
         const UsuarioID = document.getElementById("UsuarioID").value;
-        const Email  = document.getElementById("Email").value;
+        const Email = document.getElementById("Email").value;
         const Contraseña = document.getElementById("Contraseña").value;
         const TipoUsuario = document.getElementById("TipoUsuario").value;
         const TipoDocumento = document.getElementById("TipoDocumento").value;
@@ -20,13 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
             TipoUsuario:TipoUsuario,
             TipoDocumento:TipoDocumento,
             NumeroDocumento:NumeroDocumento,
-            Nombres: Nombres,
+            Nombres:Nombres,
             Apellidos:Apellidos
     
             
         }
         
-        fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroUsuario", {
+        fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroUsuario", {
             method: "POST",
             headers:{
                 "Content-Type": "application/json"

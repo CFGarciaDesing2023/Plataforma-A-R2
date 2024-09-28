@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-  fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroAlojamientos/" + id)
+  fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroAlojamientos/" + id)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-    fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroAlojamientos/", {
+    fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroAlojamientos/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

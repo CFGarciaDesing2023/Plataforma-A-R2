@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Estado = document.getElementById("Estado");
 
 
-  fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroReserva/" + id)
+  fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroReserva/" + id)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-    fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroReserva/", {
+    fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroReserva/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

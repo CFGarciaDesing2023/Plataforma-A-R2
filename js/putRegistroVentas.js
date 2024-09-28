@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
  
   const ClienteID = document.getElementById("ClienteID");
   const AlojamientoID = document.getElementById("AlojamientoID");
-  const FechaVenta = document.getElementById("FechaVenta");
+  const EmpleadoID  = document.getElementById("EmpleadoID")
   const ProductoID = document.getElementById("ProductoID");
   const CantidadVendida = document.getElementById("CantidadVendida");
   const Precio_Unitario = document.getElementById("Precio_Unitario");
@@ -14,14 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const EstadoVenta = document.getElementById("EstadoVenta");
 
 
-  fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroVentas/" + id)
+  fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroVentas/" + id)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
        
         ClienteID.value = user.ClienteID;
         AlojamientoID.value = user.AlojamientoID;
-        FechaVenta.value = user.FechaVenta;
+        EmpleadoID.value = user.EmpleadoID;
         ProductoID.value = user.ProductoID;
         CantidadVendida.value = user.CantidadVendida;
         Precio_Unitario.value = user.Precio_Unitario;
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "VentaID": id,
       "ClienteID": ClienteID.value,
       "AlojamientoID": AlojamientoID.value,
-      "FechaVenta": FechaVenta.value,
+      "EmpleadoID": EmpleadoID.value,
       "ProductoID ": ProductoID.value,
       "CantidadVendida": CantidadVendida.value,
       "Precio_Unitario": Precio_Unitario.value,
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-    fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroVentas/", {
+    fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroVentas/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

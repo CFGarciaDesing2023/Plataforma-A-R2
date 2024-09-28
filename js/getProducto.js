@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   **/
   function obtenerUsuarios(inicioRegistros) {
-    fetch(`http://www.PlataformaAR-2721501.somee.com/api/Producto `  )
+    fetch(`http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/Producto `  )
        .then((response) => response.json())
        .then((data) => {
          tabla.innerHTML = ""; 
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (confirmacion == true) {
-        fetch(`http://www.PlataformaAR-2721501.somee.com/api/Producto/${event.target.value}`, {
+        fetch(`http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/Producto/${event.target.value}`, {
           method: "DELETE",
         })
           .then((response) => {

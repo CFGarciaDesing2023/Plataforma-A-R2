@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const Nombre = document.getElementById("Nombre").value;
         const Ubicacion = document.getElementById("Ubicacion").value;
         const DescripcionInstalaciones = document.getElementById("DescripcionInstalaciones").value;
-        const Capacidad_Habitaciones = document.getElementById("Capacidad_Habitaciones").value;
        
       
     
@@ -18,14 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
           TipoAlojamiento:TipoAlojamiento,
           Nombre:Nombre,
           Ubicacion:Ubicacion,
-          DescripcionInstalaciones:DescripcionInstalaciones,
-          Capacidad_Habitaciones:Capacidad_Habitaciones
+          DescripcionInstalaciones:DescripcionInstalaciones
          
     
             
         }
         
-        fetch("http://www.NuevoPlataformaAR-ADSO.somee.com/api/RegistroAlojamientos", {
+        fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroAlojamientos", {
             method: "POST",
             headers:{
                 "Content-Type": "application/json"
@@ -37,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (response.ok) {
               console.log("Datos enviados correctamente");
 
-              window.location.href = "../html/ConsultaRegistroAlojamiento.html"
+              window.location.href = "../html/ConsultarAlojamiento.html"
 
             } else {
               console.error("Error al enviar la solicitud:", response.status);
