@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     registrar.addEventListener("click", (e) => {
       const Nombre = document.getElementById("Nombre");
       const Descripcion = document.getElementById("Descripcion");
-      const CantidadDisponible = document.getElementById("CantidadDisponible");
       const Precio = document.getElementById("Precio");
+      const CantidadDisponible = document.getElementById("CantidadDisponible");
       const Estado = document.getElementById("Estado");
   
       
@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const data = {
           Nombre:Nombre,
           Descripcion:Descripcion,
-          CantidadDisponible:CantidadDisponible,
           Precio:Precio,
+          CantidadDisponible:CantidadDisponible,
           Estado:Estado    
         }
         
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (response.ok) {
               console.log("Datos enviados correctamente");
 
-              window.location.href = "../html/ConsultarHabitacion.html"
+              window.location.href ="../html/ConsultarProducto.html"
 
             } else {
               console.error("Error al enviar la solicitud:", response.status);

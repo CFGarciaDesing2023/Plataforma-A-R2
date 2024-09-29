@@ -41,9 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
            row.innerHTML = `
                    <td class="text-center" >${user.ProductoID}</td>
                    <td class="text-center" >${user.Nombre}</td>
-                   <td class="text-center" >${user.Descripcion}</td
-                   <td class="text-center" >${user.CantidadDisponible}</td>
+                   <td class="text-center" >${user.Descripcion}</td>
                    <td class="text-center" >${user.Precio}</td>
+                   <td class="text-center" >${user.CantidadDisponible}</td>
                    <td class="text-center" >${user.Estado}</td>
                    <td> <button id="editar"  value=${user.ProductoID} class="btn btn-warning" >editar</button> </td>
                    <td> <button id="borrar"  value=${user.ProductoID} class="btn btn-danger" >eliminar</button> </td>
