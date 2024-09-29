@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
                    <td class="text-center" >${user.NumeroDocumento}</td>
                    <td class="text-center" >${user.Nombres}</td>
                    <td class="text-center" >${user.Apellidos}</td>               
-                   <td> <button id="editar" value=${user.UsuarioID} class="btn btn-warning" >editar</button> </td>
-                   <td> <button id="borrar" value=${user.UsuarioID} class="btn btn-danger" >eliminar</button> </td>
+                   <td> <button id="editar" value=${user.NumeroDocumento} class="btn btn-warning" >editar</button> </td>
+                   <td> <button id="borrar" value=${user.NumeroDocumento} class="btn btn-danger" >eliminar</button> </td>
                `;
  
            tabla.appendChild(row);
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .catch((error) => console.error("Error al eliminar usuario:", error));
       }
     } else if (event.target.id == "editar") {
-      window.location.href = "../html/EditarRegistroUsuario.html?id=" + event.target.value; // Agrega el parámetro a la URL
+      window.location.href ="../html/EditarRegistroUsuario.html?id=" + event.target.value; // Agrega el parámetro a la URL
     }
     
     

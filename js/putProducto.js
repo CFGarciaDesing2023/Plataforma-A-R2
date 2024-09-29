@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Nombre= document.getElementById("Nombre");
   const Descripcion = document.getElementById("Descripcion");
   const CantidadDisponible = document.getElementById("CantidadDisponible");
+  const Precio = document.getElementById("Precio");
   const Estado = document.getElementById("Estado");
 
 
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Nombre.value = user.Nombre;
         Descripcion.value = user.Descripcion;
         CantidadDisponible.value = user.CantidadDisponible;
+        Precio.value = user.Precio;
         Estado.value = user.Estado;
 
       });
@@ -32,7 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Nombre": Nombre.value,
       "Descripcion": Descripcion.value,
       "CantidadDisponible": CantidadDisponible.value,
-      "Estado": Estado.value
+      "Precio": Precio.value,
+      "Estado": Estado.value,
       
   }
 

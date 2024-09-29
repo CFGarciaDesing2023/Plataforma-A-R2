@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (response.ok) {
           console.log("Datos enviados correctamente");
-          window.location.href = "../html/ConsultarReserva.html"
+          window.location.href = "../html/ConsultarReservas.html"
           
         } else {
           console.error("Error al enviar la solicitud:", response.status);

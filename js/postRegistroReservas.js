@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const AlojamientoID = document.getElementById("AlojamientoID").value;
         const FechaIngreso= document.getElementById("FechaIngreso").value;
         const FechaSalida = document.getElementById("FechaSalida").value;
-        const TipoHabitacion = document.getElementById("TipoHabitacion").value;
         const HabitacionID = document.getElementById("HabitacionID").value;
         const NumeroPersonas = document.getElementById("NumeroPersonas").value;
         const ValorTotal = document.getElementById("ValorTotal").value;
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
           AlojamientoID:AlojamientoID,
           FechaIngreso:FechaIngreso,
           FechaSalida:FechaSalida,
-          TipoHabitacion:TipoHabitacion,
           HabitacionID:HabitacionID,
           NumeroPersonas:NumeroPersonas,
           ValorTotal:ValorTotal,

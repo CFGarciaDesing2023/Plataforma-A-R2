@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
                    <td class="text-center" >${user.Nombre}</td>
                    <td class="text-center" >${user.Ubicacion}</td>
                    <td class="text-center" >${user.DescripcionInstalaciones}</td>
-                   <td class="text-center" >${user.Capacidad_Habitaciones}</td>
                  <td> <button id="editar"  value=${user.AlojamientoID} class="btn btn-warning" >editar</button> </td>
   
                `;

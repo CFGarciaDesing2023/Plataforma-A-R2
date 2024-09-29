@@ -17,10 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
           TipoAlojamiento:TipoAlojamiento,
           Nombre:Nombre,
           Ubicacion:Ubicacion,
-          DescripcionInstalaciones:DescripcionInstalaciones
-         
-    
-            
+          DescripcionInstalaciones:DescripcionInstalaciones,
         }
         
         fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroAlojamientos", {

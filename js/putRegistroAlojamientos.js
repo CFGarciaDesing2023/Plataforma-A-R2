@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "TipoAlojamiento": TipoAlojamiento.value,
       "Nombre": Nombre.value,
       "Ubicacion": Ubicacion.value,
-      "DescripcionInstalaciones": DescripcionInstalaciones.value,
+      "DescripcionInstalaciones": DescripcionInstalaciones.value
       
 
  
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (response.ok) {
           console.log("Datos enviados correctamente");
-          window.location.href = "../html/ConsultaRegistroAlojamiento.html"
+          window.location.href = "../html/ConsultarAlojamiento.html"
           
         } else {
           console.error("Error al enviar la solicitud:", response.status);

@@ -40,7 +40,7 @@
                     <li class="nav-item"><a class="nav-link" href="#">Vistos Recientemente</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Recomendados</a></li>
                   </ul>
-                  <div><a class="btn btn-outline-secondary me-2" href="login.html"  target="_blank">Ingresar</a><a class="btn btn-primary" href="Login2.html" >Crear Cuenta</a></div>
+                  <div><a class="btn btn-outline-secondary me-2" href="Dashboar.html"  target="_blank">Ingresar</a><a class="btn btn-primary" href="Login2.html" >Crear Cuenta</a></div>
                 </div>
               </div>
               </div>
@@ -54,14 +54,9 @@
                     <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                       <div class="card shadow-2-strong" style="border-radius: 1rem;">
                         <div class="card-body p-5 text-center">
-              
+                          <form id="loginForm" onsubmit="return validarFormulario()">
                           <h3 class="mb-5">Inicio Sesion</h3>
 
-                          <div class="form-outline mb-4"></div>
-                            <input type="text" id="TipoUsuario" class="form-control form-control-lg" />
-                            <label class="form-label" for="TipoUsuario">TipoUsuario</label>
-                          </div>
-              
                           <div class="form-outline mb-4">
                             <input type="text" id="Email" class="form-control form-control-lg" />
                             <label class="form-label" for="Email">CorreoElectronico</label>
@@ -78,10 +73,10 @@
                             <label class="form-check-label" for="form1Example3"> Recordar Contraseña </label>
                           </div>
               
-                          <button  for="Ingresar"class="btn btn-primary btn-lg btn-block"  name="Ingresar" id="Ingresar"type="submit">Ingresar</button>
+                          <button  for="Ingresar"class="btn btn-primary btn-lg btn-block" href="Dashboar.html"  name="Ingresar" id="Ingresar"type="submit">Ingresar</button>
               
                           <hr class="my-4">
-            
+                        </form>
               
                         </div>
                       </div>
@@ -208,7 +203,7 @@
        
       
       </div>
-      <script src="../js/postValidarUsuarios.js"></script>
+      <script src="../js/ValidarUser.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

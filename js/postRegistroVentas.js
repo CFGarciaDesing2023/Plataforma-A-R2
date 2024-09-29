@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
     
         const data = {
-          ClienteID :ClienteID ,
+          ClienteID :ClienteID,
           AlojamientoID:AlojamientoID,
           EmpleadoID:EmpleadoID,
           ProductoID:ProductoID,

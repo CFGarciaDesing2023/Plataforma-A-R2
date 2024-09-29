@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const Nombre = document.getElementById("Nombre");
       const Descripcion = document.getElementById("Descripcion");
       const CantidadDisponible = document.getElementById("CantidadDisponible");
+      const Precio = document.getElementById("Precio");
       const Estado = document.getElementById("Estado");
   
       
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
           Nombre:Nombre,
           Descripcion:Descripcion,
           CantidadDisponible:CantidadDisponible,
+          Precio:Precio,
           Estado:Estado    
         }
         

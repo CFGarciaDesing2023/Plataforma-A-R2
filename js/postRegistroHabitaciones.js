@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
       
     
         const data = {
-          AlojamientoID:AlojamientoID ,
+          AlojamientoID:AlojamientoID,
           TipoHabitacion:TipoHabitacion,
           Descripcion:Descripcion,
           PrecioNoche:PrecioNoche,
-          Estado:Estado,
+          Estado:Estado
           
     
             
