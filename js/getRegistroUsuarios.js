@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
                    <td class="text-center" >${user.Nombres}</td>
                    <td class="text-center" >${user.Apellidos}</td>               
                    <td> <button id="editar" value=${user.NumeroDocumento} class="btn btn-warning" >editar</button> </td>
-                   <td> <button id="borrar" value=${user.NumeroDocumento} class="btn btn-danger" >eliminar</button> </td>
+                   <td> <button id="borrar" value=${user.UsuarioID} class="btn btn-danger" >eliminar</button> </td>
                `;
  
            tabla.appendChild(row);
