@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
                    <td class="text-center" >${user.AlojamientoID}</td>
                    <td class="text-center" >${user.EmpleadoID}</td>
                    <td class="text-center" >${user.ProductoID}</td>
+                   <td class="text-center" >${user.FechaVenta}</td>
                    <td class="text-center" >${user.CantidadVendida}</td>
                    <td class="text-center" >${user.Precio_Unitario}</td>
                    <td class="text-center" >${user.Total}</td>

@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
         }
         
-        fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroVenta", {
+        fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroVentas", {
             method: "POST",
             headers:{
                 "Content-Type": "application/json"

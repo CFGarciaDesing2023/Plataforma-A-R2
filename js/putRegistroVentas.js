@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "ClienteID": ClienteID.value,
       "AlojamientoID": AlojamientoID.value,
       "EmpleadoID": EmpleadoID.value,
-      "ProductoID ": ProductoID.value,
+      "ProductoID": ProductoID.value,
       "CantidadVendida": CantidadVendida.value,
       "Precio_Unitario": Precio_Unitario.value,
       "Total": Total.value,
