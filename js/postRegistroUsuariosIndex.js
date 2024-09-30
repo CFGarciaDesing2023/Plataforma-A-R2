@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const registrar = document.getElementById("registrar");
 
     registrar.addEventListener("click", (e) => {
-      
+        const UsuarioID = document.getElementById("UsuarioID").value;
         const Email = document.getElementById("Email").value;
         const Contraseña = document.getElementById("Contraseña").value;
         const TipoUsuario = document.getElementById("TipoUsuario").value;
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
     
         const data = {
-          
+            UsuarioID:UsuarioID,
             Email:Email,
             Contraseña:Contraseña,
             TipoUsuario:TipoUsuario,
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (response.ok) {
               console.log("Datos enviados correctamente");
 
-              window.location.href = "../html/ConsultarUsuario.html"
+              window.location.href = "../html/PerfilUsuario.html"
 
             } else {
               console.error("Error al enviar la solicitud:", response.status);

@@ -64,89 +64,55 @@
           <div class="col-lg-6 mb-5 mb-lg-0">
             <div class="card">
               <div class="card-body py-5 px-md-5">
-                <form>
-                  <!-- 2 column grid layout with text inputs for the first and last names -->
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <input type="text" id="form3Example1" class="form-control" />
-                        <label class="form-label" for="form3Example1">Tipo Usuario</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <input type="text" id="form3Example1" class="form-control" />
-                        <label class="form-label" for="form3Example1">Nombres</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <input type="text" id="form3Example2" class="form-control" />
-                        <label class="form-label" for="form3Example2">Apellidos</label>
-                      </div>
-                    </div>
+                <form  >
+            
+                  <div class="" >
+                      <h5 class="text-center" >Formulario de registro de Usuarios</h5> 
+                       <hr class="" >
                   </div>
-                  <!-- Email input -->
-                  <div class="form-outline mb-4">
-                    <input type="text" id="form3Example3" class="form-control" />
-                    <label class="form-label" for="form3Example3">TipoDocumento</label>
+      
+                  
+                  <div class="mb-3">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="Email">
                   </div>
-                  <!-- Email input -->
-                  <div class="form-outline mb-4">
-                    <input type="text" id="form3Example3" class="form-control" />
-                    <label class="form-label" for="form3Example3">NumeroDocumento</label>
+      
+                  <div class="mb-3">
+                    <label for="Contraseña" class="form-label">Contraseña</label>
+                    <input type="text" class="form-control" id="Contraseña">
                   </div>
-                   <!-- Email input -->
-                   <div class="form-outline mb-4">
-                    <input type="email" id="form3Example3" class="form-control" />
-                    <label class="form-label" for="form3Example3">FechaNacimiento</label>
+      
+      
+                  <div class="mb-3">
+                    <label for="TipoUsuario" class="form-label">TipoUsuario</label>
+                    <input type="text" class="form-control" id="TipoUsuario">
                   </div>
-  
-                  <!-- Email input -->
-                  <div class="form-outline mb-4">
-                    <input type="email" id="form3Example3" class="form-control" />
-                    <label class="form-label" for="form3Example3">Direccion Correo Electronico</label>
+      
+                  <div class="mb-3">
+                    <label for="TipoDocumento" class="form-label">TipoDocumento</label>
+                    <input type="text" class="form-control" id="TipoDocumento">
                   </div>
-  
-                  <!-- Password input -->
-                  <div class="form-outline mb-4">
-                    <input type="password" id="form3Example4" class="form-control" />
-                    <label class="form-label" for="form3Example4">Contraseña</label>
+      
+                  <div class="mb-3">
+                    <label for="NumeroDocumento" class="form-label">NumeroDocumento</label>
+                    <input type="number" class="form-control" id="NumeroDocumento">
                   </div>
-  
-                  <!-- Checkbox -->
-                  <div class="form-check d-flex justify-content-center mb-4">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-                    <label class="form-check-label" for="form2Example33">
-                      Subscribe to our newsletter
-                    </label>
+                  <div class="mb-3">
+                    <label for="Nombres" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="Nombres">
                   </div>
-  
-                  <!-- Submit button -->
-                  <button type="submit" class="btn btn-primary btn-block mb-4">
-                    Crear Cuenta
-                  </button>
-  
-                  <!-- Register buttons -->
-                  <div class="text-center">
-                    <p>o Iniciar con:</p>
-                    <button type="button" class="btn btn-link btn-floating mx-1">
-                      <i class="fab fa-facebook-f"></i>
-                    </button>
-  
-                    <button type="button" class="btn btn-link btn-floating mx-1">
-                      <i class="fab fa-google"></i>
-                    </button>
-  
-                    <button type="button" class="btn btn-link btn-floating mx-1">
-                      <i class="fab fa-twitter"></i>
-                    </button>
-  
-                    <button type="button" class="btn btn-link btn-floating mx-1">
-                      <i class="fab fa-github"></i>
-                    </button>
+      
+                  <div class="mb-3">
+                    <label for="Apellidos" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="Apellidos">
                   </div>
+                  
+                  
+      
+                  <button type="button" id="registrar" class="btn btn-success ">Registrar</button>
+                  <a href="index.html" class="btn btn-primary ms-5 ">Regresar</a>
                 </form>
+              
               </div>
             </div>
           </div>
@@ -272,6 +238,7 @@
            </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
+        <script src="../js/postRegistroUsuariosIndex.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
