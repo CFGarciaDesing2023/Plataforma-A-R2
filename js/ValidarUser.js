@@ -14,7 +14,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   // Realizar la lógica de inicio de sesión (puedes hacer una llamada a una API o verificar en una base de datos)
   if (username === "admin" && password === "123456") {
     alert("Inicio de sesión exitoso");
-    window.location.href="index.html";
+    window.location.href="indexLogueado.html";
     // Aquí puedes redirigir al usuario a otra página o realizar otras acciones
   } else {
     alert("Usuario o contraseña incorrectos");
