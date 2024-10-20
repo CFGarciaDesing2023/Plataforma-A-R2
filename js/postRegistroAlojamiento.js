@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const registrar = document.getElementById("registrar");
 
     registrar.addEventListener("click", (e) => {
-        const AlojamientoID = document.getElementById("AlojamientoID").value;
         const AdministradorID = document.getElementById("AdministradorID").value;
         const TipoAlojamiento = document.getElementById("TipoAlojamiento").value;
         const Nombre = document.getElementById("Nombre").value;
@@ -13,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
     
         const data = {
-          AlojamientoID:AlojamientoID,
+        
           AdministradorID:AdministradorID,
           TipoAlojamiento:TipoAlojamiento,
           Nombre:Nombre,
