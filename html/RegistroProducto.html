@@ -58,11 +58,11 @@
     <!-- Page CSS -->
 
     <!-- Helpers -->
-
+    <script src="../assets/vendor/js/helpers.js"></script>
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-  
+    <script src="../assets/js/config.js"></script>
   </head>
 
   <body>
@@ -157,10 +157,18 @@
 
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="OpcionesPerfil.html" class="menu-link">
+                  <a href="../html/PerfilUsuario.html" class="menu-link">
                     <div data-i18n="Without menu">Usuario</div>
                   </a>
+              
                 </li>
+                <li class="menu-item"></li>
+                  <a href="PerfilAlojamiento.html" class="menu-link">
+                    <div data-i18n="Without menu">Alojamiento</div>
+                  </a>
+              
+                </li>
+                
             
                
                 <li class="menu-item">
@@ -308,6 +316,7 @@
               </ul>
             </li>
             
+            
         </aside>
         <!-- / Menu -->
 
@@ -354,65 +363,65 @@
                   >
                 </li>
 
-                 <!-- User -->
-                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                    <div class="avatar avatar-online">
-                      <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
-                    </div>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar avatar-online">
-                              <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                  <!-- User -->
+                  <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                    <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                      <div class="avatar avatar-online">
+                        <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                      </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar avatar-online">
+                                <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <span class="fw-semibold d-block">John Doe</span>
+                              <small class="text-muted">Admin</small>
                             </div>
                           </div>
-                          <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
-                            <small class="text-muted">Admin</small>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-user me-2"></i>
-                        <span class="align-middle">Mi perfil</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-cog me-2"></i>
-                        <span class="align-middle">Opciones</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <span class="d-flex align-items-center align-middle">
-                          <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                          <span class="flex-grow-1 align-middle">Pagos</span>
-                          <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="login.html">
-                        <i class="nav-link"></i>
-                        <span class="align-middle">Cerrar Sesion</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <!--/ User -->
+                        </a>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bx bx-user me-2"></i>
+                          <span class="align-middle">Mi perfil</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bx bx-cog me-2"></i>
+                          <span class="align-middle">Opciones</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <span class="d-flex align-items-center align-middle">
+                            <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                            <span class="flex-grow-1 align-middle">Pagos</span>
+                            <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="login.html">
+                          <i class="nav-link"></i>
+                          <span class="align-middle">Cerrar Sesion</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--/ User -->
               </ul>
             </div>
           </nav>
@@ -429,42 +438,43 @@
                   
                         <div class="card-body">
             
-            <form  >
+                          <form  >
             
-              <div class="" >
-                <h5 class="text-center" >Formulario de registro de Producto</h5> 
-                 <hr class="" >
-            </div>
-
-            <div class="mb-3">
-              <label for="Nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="Nombre" >
-            </div>
-
-
-            <div class="mb-3">
-              <label for="Descripcion" class="form-label">Descripcion</label>
-              <input type="text" class="form-control" id="Descripcion" >
-            </div>
-
-            <div class="mb-3">
-              <label for="Precio" class="form-label">Precio</label>
-              <input type="number" class="form-control" id="Precio" >
-            </div>
-
-            <div class="mb-3">
-              <label for="CantidadDisponible" class="form-label">CantidadDisponible</label>
-              <input type="number" class="form-control" id="CantidadDisponible" >
-            </div>
-
-            <div class="mb-3">
-              <label for="Estado" class="form-label">Estado</label>
-              <input type="text" class="form-control" id="Estado" >
-            </div>
-
-            <button type="button" id="registrar" class="btn btn-success ">Registrar</button>
-            <a href="index.html" class="btn btn-primary ms-5 ">Regresar</a>
-            </form>
+                            <div class="" >
+                                <h5 class="text-center" >Formulario de registro de Producto</h5> 
+                                 <hr class="" >
+                            </div>
+                
+                            <div class="mb-3">
+                              <label for="Nombre" class="form-label">Nombre</label>
+                              <input type="text" class="form-control" id="Nombre" >
+                            </div>
+                
+                            <div class="mb-3">
+                              <label for="Descripcion" class="form-label">Descripcion</label>
+                              <input type="text" class="form-control" id="Descripcion" >
+                            </div>
+                
+                            <div class="mb-3">
+                              <label for="Precio" class="form-label">Precio</label>
+                              <input type="number" class="form-control" id="Precio" >
+                            </div>
+                
+                
+                            <div class="mb-3">
+                              <label for="CantidadDisponible" class="form-label">CantidadDisponible</label>
+                              <input type="number" class="form-control" id="CantidadDisponible">
+                            </div>
+                
+                            <div class="mb-3">
+                              <label for="Estado" class="form-label">Estado</label>
+                              <input type="text" class="form-control" id="Estado">
+                            </div>
+                            
+                
+                            <button type="button" id="registrar" class="btn btn-success ">Registrar</button>
+                            <a href="index.html" class="btn btn-primary ms-5 ">Regresar</a>
+                          </form>
             <!-- / Content -->
 
             <!-- Footer -->
@@ -497,15 +507,16 @@
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
+   
+    <script src="../js//postArticulos.js"></script>
 
-    <script src="../js//postProducto.js"></script>
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
     <script src="../assets/vendor/libs/popper/popper.js"></script>
     <script src="../assets/vendor/js/bootstrap.js"></script>
     <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-
+    
     <script src="../assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
 
