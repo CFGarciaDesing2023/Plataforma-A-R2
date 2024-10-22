@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const registrar = document.getElementById("registrar");
 
     registrar.addEventListener("click", (e) => {
-        const UsuarioID= document.getElementById("UsuarioID").value;
         const Email = document.getElementById("Email").value;
         const Contraseña = document.getElementById("Contraseña").value;
         const TipoUsuario = document.getElementById("TipoUsuario").value;
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
       
     
         const data = {
-            UsuarioID:UsuarioID,
             Email:Email,
             Contraseña:Contraseña,
             TipoUsuario:TipoUsuario,
