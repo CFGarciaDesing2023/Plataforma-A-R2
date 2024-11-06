@@ -1,25 +1,102 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Evita que el formulario se envíe automáticamente
+window.addEventListener("load", function () {
+  // Selecciona el ícono para mostrar/ocultar la contraseña
+  const showPassword = document.querySelector(".show-password");
 
-  // Obtener los valores de usuario y contraseña ingresados
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("password").value;
+  // Asegúrate de que el ícono existe en el DOM antes de añadir el evento
+  if (showPassword) {
+    showPassword.addEventListener("click", () => {
+      // Selecciona el campo de la contraseña
+      const passwordInput = document.querySelector("#password");
 
-  // Validar los campos (puedes agregar tus propias validaciones aquí)
-  if (username === "" || password === "") {
-    alert("Por favor, ingresa tu usuario y contraseña");
-    return;
-  }
-
-  // Realizar la lógica de inicio de sesión (puedes hacer una llamada a una API o verificar en una base de datos)
-  if (username === "admin" && password === "123456") {
-    alert("Inicio de sesión exitoso");
-    window.location.href="indexLogueado.html";
-    // Aquí puedes redirigir al usuario a otra página o realizar otras acciones
-  } else {
-    alert("Usuario o contraseña incorrectos");
+      if (passwordInput) {
+        if (passwordInput.type === "text") {
+          passwordInput.type = "password";
+          showPassword.classList.remove("fa-eye-slash");
+          showPassword.classList.add("fa-eye");
+        } else {
+          passwordInput.type = "text";
+          showPassword.classList.remove("fa-eye");
+          showPassword.classList.add("fa-eye-slash");
+        }
+      }
+    });
   }
 });
+
+(() => {
+  "use strict";
+
+  const forms = document.querySelectorAll(".needs-validation");
+
+  Array.from(forms).forEach((form) => {
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (form.checkValidity()) {
+        const formData = new FormData(form);
+        // Obtener los valores del formulario
+        const correo = formData.get("correo");
+        const contraseña = formData.get("contraseña");
+
+        // Crear el objeto de datos para enviar
+        const data = {
+          Correo: correo,
+          Contraseña: contraseña,
+        };
+
+        // Realizar la petición a la API
+        fetch("https://www.appsegura.somee.com/api/Login", {
+          method: "Post",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.Success) {
+              Swal.fire({
+                icon: "success",
+                title: "Exito",
+                text: data.Mensaje,
+                showConfirmButton: false,
+                timer: 1500, // El tiempo en milisegundos
+                didOpen: () => {
+                  Swal.showLoading(); // Mostrar una barra de carga
+                },
+                willClose: () => {
+                  form.reset();
+                  window.location.href = "../view/verificarLink.html";
+                },
+              });
+            } else {
+              Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: data.Mensaje,
+                confirmButtonText: "OK",
+                customClass: {
+                  title: "custom-title-unsafe", // Aplicar la clase personalizada al título
+                  htmlContainer: "custom-html", // Aplicar la clase personalizada al contenido
+                },
+              });
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            Swal.fire({
+              icon: "error",
+              title: "Error",
+              text: error.Mensaje || "Hubo un error.",
+            });
+          });
+      }
+      form.classList.add("was-validated");
+    });
+  });
+})();
+
 
 /*
 // Obtener los valores del formulario de inicio de sesión
