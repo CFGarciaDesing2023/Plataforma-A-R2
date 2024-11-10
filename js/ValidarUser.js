@@ -1,101 +1,41 @@
-window.addEventListener("load", function () {
-  // Selecciona el ícono para mostrar/ocultar la contraseña
-  const showPassword = document.querySelector(".show-password");
+// Función para autenticar al usuario
+async function login(correo, contraseña) {
+  const url = "http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/Login"; // URL de tu API
+  const data = {
+      Correo: correo,
+      Contraseña: contraseña
+  };
 
-  // Asegúrate de que el ícono existe en el DOM antes de añadir el evento
-  if (showPassword) {
-    showPassword.addEventListener("click", () => {
-      // Selecciona el campo de la contraseña
-      const passwordInput = document.querySelector("#password");
-
-      if (passwordInput) {
-        if (passwordInput.type === "text") {
-          passwordInput.type = "password";
-          showPassword.classList.remove("fa-eye-slash");
-          showPassword.classList.add("fa-eye");
-        } else {
-          passwordInput.type = "text";
-          showPassword.classList.remove("fa-eye");
-          showPassword.classList.add("fa-eye-slash");
-        }
-      }
-    });
-  }
-});
-
-(() => {
-  "use strict";
-
-  const forms = document.querySelectorAll(".needs-validation");
-
-  Array.from(forms).forEach((form) => {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      event.stopPropagation();
-
-      if (form.checkValidity()) {
-        const formData = new FormData(form);
-        // Obtener los valores del formulario
-        const correo = formData.get("correo");
-        const contraseña = formData.get("contraseña");
-
-        // Crear el objeto de datos para enviar
-        const data = {
-          Correo: correo,
-          Contraseña: contraseña,
-        };
-
-        // Realizar la petición a la API
-        fetch("https://www.appsegura.somee.com/api/Login", {
-          method: "Post",
+  try {
+      const response = await fetch(url, {
+          method: "POST",  // Usamos POST porque estamos enviando datos
           headers: {
-            "content-type": "application/json",
+              "Content-Type": "application/json"
           },
-          body: JSON.stringify(data),
-        })
-          .then((response) => response.json())
-          .then((data) => {
-            if (data.Success) {
-              Swal.fire({
-                icon: "success",
-                title: "Exito",
-                text: data.Mensaje,
-                showConfirmButton: false,
-                timer: 1500, // El tiempo en milisegundos
-                didOpen: () => {
-                  Swal.showLoading(); // Mostrar una barra de carga
-                },
-                willClose: () => {
-                  form.reset();
-                  window.location.href = "../view/verificarLink.html";
-                },
-              });
-            } else {
-              Swal.fire({
-                icon: "error",
-                title: "Error",
-                text: data.Mensaje,
-                confirmButtonText: "OK",
-                customClass: {
-                  title: "custom-title-unsafe", // Aplicar la clase personalizada al título
-                  htmlContainer: "custom-html", // Aplicar la clase personalizada al contenido
-                },
-              });
-            }
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-            Swal.fire({
-              icon: "error",
-              title: "Error",
-              text: error.Mensaje || "Hubo un error.",
-            });
-          });
+          body: JSON.stringify(data)  // Convertimos el objeto de datos a JSON
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+          // Si la respuesta es exitosa, mostramos los datos del usuario
+          console.log("Usuario autenticado:", result);
+          alert(`Bienvenido, ${result.nombre}`);
+          // Aquí podrías redirigir al usuario o realizar otras acciones
+      } else {
+          // Si la respuesta es error (401 Unauthorized), mostramos un mensaje
+          console.error("Error:", result.mensaje);
+          alert(result.mensaje);
       }
-      form.classList.add("was-validated");
-    });
-  });
-})();
+  } catch (error) {
+      console.error("Hubo un error al hacer la solicitud:", error);
+      alert("Hubo un error al intentar iniciar sesión.");
+  }
+}
+
+// Llamar a la función con datos de prueba
+login("juan@ejemplo.com", "12345");
+
 
 
 /*
