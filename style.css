@@ -2,7 +2,64 @@
    
     }
     .container{
-       
+         /* Estilo base para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los encabezados de la tabla */
+.table thead {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+.table th {
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo para las filas del cuerpo de la tabla */
+.table tbody tr:nth-child(even) {
+    background-color: #E8E8E8; /* Gris claro */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #F0F8FF; /* Azul muy claro */
+}
+
+/* Estilo cuando el mouse pasa sobre una fila */
+.table tbody tr:hover {
+    background-color: #D8BFD8; /* Morado claro */
+    cursor: pointer;
+}
+
+/* Estilo para las celdas de la tabla */
+.table td {
+    padding: 12px;
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo para la columna de Estado con color personalizado */
+.table .estado {
+    font-weight: bold;
+    color: #FF6347; /* Rojo tomate, por ejemplo, para denotar algo importante */
+}
+
+/* Estilo para resaltar la columna de PrecioNoche */
+.table .precio {
+    color: #FFD700; /* Amarillo */
+}
+
+/* Estilo para bordes */
+.table, .table th, .table td {
+    border: 1px solid #ddd;
+}
+
         
     }
     .lc-block3{
@@ -12,4 +69,4 @@
     .lc-block4{
         
     }
-   
+ 
