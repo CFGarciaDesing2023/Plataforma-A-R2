@@ -51,63 +51,46 @@
              
         </header>
         <main>
-            <section class="vh-100" style="background-color: #46f864;">
-                <div class="container py-5 h-100">
-                  <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                      <div class="card shadow-2-strong" style="border-radius: 1rem;">
-                        <div class="card-body p-5 text-center">
-                          
-                            <div class="container">
-                              <h2>Inicio de Sesión</h2>
-                              <form id="loginForm">
-                                <label for="username">Usuario:</label>
-                                <input type="text" id="username" name="username" required>
-                                
-                          
-                                <label for="password">Contraseña:</label>
-                                <input type="password" id="password" name="password" required>
-                                
-                          
-                                <input type="submit" value="Iniciar Sesión">
-                              </form>
-                            </div>
-                            <div id="resultado" style="display: none;"></div>
-
-                            <script>
-                                document.getElementById('login-form').addEventListener('submit', async function(event) {
-                                    event.preventDefault();
-                        
-                                    const email = document.getElementById('email').value;
-                                    const contraseña = document.getElementById('contraseña').value;
-                        
-                                    const response = await fetch('http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/LoginUser', {
-                                        method: 'POST',
-                                        headers: {
-                                            'Content-Type': 'application/json'
-                                        },
-                                        body: JSON.stringify({ Email: email, Contraseña: contraseña })
-                                    });
-                        
-                                    const resultadoDiv = document.getElementById('resultado');
-                                    if (response.ok) {
-                                        const data = await response.json();
-                                        resultadoDiv.innerText = `Bienvenido, ${data.Nombre}`;
-                                    } else {
-                                        resultadoDiv.innerText = 'Credenciales incorrectas';
-                                    }
-                                    resultadoDiv.style.display = 'block';
-                                });
-                            </script>
-                      
+  <section class="vh-100" style="background-color: #46f864;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
               
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <!-- Título -->
+              <h2 class="mb-4">Inicio de Sesión</h2>
+              
+              <!-- Formulario de inicio de sesión -->
+              <form id="loginForm">
+                
+                <!-- Usuario -->
+                <div class="mb-4">
+                  <label for="username" class="form-label">Usuario:</label>
+                  <input type="text" id="username" name="username" class="form-control" required>
                 </div>
-              </section>
-        </main>
+                
+                <!-- Contraseña -->
+                <div class="mb-4">
+                  <label for="password" class="form-label">Contraseña:</label>
+                  <input type="password" id="password" name="password" class="form-control" required>
+                </div>
+                
+                <!-- Botón de inicio de sesión -->
+                <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+              </form>
+              
+              <!-- Resultado del login -->
+              <div id="resultado" style="display: none;"></div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
         <footer>
             <!-- place footer here -->
         </footer>

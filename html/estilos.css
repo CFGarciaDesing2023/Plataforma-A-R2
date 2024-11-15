@@ -1,246 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-
-/* Estilo global */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #72f336; /* Fondo suave y claro */
-  }
-  
-  /* Contenedor principal */
+/* Ajustes de responsividad para móviles */
+@media (max-width: 768px) {
+  /* Container: Reducir el tamaño del margen y el padding */
   .container {
-    width: 80%;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #9c01bb; /* Blanco para el contenedor */
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+      width: 95%;
+      margin: 20px auto;
+      padding: 15px;
   }
-  
-  /* Estilo del campo de búsqueda */
-  #buscador {
-    width: 100%;
-    padding: 12px 20px;
-    margin-bottom: 20px;
-    border: 2px solid #007bff; /* Borde azul brillante */
-    border-radius: 4px;
-    font-size: 16px;
-    color: #070707; /* Color de texto oscuro para buena visibilidad */
-    background-color: #fefeff; /* Fondo gris suave */
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-  }
-  
-  #buscador:focus {
-    border-color: #0056b3; /* Azul más oscuro al enfocar */
-    outline: none;
-  }
-  
-  /* Estilo para la tabla */
-  #tablaDatos {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  /* Estilo para los encabezados de la tabla */
-  #tablaDatos th {
-    background-color: #770294; /* Azul brillante */
-    color: white; /* Blanco para el texto */
-    font-size: 16px;
-    font-weight: bold;
-    padding: 14px 12px;
-    text-align: left;
-  }
-  
-  /* Estilo para las celdas de la tabla */
-  #tablaDatos td {
-    padding: 12px;
-    text-align: left;
-    color: #333; /* Texto oscuro para buena legibilidad */
-    background-color: #ffffff; /* Blanco para las celdas */
-    border-bottom: 1px solid #ddd; /* Línea de separación suave */
-  }
-  
-  /* Estilo para las filas alternadas (zebras) */
-  #tablaDatos tr:nth-child(even) {
-    background-color: #fc0909; /* Fondo muy suave para las filas pares */
-  }
-  
-  /* Estilo para las filas cuando el mouse pasa por encima */
-  #tablaDatos tr:hover {
-    background-color: #0dbdf8; /* Azul claro de fondo cuando el mouse pasa por encima */
-    cursor: pointer;
-  }
-  
-  /* Estilo para las filas ocultas */
-  #tablaDatos tr[style="display: none;"] {
-    display: none !important;
-  }
-  
-  /* Estilo para los textos en la tabla */
-  #tablaDatos td, #tablaDatos th {
-    font-size: 14px; /* Tamaño de fuente moderado */
-    line-height: 1.6;
-  }
-  
-  /* Estilo para las filas visibles */
-  #tablaDatos tr {
-    display: table-row;
-  }
-  
-  /* Estilo para las filas ocultas */
-  #tablaDatos tr[style="display: none;"] {
-    display: none !important;
-  }
- 
 
-  /* Estilo general del footer */
-footer {
-    background-color: #080808; /* Fondo oscuro */
-    color: #760b8b; /* Color de texto claro */
-    font-family: 'Arial', sans-serif;
-    padding: 40px 0;
-    box-shadow: 0px -4px 10px rgba(255, 254, 254, 0.1);
+  /* Buscar: Reducir el tamaño de la fuente del input */
+  #buscador {
+      font-size: 14px;
+      padding: 10px 16px;
   }
-  
-  footer h4 {
-    color: #ffd700; /* Título en dorado para destacar */
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 15px;
+
+  /* Tabla: Hacer la tabla desplazable horizontalmente */
+  #tablaDatos {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
   }
-  
-  footer .container {
-    max-width: 1140px;
-    margin: 0 auto;
+
+  #tablaDatos th, #tablaDatos td {
+      font-size: 12px; /* Reducir tamaño de fuente */
+      padding: 10px;
   }
-  
+
+  /* Footer: Ajustar el layout para pantallas más pequeñas */
   footer .row {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  footer .col-lg-3, footer .col-lg-2 {
-    flex: 1;
-  }
-  
-  footer .col-lg-2.offset-lg-1 {
-    flex: 1;
-    padding-left: 30px;
-  }
-  
-  footer .lc-block {
-    margin-bottom: 20px;
-  }
-  
-  footer .lc-block p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  
-  footer .lc-block a {
-    color: #7cfa71;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  footer .lc-block a:hover {
-    color: #ffd700; /* Enlaces en dorado al pasar el mouse */
-  }
-  
-  footer .lc-block small {
-    font-size: 12px;
-  }
-  
-  footer .lc-block .text-end {
-    text-align: right;
-  }
-  
-  /* Estilo para los íconos de redes sociales */
-  footer .lc-block svg {
-    width: 30px;
-    height: 30px;
-    fill: #151616;
-    margin-right: 15px;
-    transition: fill 0.3s ease;
-  }
-  
-  footer .lc-block svg:hover {
-    fill: #ffd700; /* Cambio a dorado al pasar el mouse */
-  }
-  
-  /* Sección de "Acerca de nosotros" */
-  footer #AcercaDeNosotros label {
-    font-size: 14px;
-    color: #ffffff; /* Color suave para el texto largo */
-    line-height: 1.6;
-    font-weight: normal;
-  }
-  
-  /* Sección de "Servicios" */
-  footer #Servicios p {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilo para las licencias y términos */
-  footer .col-6.text-end p {
-    font-size: 12px;
-    color: #202020; /* Color de texto gris claro */
-  }
-  
-  footer .col-6.text-end a {
-    color: #e02ef0;
-  }
-  
-  footer .col-6.text-end a:hover {
-    color: #ffd700; /* Enlaces en dorado al pasar el mouse */
-  }
-  
-  /* Sección de contacto */
-  footer .lc-block.fw-medium p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  
-  footer .lc-block.fw-medium a {
-    color: #ffde23; /* Enlaces de contacto en dorado */
-    text-decoration: none;
-  }
-  
-  footer .lc-block.fw-medium a:hover {
-    color: #032cdf;
-  }
-  
-  /* Resaltar los elementos cuando hay texto */
-  footer .lc-block .small {
-    font-size: 13px;
-    color: #41fa09;
-  }
-  
-  /* Ajustes de responsividad */
-  @media (max-width: 768px) {
-    footer .row {
       flex-direction: column;
-    }
-    
-    footer .col-lg-3,
-    footer .col-lg-2 {
+      text-align: center;
+  }
+
+  footer .col-lg-3, footer .col-lg-2 {
       margin-bottom: 20px;
-    }
-  
-    footer .col-lg-2.offset-lg-1 {
+  }
+
+  footer .col-lg-2.offset-lg-1 {
       padding-left: 0;
-    }
   }
-  
-  @media (max-width: 576px) {
-    footer .lc-block p {
+
+  footer .lc-block p {
       font-size: 13px;
-    }
   }
+
+  footer .lc-block a {
+      font-size: 14px; /* Reducir el tamaño de los enlaces */
+  }
+
+  footer .lc-block small {
+      font-size: 12px;
+  }
+}
+
+/* Ajustes de responsividad para pantallas más pequeñas (móviles) */
+@media (max-width: 576px) {
+  /* Reducir aún más el tamaño de la fuente y los márgenes */
+  #buscador {
+      font-size: 12px;
+      padding: 8px 14px;
+  }
+
+  #tablaDatos th, #tablaDatos td {
+      font-size: 11px;
+      padding: 8px;
+  }
+
+  footer .lc-block p {
+      font-size: 12px;
+  }
+
+  footer .lc-block a {
+      font-size: 13px;
+  }
+
+  footer .lc-block small {
+      font-size: 10px;
+  }
+}
+
+
   
