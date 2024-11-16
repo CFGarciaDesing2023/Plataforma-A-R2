@@ -1,72 +1,94 @@
-.lc-block1{
-   
-    }
-    .container{
-         /* Estilo base para la tabla */
-.table {
+/* Contenedor principal */
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilo general para la tabla */
+table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Esto asegura que los bordes se fusionen */
+    margin: 20px 0;
     font-family: Arial, sans-serif;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo para los encabezados de la tabla */
-.table thead {
-    background-color: #4CAF50; /* Verde */
-    color: white;
-}
-
-.table th {
-    padding: 12px;
-    text-align: center;
-    font-weight: bold;
-}
-
-/* Estilo para las filas del cuerpo de la tabla */
-.table tbody tr:nth-child(even) {
-    background-color: #E8E8E8; /* Gris claro */
-}
-
-.table tbody tr:nth-child(odd) {
-    background-color: #F0F8FF; /* Azul muy claro */
-}
-
-/* Estilo cuando el mouse pasa sobre una fila */
-.table tbody tr:hover {
-    background-color: #D8BFD8; /* Morado claro */
-    cursor: pointer;
-}
-
-/* Estilo para las celdas de la tabla */
-.table td {
-    padding: 12px;
-    text-align: center;
-    color: #333;
-}
-
-/* Estilo para la columna de Estado con color personalizado */
-.table .estado {
-    font-weight: bold;
-    color: #FF6347; /* Rojo tomate, por ejemplo, para denotar algo importante */
-}
-
-/* Estilo para resaltar la columna de PrecioNoche */
-.table .precio {
-    color: #FFD700; /* Amarillo */
-}
-
-/* Estilo para bordes */
-.table, .table th, .table td {
+  }
+  
+  /* Estilo para las cabeceras (th) */
+  th {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Bordes sutiles */
+  }
+  
+  /* Estilo para las celdas (td) */
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd; /* Bordes sutiles */
+  }
+  
+  /* Fondo alternativo en las filas (tr) */
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fondo gris claro en las filas pares */
+  }
+  
+  /* Efecto hover en las filas (tr:hover) */
+  tr:hover {
+    background-color: #ddd; /* Fondo gris más oscuro al pasar el mouse */
+  }
+  
+  /* Input de búsqueda (campo de texto) */
+  #buscador {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
     border: 1px solid #ddd;
-}
-
-        
+    border-radius: 4px;
+  }
+  
+  /* Cambio de color del borde al enfocar el campo de búsqueda */
+  #buscador:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  
+  /* Input de búsqueda */
+  #buscador {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #buscador:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  /* Estilo para la tabla cuando no hay datos */
+  table.empty-table {
+    text-align: center;
+    font-style: italic;
+    color: #aaa;
+  }
+  
+  /* Reponsive: Asegurarse que la tabla se vea bien en dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    table, th, td {
+      font-size: 14px;
+      padding: 8px;
     }
-    .lc-block3{
-       
-        
+  
+    #buscador {
+      font-size: 16px;
+      padding: 12px;
     }
-    .lc-block4{
-        
-    }
- 
+  }
+  

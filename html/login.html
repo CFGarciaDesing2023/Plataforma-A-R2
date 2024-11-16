@@ -11,7 +11,11 @@
         />
         <link rel="stylesheet" type="text/css" href="estilos.css">
           
-          <script src="../js/ValidarUser.js"></script>
+          
+       
+
+        
+          
         
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -58,30 +62,70 @@
           <div class="card shadow-2-strong" style="border-radius: 1rem;">
             <div class="card-body p-5 text-center">
               
-              <!-- Título -->
-              <h2 class="mb-4">Inicio de Sesión</h2>
-              
-              <!-- Formulario de inicio de sesión -->
-              <form id="loginForm">
-                
-                <!-- Usuario -->
-                <div class="mb-4">
-                  <label for="username" class="form-label">Usuario:</label>
-                  <input type="text" id="username" name="username" class="form-control" required>
-                </div>
-                
-                <!-- Contraseña -->
-                <div class="mb-4">
-                  <label for="password" class="form-label">Contraseña:</label>
-                  <input type="password" id="password" name="password" class="form-control" required>
-                </div>
-                
-                <!-- Botón de inicio de sesión -->
-                <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
-              </form>
-              
-              <!-- Resultado del login -->
-              <div id="resultado" style="display: none;"></div>
+               <!-- Título -->
+<h2 class="mb-4">Inicio de Sesión</h2>
+
+<!-- Formulario de inicio de sesión -->
+<form id="loginForm">
+
+  <!-- Usuario -->
+  <div class="mb-4">
+    <label for="username" class="form-label">Usuario:</label>
+    <input type="text" id="username" name="username" class="form-control" required>
+  </div>
+
+  <!-- Contraseña -->
+  <div class="mb-4">
+    <label for="password" class="form-label">Contraseña:</label>
+    <input type="password" id="password" name="password" class="form-control" required>
+  </div>
+
+  <!-- Botón de inicio de sesión -->
+  <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+</form>
+
+<!-- Resultado del login -->
+<div id="resultado" style="display: none;"></div>
+
+<!-- JavaScript -->
+<script>
+  // Obtener los elementos del formulario
+  const form = document.getElementById('loginForm');
+  const resultado = document.getElementById('resultado');
+
+  // Función para manejar el evento de envío del formulario
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();  // Evitar que el formulario se envíe de manera tradicional
+
+    // Obtener los valores de usuario y contraseña
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Validación simple para asegurarnos de que ambos campos están completos
+    if (username.trim() === '' || password.trim() === '') {
+      mostrarResultado('Por favor, complete ambos campos.', 'red');
+      return;
+    }
+
+    // Simulación de autenticación (aquí puedes poner la lógica para autenticar con un backend)
+    if (username === 'admin' && password === '1234') {
+      mostrarResultado('Inicio de sesión exitoso.', 'green');
+      // Redirigir al usuario al perfil de usuario después del inicio de sesión exitoso
+      setTimeout(() => {
+        window.location.href = 'perfilUsuario.html'; // Redirige al perfil del usuario
+      }, 1000); // Espera 1 segundo antes de redirigir (para mostrar el mensaje de éxito)
+    } else {
+      mostrarResultado('Usuario o contraseña incorrectos.', 'red');
+    }
+  });
+
+  // Función para mostrar el resultado
+  function mostrarResultado(mensaje, color) {
+    resultado.innerHTML = mensaje;
+    resultado.style.color = color;
+    resultado.style.display = 'block';
+  }
+</script>
               
             </div>
           </div>
