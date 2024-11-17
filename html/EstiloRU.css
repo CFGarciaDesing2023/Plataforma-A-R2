@@ -1,0 +1,120 @@
+/* Estilo general de la tabla */
+.display-fluid {
+    margin: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .table th, .table td {
+    background-color: #007bff;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Estilo de las filas de la tabla */
+  .table tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo alternado en filas pares */
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el ratón por encima */
+  }
+  
+  /* Colores personalizados para las celdas de estado y precio */
+  .table td:nth-child(8) {
+    color: #FFD700; /* Amarillo para el precio */
+    font-weight: bold;
+  }
+  
+  .table td:nth-child(9) {
+    color: #FF6347; /* Rojo para el estado */
+    font-weight: bold;
+  }
+  
+  /* Estilo para las celdas con texto largo o que se desborde */
+  .table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Responsividad para pantallas pequeñas */
+  @media (max-width: 768px) {
+    /* Se asegura de que las celdas tengan un relleno adecuado en pantallas pequeñas */
+    .table th, .table td {
+      padding: 8px;
+    }
+    
+    /* Reducimos el tamaño de la fuente en pantallas pequeñas */
+    .table {
+      font-size: 12px;
+    }
+    
+    .table th {
+      font-size: 14px;
+    }
+    
+    /* Hacer que las filas sean más fáciles de leer en pantallas pequeñas */
+    .table tbody tr {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    .table tbody tr td {
+      display: block;
+      text-align: left;
+      padding: 10px 15px;
+      border: none;
+    }
+  
+    /* Mostrar los encabezados como etiquetas en pantallas móviles */
+    .table tbody tr td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  
+    /* En dispositivos móviles, cambiamos el estilo para los títulos y datos */
+    .table td:nth-child(1):before { content: "AlojamientoID: "; }
+    .table td:nth-child(2):before { content: "TipoAlojamiento: "; }
+    .table td:nth-child(3):before { content: "Nombre: "; }
+    .table td:nth-child(4):before { content: "Ubicacion: "; }
+    .table td:nth-child(5):before { content: "HabitacionID: "; }
+    .table td:nth-child(6):before { content: "TipoHabitacion: "; }
+    .table td:nth-child(7):before { content: "Descripcion: "; }
+    .table td:nth-child(8):before { content: "PrecioNoche: "; }
+    .table td:nth-child(9):before { content: "Estado: "; }
+  }
+  
+  /* Estilo para el input */
+#buscador {
+    justify-content: center;
+    width: 250px;             /* Ancho del input */
+    height: 40px;             /* Altura del input */
+    padding: 10px;            /* Espaciado interno */
+    border: 2px solid #007bff; /* Borde azul */
+    border-radius: 5px;       /* Bordes redondeados */
+    font-size: 16px;          /* Tamaño de fuente */
+    box-sizing: border-box;   /* Incluye el borde y padding en el tamaño total */
+  }
+  
+  #buscador::placeholder {
+    color: #888;              /* Color del texto de placeholder */
+    font-style: italic;       /* Estilo en cursiva para el placeholder */
+  }

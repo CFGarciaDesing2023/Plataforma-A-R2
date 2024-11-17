@@ -87,46 +87,7 @@
 <!-- Resultado del login -->
 <div id="resultado" style="display: none;"></div>
 
-<!-- JavaScript -->
-<script>
-  // Obtener los elementos del formulario
-  const form = document.getElementById('loginForm');
-  const resultado = document.getElementById('resultado');
 
-  // Función para manejar el evento de envío del formulario
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();  // Evitar que el formulario se envíe de manera tradicional
-
-    // Obtener los valores de usuario y contraseña
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    // Validación simple para asegurarnos de que ambos campos están completos
-    if (username.trim() === '' || password.trim() === '') {
-      mostrarResultado('Por favor, complete ambos campos.', 'red');
-      return;
-    }
-
-    // Simulación de autenticación (aquí puedes poner la lógica para autenticar con un backend)
-    if (username === 'admin' && password === '1234') {
-      mostrarResultado('Inicio de sesión exitoso.', 'green');
-      // Redirigir al usuario al perfil de usuario después del inicio de sesión exitoso
-      setTimeout(() => {
-        window.location.href = 'perfilUsuario.html'; // Redirige al perfil del usuario
-      }, 1000); // Espera 1 segundo antes de redirigir (para mostrar el mensaje de éxito)
-    } else {
-      mostrarResultado('Usuario o contraseña incorrectos.', 'red');
-    }
-  });
-
-  // Función para mostrar el resultado
-  function mostrarResultado(mensaje, color) {
-    resultado.innerHTML = mensaje;
-    resultado.style.color = color;
-    resultado.style.display = 'block';
-  }
-</script>
-              
             </div>
           </div>
         </div>

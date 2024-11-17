@@ -1,26 +1,175 @@
- /* Reset de estilos comunes */ * { margin: 0; padding: 0; box-sizing: border-box; } html, body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #c611ebd0; color: #333; font-size: 16px; overflow-x: hidden; 
-    /* Evitar desplazamiento horizontal */ } a { text-decoration: none; color: inherit; } ul { list-style: none; } 
-    /* Navegación */ .navbar { background-color: #74ff80c9; border-bottom: 1px solid #000000; } .navbar .navbar-brand img { width: 60px; height: 60px; } .navbar-nav .nav-link { font-weight: 500; color: #333; padding: 0.5rem 1rem; transition: color 0.3s ease; } .navbar-nav .nav-link:hover { color: #007bff; } .navbar .btn-outline-secondary { color: #007bff; border: 1px solid #007bff; } .navbar .btn-outline-secondary:hover { background-color: #007bff; color: #ff0707; } .navbar .btn-primary { background-color: #007bff; border-color: #007bff; } .navbar .btn-primary:hover { background-color: #0056b3; border-color: #0056b3; } 
-    
- 
-    
-      table th, table td {
-        border: 1px solid #ddd;
-        text-align: center;
-      }
-      table th {
-        background-color: #007bff; /* Blue color */
-        color: rgb(238, 13, 13);
-      }
-      table td {
-        padding: 10px;
-      }
-    
-  
-    /* Diseño de formulario */ .tm-search-form { margin-bottom: 30px; } .tm-search-form-row { display: flex; justify-content: center; } .tm-search-form .form-group { width: 60%; } .tm-search-form input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; margin-right: 10px; } .tm-search-form input:focus { border-color: #4CAF50; outline: none; } .tm-search-form i { color: #4CAF50; } 
-    /* Contenido principal */ .container { padding: 20px; } .text-center { text-align: center; } h1 { font-size: 2rem; margin-bottom: 20px; } h4 { font-size: 1.5rem; margin-bottom: 10px; } #tablaDatos { margin-top: 20px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border-radius: 5px; } 
-    /* Footer */ footer { background-color: #333; color: #fff; padding: 30px 0; } footer .container { max-width: 1200px; margin: 0 auto; } footer .col-lg-3 img { max-width: 100%; height: auto; } footer .lc-block small { color: #aaa; } footer a { color: #fff; transition: color 0.3s ease; } footer a:hover { color: #4CAF50; } footer .lc-block { margin-bottom: 20px; } footer h4 { margin-bottom: 10px; } footer .lc-block p { margin-bottom: 5px; } footer .lc-block svg { fill: #fff; width: 24px; height: 24px; margin-right: 10px; } footer .social-icons a { margin-right: 15px; display: inline-block; text-align: center; } 
-    /* Responsividad */ @media (max-width: 768px) { .navbar-nav { margin-top: 10px; } .navbar-nav .nav-link { padding: 0.5rem 0.75rem; } .tm-search-form .form-group { width: 100%; } .container { padding: 10px; } footer .container { padding: 20px; } footer .col-lg-3 img { max-width: 100px; height: auto; } .table th, .table td { font-size: 12px; 
-    /* Texto más pequeño en tablas para pantallas pequeñas */ padding: 8px; } .table .btn { padding: 4px 8px; 
-    /* Botones más pequeños en pantallas pequeñas */ } .table { font-size: 12px; } .table td, .table th { word-wrap: break-word; word-break: break-word; 
-    /* Asegura que las celdas no se desborden */ } }
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #9f00a5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+
+/* Estilos para el buscador */
+#buscador {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#buscador:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Estilos para los botones */
+.btn-outline-secondary,
+.btn-primary {
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-outline-secondary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+}
+
+footer h4 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  color: #ccc;
+}
+
+footer .lc-block {
+  margin-bottom: 20px;
+}
+
+/* Estilos generales para la barra de navegación */
+.navbar {
+  background-color: #f8f9fa; /* Color de fondo claro */
+  border-bottom: 2px solid #007bff; /* Línea inferior para destacar la barra */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Marca de la barra de navegación */
+.navbar-brand img {
+  border-radius: 50%; /* Bordes redondeados para la imagen */
+  transition: transform 0.3s ease; /* Animación al pasar el cursor */
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1); /* Zoom al pasar el cursor */
+}
+
+/* Links de navegación */
+.navbar-nav .nav-link {
+  color: #007bff; /* Color de los enlaces */
+  font-weight: 500; /* Peso del texto */
+  padding: 0.5rem 1rem; /* Espaciado */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Animación al interactuar */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff; /* Color del texto al pasar el cursor */
+  background-color: #007bff; /* Fondo azul al pasar el cursor */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Botones de navegación */
+.navbar .btn {
+  font-weight: 500; /* Peso del texto */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Animación */
+}
+
+.navbar .btn-outline-secondary {
+  color: #007bff; /* Texto azul */
+  border-color: #007bff; /* Borde azul */
+}
+
+.navbar .btn-outline-secondary:hover {
+  color: #fff; /* Texto blanco */
+  background-color: #007bff; /* Fondo azul */
+  border-color: #0056b3; /* Borde más oscuro */
+}
+
+.navbar .btn-primary {
+  background-color: #007bff; /* Fondo azul */
+  border-color: #0056b3; /* Borde más oscuro */
+}
+
+.navbar .btn-primary:hover {
+  background-color: #0056b3; /* Fondo más oscuro al pasar el cursor */
+  border-color: #004085; /* Borde más oscuro */
+}
+
+/* En vista móvil */
+.navbar-toggler {
+  border: none; /* Sin borde */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='%23007bff' class='bi bi-list' viewBox='0 0 16 16'%3E%3Cpath d='M3 12.5a.5.5 0 0 1 .5-.5H12a.5.5 0 0 1 0 1H3.5a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5H12a.5.5 0 0 1 0 1H3.5a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5H12a.5.5 0 0 1 0 1H3.5a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E"); /* Icono personalizado */
+}
+
+/* Mejoras en el espaciado */
+.navbar-nav {
+  margin-top: 10px; /* Separación en móviles */
+}
+
+.navbar-collapse {
+  justify-content: space-between; /* Distribuir espacio */
+}
+
+.nav-item:last-child {
+  margin-right: 0; /* Quitar margen derecho en el último elemento */
+}
+
+/* Estilo general de la tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  table-layout: fixed; /* Asegura que las celdas tengan un ancho fijo */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Sombra suave para efecto de elevación */
+  background-color: #ff0000; /* Fondo blanco para un contraste limpio */
+}
+
+/* ... más estilos para tablas ... */

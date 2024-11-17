@@ -86,7 +86,7 @@
 ******************************************************************************/
 
 .layout-demo-wrapper {
-  background-color: aqua;
+  background-color: rgb(66, 255, 59);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,5 +108,5 @@
 }
 
 .positionrelative {
-  background-color: rgb(230, 17, 17);
+  background-color: rgb(187, 17, 230);
 }
