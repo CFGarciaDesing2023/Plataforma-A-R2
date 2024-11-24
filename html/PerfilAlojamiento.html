@@ -367,7 +367,12 @@
                     </div>
                     <hr class="my-0" />
                     <div class="card-body">
-                      <form id="formAccountSettings" method="POST" onsubmit="return false">
+                      <form  >
+            
+                        <div class="" >
+                            <h5 class="text-center" >Formulario Actualizar Alojamiento</h5> 
+                             <hr class="" >
+                        </div>
             
                         <div class="mb-3">
                           <label for="AdministradorID" class="form-label">AdministradorID</label>
@@ -379,26 +384,23 @@
                           <input type="text" class="form-control" id="TipoAlojamiento" >
                         </div>
             
-            
                         <div class="mb-3">
                           <label for="Nombre" class="form-label">Nombre</label>
                           <input type="text" class="form-control" id="Nombre">
                         </div>
             
                         <div class="mb-3">
-                          <label for="Ubicacion" class="form-label">Direccion</label>
+                          <label for="Ubicacion" class="form-label">Ubicacion</label>
                           <input type="text" class="form-control" id="Ubicacion">
                         </div>
-            
+                        
                         <div class="mb-3">
-                          <label for=">DescripcionInstalaciones" class="form-label">DescripcionInstalaciones</label>
-                          <input type="text" class="form-control" id=">DescripcionInstalaciones">
+                          <label for="DescripcionInstalaciones" class="form-label">DescripcionInstalaciones</label>
+                          <input type="text" class="form-control" id="DescripcionInstalaciones">
                         </div>
-                         
-                        <div class="mt-2">
-                          <button type="submit" class="btn btn-primary me-2">Guardar Cambios</button>
-                          <button type="reset" class="btn btn-outline-secondary">Cancelar</button>
-                        </div>
+                        
+                        <button type="button" id="editar" class="btn btn-success ">Actualizar</button>
+                        <a href="index.html" class="btn btn-primary ms-5 ">Regresar</a>
                       </form>
                     </div>
                     <!-- /Account -->

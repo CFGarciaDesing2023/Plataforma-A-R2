@@ -14,7 +14,7 @@
 <!-- beautify ignore:start -->
 <html
   lang="en"
-  class="light-style layout-menu-fixed"
+  class="dark-style layout-menu-fixed"
   dir="ltr"
   data-theme="theme-default"
   data-assets-path="../assets/"
@@ -373,66 +373,53 @@
                     </div>
                     <hr class="my-0" />
                     <div class="card-body">
-                      <form id="formAccountSettings" method="PUT" onsubmit="return false">
-                        <div class="row">
-                          <div class="mb-3 col-md-6"></div>
-                            <label for="email" class="form-label">Email</label>
-                            <input
-                              class="form-control"
-                              type="text"
-                              id="email"
-                              name="email"
-                            />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="contraseña" class="form-label">Contraseña</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="Contraseña"
-                              name="Contraseña"
-
-                            />
-                          <div class="mb-3 col-md-6">
-                            <label for="Nombres" class="form-label">Nombres</label>
-                            <input
-                              class="form-control"
-                              type="text"
-                              id="Nombres"
-                              autofocus
-                            />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="Apellidos" class="form-label">Apellidos</label>
-                            <input class="form-control" type="text" name="lastName" id="Apellidos"  />
-                          </div>
-                          
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label class="form-label" for="TipoDocumento">TipoDocumento</label>
-                            <div class="input-group input-group-merge">
-                              <input
-                                type="text"
-                                id="TipoDocumento"
-                                name="TipoDocumento"
-                                class="form-control"
-                                
-                              />
-                            </div>
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="NumeroDocumento" class="form-label">NumeroDocumento</label>
-                            <input type="text" class="form-control" id="NumeroDocumento" name="NumeroDocumento"  />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="FechaRegistro" class="form-label">FechaRegistro</label>
-                            <input class="form-control" type="text" id="FechaRegistro" name="FechaRegistro" />
-                          </div>
-                         
-                        <div class="mt-2">
-                          <button type="submit" id="editar" class="btn btn-primary me-2">Guardar Cambios</button>
-                          <button type="reset" class="btn btn-outline-secondary">Cancelar</button>
+                      <form  >
+            
+                        <div class="" >
+                            <h5 class="text-center" >Formulario de Actualizar Usuario</h5> 
+                             <hr class="" >
                         </div>
+          
+                        <div class="mb-3">
+                          <label for="Email" class="form-label">Email</label>
+                          <input type="text" class="form-control" id="Email" >
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="Contraseña" class="form-label">Contraseña</label>
+                          <input type="text" class="form-control" id="Contraseña" >
+                        </div>
+            
+            
+                        <div class="mb-3">
+                          <label for="TipoUsuario" class="form-label">Tipo de Usuario</label>
+                          <input type="text" class="form-control" id="TipoUsuario">
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="TipoDocumento" class="form-label">Tipo de Documento</label>
+                          <input type="text" class="form-control" id="TipoDocumento">
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="NumeroDocumento" class="form-label">NumeroDocumento</label>
+                          <input type="number" class="form-control" id="NumeroDocumento">
+                        </div>
+                        <div class="mb-3">
+                          <label for="Nombres" class="form-label">Nombres</label>
+                          <input type="text" class="form-control" id="Nombres">
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="Apellidos" class="form-label">Apellidos</label>
+                          <input type="text" class="form-control" id="Apellidos">
+                        </div>
+                        
+                        
+            
+                        <button type="button" id="editar" class="btn btn-success ">Actualizar</button>
+                        <a href="index.html" class="btn btn-primary ms-5 ">Regresar</a>
+                  
                       </form>
                     </div>
                     <!-- /Account -->
@@ -511,7 +498,7 @@
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
-    <script src="../js/PutUsuarioLogin.js"></script>
+
     <script src="../js/putRegistroUsuarios.js"></script>
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->

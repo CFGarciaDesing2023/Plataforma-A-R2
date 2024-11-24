@@ -1,3 +1,34 @@
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Obtener datos de la API
+    fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroUsuario")
+      .then(response => response.json())
+      .then(data => {
+        let select = document.getElementById('ClienteID');
+        data.forEach(usuario => {
+          let option = document.createElement('option');
+          option.value = usuario.id;
+          option.textContent = usuario.nombre;
+          select.appendChild(option);
+        });
+      });
+
+    fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroAlojamientos")
+      .then(response => response.json())
+      .then(data => {
+        let select = document.getElementById('AlojamientoID');
+        data.forEach(alojamiento => {
+          let option = document.createElement('option');
+          option.value = alojamiento.id;
+          option.textContent = alojamiento.nombre;
+          select.appendChild(option);
+        });
+      });
+
+    // Repetir el proceso para Empleados y Productos de forma similar
+  });
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const registrar = document.getElementById("registrar");

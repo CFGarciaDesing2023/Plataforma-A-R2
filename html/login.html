@@ -39,8 +39,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="nav_lc">
                   <ul class="navbar-nav my-3 my-lg-0 ms-lg-3 me-auto">
-                    <li class="nav-item me-4"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item me-4"><a class="nav-link" href="index.html">Dashboar</a></li>
+                    <li class="nav-item me-4"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item me-4"><a class="nav-link" href="../index.html">Dashboar</a></li>
                     <li class="nav-item me-4"><a class="nav-link" href="#AcercaDeNosotros">Acerca de Nosotros</a></li>
                     <li class="nav-item me-4"><a class="nav-link" href="#Servicios">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
@@ -62,30 +62,125 @@
           <div class="card shadow-2-strong" style="border-radius: 1rem;">
             <div class="card-body p-5 text-center">
               
-               <!-- Título -->
-<h2 class="mb-4">Inicio de Sesión</h2>
+              <div class="login-container">
+                <form class="login-form">
+                    <h2>Iniciar sesión</h2>
+                    <div class="input-group">
+                        <label for="Email">Correo electrónico</label>
+                        <input type="text" id="Email" name="Email" placeholder="Introduce tu correo" required>
+                    </div>
+        
+                    <div class="input-group">
+                        <label for="Contraseña">Contraseña</label>
+                        <input type="text" id="Contraseña" name="Contraseña" placeholder="Introduce tu contraseña" required>
+                    </div>
+        
+                    <div class="forgot-password">
+                        <a href="auth-forgot-password-basic.html">¿Olvidaste tu contraseña?</a>
+                    </div>
+        
+                    <button type="submit" class="login-button">Iniciar sesión</button>
+                    <style>
 
-<!-- Formulario de inicio de sesión -->
-<form id="loginForm">
+                      /* Contenedor del formulario */
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
 
-  <!-- Usuario -->
-  <div class="mb-4">
-    <label for="username" class="form-label">Usuario:</label>
-    <input type="text" id="username" name="username" class="form-control" required>
-  </div>
+/* Formulario */
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
 
-  <!-- Contraseña -->
-  <div class="mb-4">
-    <label for="password" class="form-label">Contraseña:</label>
-    <input type="password" id="password" name="password" class="form-control" required>
-  </div>
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
 
-  <!-- Botón de inicio de sesión -->
-  <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
-</form>
+.input-group label {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 8px;
+}
 
-<!-- Resultado del login -->
-<div id="resultado" style="display: none;"></div>
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+}
+
+.forgot-password {
+    text-align: left;
+}
+
+.forgot-password a {
+    font-size: 12px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .login-form h2 {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        font-size: 16px;
+    }
+
+    .login-button {
+        font-size: 18px;
+    }
+
+    .forgot-password a {
+        font-size: 14px;
+    }
+}
+
+                    </style>
+                </form>
+            </div>
 
 
             </div>
@@ -214,7 +309,7 @@
        
       
       </div>
-      <!-- <script src="../js/ValidarUser.js"></script>  -->
+       <script src="../js/putUserLogueado.js"></script>  
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

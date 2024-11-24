@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
           })
           .catch((error) => console.error("Error al eliminar Alojamiento:", error));
       }
-    } else if (event.target.id == "editar") {
+    } else if (event.target.id == "Reservar") {
       window.location.href = "../html/RegistroReservas.html?id=" + event.target.value; // Agrega el parámetro a la URL
     }
     

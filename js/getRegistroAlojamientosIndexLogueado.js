@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
                    <td class="text-center" >${user.Descripcion}</td>
                    <td class="text-center" >${user.PrecioNoche}</td>
                    <td class="text-center" >${user.Estado}</td>
-                   <td> <button id="editar"  value=${user.AlojamientoID} class="btn btn-warning" >Reservar</button> </td>
+                   <td> <button id="Reservar"  value=${user.AlojamientoID} class="btn btn-warning" >Reservar</button> </td>
   
                `;
  
@@ -98,10 +98,12 @@ document.addEventListener("DOMContentLoaded", () => {
           })
           .catch((error) => console.error("Error al eliminar Alojamiento:", error));
       }
-    } else if (event.target.id == "editar") {
-      window.location.href = "../html/ConsultarHabitaciones.html?id=" + event.target.value; // Agrega el parámetro a la URL
+    } else if (event.target.id == "Reservar") {
+      window.location.href = "../html/RegistrarReservas.html?id=" + event.target.value; // Agrega el parámetro a la URL
     }
     
     
   });
+
+  
 });
