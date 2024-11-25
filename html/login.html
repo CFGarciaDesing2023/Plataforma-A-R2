@@ -63,26 +63,18 @@
             <div class="card-body p-5 text-center">
               
               <div class="login-container">
-                <form class="LoginForm">
-                    <h2>Iniciar sesión</h2>
-                    <div class="input-group">
-                        <label for="Email">Correo electrónico</label>
-                        <input type="email" id="correo" name="Email" placeholder="Introduce tu correo" required>
-                    </div>
-        
-                    <div class="input-group">
-                        <label for="Contraseña">Contraseña</label>
-                        <input type="password" id="contraseña" name="Contraseña" placeholder="Introduce tu contraseña" required>
-                    </div>
-        
-                    <div class="forgot-password">
-                        <a href="auth-forgot-password-basic.html">¿Olvidaste tu contraseña?</a>
-                    </div>
-        
-                    <button type="submit" class="login-button">Iniciar sesión</button>
-                    
-                </form>
+                <form id="loginForm">
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" id="email" required>
+              
+                  <label for="password">Contraseña:</label>
+                  <input type="password" id="password" required>
+              
+                  <button type="submit">Iniciar Sesión</button>
+              </form>
+              
             </div>
+            
 
 
             </div>
@@ -95,8 +87,7 @@
 
         <footer>
             <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
+               <!-- Bootstrap JavaScript Libraries -->
         <div class="col-sm-12">
           <section class="d-flex bg-dark text-light">
             <div class="container py-5">
@@ -208,6 +199,8 @@
         </div>
        
        </div>
+        </footer>
+      
        
       
       </div>

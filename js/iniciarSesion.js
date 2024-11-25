@@ -1,45 +1,48 @@
-// Obtener el formulario y agregar el evento submit
-const loginForm = document.getElementById('loginForm');
-loginForm.addEventListener('submit', async function (event) {
-    event.preventDefault();  // Prevenir el envío predeterminado del formulario
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("loginForm");
 
-    // Obtener los valores de los campos de entrada
-    const email = document.getElementById('correo').value;
-    const password = document.getElementById('contraseña').value;
+    form.addEventListener("submit", async (event) => {
+        event.preventDefault(); // Evitar el comportamiento por defecto del formulario.
 
-    // Crear el objeto con los datos que se van a enviar
-    const loginData = {
-        email: email,
-        password: password
-    };
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
 
-    try {
-        // Realizar la petición POST a la API
-        const response = await fetch('http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(loginData)
-        });
-
-        // Verificar si la respuesta es exitosa (código 200)
-        if (response.ok) {
-            const data = await response.json();
-            // Si la autenticación es exitosa, redirigir al usuario o manejar el JWT
-            alert('Inicio de sesión exitoso');
-            console.log(data);  // Muestra la respuesta de la API (generalmente un token)
-            // Puedes guardar el token en localStorage o sessionStorage si es necesario
-            localStorage.setItem('authToken', data.token);  // Por ejemplo, si la respuesta contiene un token
-            window.location.href = '../html/PerfilUsuario.html';  // Redirigir a una página de éxito o panel
-        } else {
-            // Si hubo un error en la autenticación
-            const errorData = await response.json();
-            alert('Error de autenticación: ' + errorData.message);  // Mostrar el mensaje de error
+        // Validar entradas antes de enviar
+        if (!email || !password) {
+            alert("Por favor, complete todos los campos.");
+            return;
         }
-    } catch (error) {
-        // Manejo de errores en caso de que la petición falle
-        console.error('Error de red:', error);
-        alert('Hubo un problema con la conexión. Intenta de nuevo más tarde.');
-    }
+
+        try {
+            // Configuración de la solicitud
+            const response = await fetch("http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ email, password })
+            });
+
+            if (!response.ok) {
+                throw new Error("Error en el servidor. Inténtalo de nuevo más tarde.");
+            }
+
+            const data = await response.json();
+
+            // Procesar la respuesta
+            if (data.usuarioID && data.usuarioID !== "0") {
+                alert("Inicio de sesión exitoso.");
+                // Guardar usuario en localStorage o cookies si es necesario
+                localStorage.setItem("usuarioID", data.usuarioID);
+
+                // Redirigir al usuario
+                window.location.href = "../html/PerfilUsuario.html";
+            } else {
+                alert("Correo o contraseña incorrectos.");
+            }
+        } catch (error) {
+            console.error("Error:", error.message);
+            alert("Hubo un problema al intentar iniciar sesión.");
+        }
+    });
 });
