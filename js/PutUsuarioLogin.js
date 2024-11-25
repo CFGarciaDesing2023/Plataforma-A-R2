@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Apellidos = document.getElementById("Apellidos");
 
   // Cargar datos del usuario al formulario
-  fetch(`http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroUsuario?Email=${Email}&Contraseña=${Contraseña}`)
+  fetch(`http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/login`)
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

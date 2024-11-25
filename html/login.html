@@ -63,16 +63,16 @@
             <div class="card-body p-5 text-center">
               
               <div class="login-container">
-                <form class="login-form">
+                <form class="LoginForm">
                     <h2>Iniciar sesión</h2>
                     <div class="input-group">
                         <label for="Email">Correo electrónico</label>
-                        <input type="text" id="Email" name="Email" placeholder="Introduce tu correo" required>
+                        <input type="email" id="correo" name="Email" placeholder="Introduce tu correo" required>
                     </div>
         
                     <div class="input-group">
                         <label for="Contraseña">Contraseña</label>
-                        <input type="text" id="Contraseña" name="Contraseña" placeholder="Introduce tu contraseña" required>
+                        <input type="password" id="contraseña" name="Contraseña" placeholder="Introduce tu contraseña" required>
                     </div>
         
                     <div class="forgot-password">
@@ -80,105 +80,7 @@
                     </div>
         
                     <button type="submit" class="login-button">Iniciar sesión</button>
-                    <style>
-
-                      /* Contenedor del formulario */
-.login-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
-
-/* Formulario */
-.login-form h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.input-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.input-group label {
-    font-size: 14px;
-    color: #666;
-    display: block;
-    margin-bottom: 8px;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-}
-
-.input-group input:focus {
-    border-color: #007bff;
-}
-
-.forgot-password {
-    text-align: left;
-}
-
-.forgot-password a {
-    font-size: 12px;
-    color: #007bff;
-    text-decoration: none;
-}
-
-.forgot-password a:hover {
-    text-decoration: underline;
-}
-
-.login-button {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.login-button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilos para dispositivos móviles */
-@media (max-width: 600px) {
-    .login-container {
-        padding: 20px;
-        max-width: 90%;
-    }
-
-    .login-form h2 {
-        font-size: 20px;
-    }
-
-    .input-group input {
-        font-size: 16px;
-    }
-
-    .login-button {
-        font-size: 18px;
-    }
-
-    .forgot-password a {
-        font-size: 14px;
-    }
-}
-
-                    </style>
+                    
                 </form>
             </div>
 
@@ -309,7 +211,7 @@
        
       
       </div>
-       <script src="../js/putUserLogueado.js"></script>  
+       <script src="../js/iniciarSesion.js"></script>  
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

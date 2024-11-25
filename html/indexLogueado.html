@@ -103,7 +103,106 @@
           <!-- Footer -->
           <div class="col-12">
               <section class="d-flex bg-dark text-light py-5">
-                  <div class="container">
+                  
+      </div>
+  </main>
+  
+  <style>
+    /* Contenedor de la tabla con scroll horizontal */
+    .table-wrapper {
+        overflow-x: auto; /* Scroll horizontal si es necesario */
+        width: 100%;
+        margin: 20px 0; /* Espaciado superior e inferior */
+        border-radius: 10px; /* Bordes redondeados del contenedor */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        background-color: #fff; /* Fondo blanco */
+    }
+
+    /* Tabla moderna */
+    .table {
+        border-spacing: 0;
+        width: 100%;
+        font-size: 14px;
+        color: #333; /* Color de texto principal */
+        border-collapse: separate; /* Permite bordes redondeados */
+    }
+
+    /* Cabecera de la tabla */
+    .table th {
+        background-color: #0078d7; /* Azul moderno */
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 13px;
+        text-align: left;
+        padding: 12px;
+        border-top-left-radius: 10px; /* Bordes redondeados en las esquinas */
+        border-top-right-radius: 10px;
+    }
+
+    .table th:first-child {
+        border-top-left-radius: 10px; /* Esquina superior izquierda */
+    }
+
+    .table th:last-child {
+        border-top-right-radius: 10px; /* Esquina superior derecha */
+    }
+
+    /* Filas de la tabla */
+    .table td {
+        padding: 12px;
+        border-bottom: 1px solid #eaeaea; /* Línea suave entre filas */
+        background-color: #f9f9f9; /* Fondo ligero */
+    }
+
+    /* Alternancia de colores en filas */
+    .table tr:nth-child(odd) td {
+        background-color: #ffffff; /* Alterna con blanco */
+    }
+
+    .table tr:hover td {
+        background-color: #77b0ff; /* Color destacado en hover */
+    }
+
+    /* Columna de operaciones */
+    .table .col-operaciones {
+        text-align: center;
+        min-width: 150px;
+    }
+
+    /* Botones en la columna de operaciones */
+    .table .col-operaciones button {
+        padding: 6px 10px;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .table .col-operaciones button:hover {
+        background-color: #0056b3; /* Azul oscuro al pasar el cursor */
+        color: white;
+    }
+
+    .table .col-operaciones button:first-child {
+        background-color: #0078d7; /* Azul moderno */
+        color: white;
+    }
+
+    .table .col-operaciones button:last-child {
+        background-color: #ff4d4d; /* Rojo claro */
+        color: white;
+    }
+</style>
+
+
+
+  
+    <footer>
+      <!-- place footer here -->
+       <div class="container">
                       <div class="row">
                           <!-- Logo y descripción -->
                           <div class="col-lg-3 mb-4">
@@ -141,43 +240,6 @@
                   <a class="text-decoration-none" href="#">Detalles Licencia</a> - <a class="text-decoration-none" href="#">Términos & Condiciones</a>
               </div>
           </div>
-      </div>
-  </main>
-  
-  <style>
-      /* Mejoras generales en la tabla */
-      .table {
-          overflow-x: auto;
-          display: block;
-          border-spacing: 0;
-      }
-  
-      .table th, .table td {
-          padding: 10px;
-          border-bottom: 1px solid #ddd;
-          text-align: left;
-          word-wrap: break-word;
-      }
-  
-      .table th {
-          background-color: #007bff;
-          color: white;
-          text-transform: uppercase;
-      }
-  
-      .table tr:hover {
-          background-color: rgba(0, 123, 255, 0.1);
-      }
-  
-      /* Mejoras en la búsqueda */
-      .tm-search-form input {
-          padding: 10px;
-          font-size: 16px;
-      }
-  </style>
-  
-    <footer>
-      <!-- place footer here -->
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="../js/getRegistroAlojamientosIndexLogueado.js"></script>
