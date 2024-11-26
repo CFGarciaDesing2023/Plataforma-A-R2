@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const usuarioID = localStorage.getItem("usuarioID");
+    const UsuarioID = localStorage.getItem("UsuarioID");
 
-    if (!usuarioID) {
+    if (!UsuarioID) {
         alert("No se encontró un UsuarioID. Por favor, inicia sesión.");
         window.location.href = "index.html"; // Redirige al inicio de sesión
         return;
     }
 
-    const apiBaseUrl = "http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroUsuario/"+ usuarioID; // Cambia esto por la URL de tu API
+    const apiBaseUrl = "http://www.NuevoPlataformaAR-ADSO-2721501.somee.com/api/RegistroUsuario/"+ UsuarioID; // Cambia esto por la URL de tu API
 
     // Referencias a los campos del formulario
     const emailInput = document.getElementById("Email");
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Obtener los datos del usuario
     async function obtenerDatosUsuario() {
         try {
-            const response = await fetch(`${apiBaseUrl}/usuarios/${usuarioID}`, {
+            const response = await fetch(`${apiBaseUrl}/usuarios/${UsuarioID}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         try {
-            const response = await fetch(`${apiBaseUrl}/usuarios/${usuarioID}`, {
+            const response = await fetch(`${apiBaseUrl}/usuarios/${UsuarioID}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"

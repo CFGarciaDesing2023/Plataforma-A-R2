@@ -14,7 +14,7 @@
 <!-- beautify ignore:start -->
 <html
   lang="en"
-  class="light-style layout-menu-fixed"
+  class="dark-style layout-menu-fixed"
   dir="ltr"
   data-theme="theme-default"
   data-assets-path="../assets/"
@@ -27,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Dashboard | Proyecto-PAR - Bootstrap 5 HTML Admin Template </title>
+    <title>Perfil del Usuario| Dashboard - Bootstrap 5 HTML Admin Template - Pro</title>
 
     <meta name="description" content="" />
 
@@ -52,8 +52,6 @@
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-
-    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
 
     <!-- Page CSS -->
 
@@ -280,6 +278,7 @@
           <!-- Navbar -->
 
           
+
           <!-- / Navbar -->
 
           <!-- Content wrapper -->
@@ -287,77 +286,161 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Opciones Perfil /</span> Cuenta</h4>
+
               <div class="row">
-                <div class="col-lg-12 mb-lg-1 order-0">
-                  
-                        <div class="card-body">
-            
-                          <form  >
-            
-                            <div class="" >
-                                <h5 class="text-center" >Formulario de registro de Reserva</h5> 
-                                 <hr class="" >
-                            </div>
-                
+                <div class="col-md-12">
+                  <ul class="nav nav-pills flex-column flex-md-row mb-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="javascript:void(0);"><i class="bx bx-user me-1"></i>Cuenta</a>
+                    </li>
                     
-                            <div class="mb-3">
-                              <label for="ClienteID" class="form-label">ClienteID</label>
-                              <input type="number" class="form-control" id="ClienteID" >
-                            </div>
-                
-                            <div class="mb-3">
-                              <label for="AlojamientoID" class="form-label">AlojamientoID</label>
-                              <input type="number" class="form-control" id="AlojamientoID" >
-                            </div>
-                
-                
-                            <div class="mb-3">
-                              <label for="FechaIngreso" class="form-label">FechaIngreso</label>
-                              <input type="datetime" class="form-control" id="FechaIngreso">
-                            </div>
-                
-                            <div class="mb-3">
-                              <label for="FechaSalida" class="form-label">FechaSalida</label>
-                              <input type="datetime" class="form-control" id="FechaSalida">
-                            </div>
-                
-                            <div class="mb-3">
-                              <label for="HabitacionID" class="form-label">HabitacionID</label>
-                              <input type="number" class="form-control" id="HabitacionID">
-                            </div>
-                            <div class="mb-3">
-                              <label for="NumeroPersonas" class="form-label">NumeroPersonas</label>
-                              <input type="number" class="form-control" id="NumeroPersonas">
-                            </div>
-                            <div class="mb-3">
-                              <label for="ValorTotal" class="form-label">ValorTotal</label>
-                              <input type="number" class="form-control" id="ValorTotal">
-                            </div>
-                            <div class="mb-3">
-                              <label for="Estado" class="form-label">Estado</label>
-                              <input type="text" class="form-control" id="Estado">
-                            </div>
-                            
-                
-                            <button type="button" id="registrar" class="btn btn-success ">Registrar</button>
-                            <a href="index.html" class="btn btn-primary ms-5 ">Regresar</a>
-                          </form>
+                  </ul>
+                  <div class="card mb-4">
+                    <h5 class="card-header">Detalles del Usuario</h5>
+                    <!-- Account -->
+                    <div class="card-body">
+                      <div class="d-flex align-items-start align-items-sm-center gap-4">
+                        <img
+                          src="../assets/img/avatars/5.png"
+                          alt="user-avatar"
+                          class="d-block rounded"
+                          height="100"
+                          width="100"
+                          id="uploadedAvatar"
+                        />
+                        <div class="button-wrapper">
+                          <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
+                            <span class="d-none d-sm-block">Cargar Foto</span>
+                            <i class="bx bx-upload d-block d-sm-none"></i>
+                            <input
+                              type="file"
+                              id="upload"
+                              class="account-file-input"
+                              hidden
+                              accept="image/png, image/jpeg"
+                            />
+                          </label>
+                          <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                            <i class="bx bx-reset d-block d-sm-none"></i>
+                            <span class="d-none d-sm-block">Reiniciar</span>
+                          </button>
+
+                          <p class="text-muted mb-0">JPG, GIF o PNG permitidos. Tamaño máximo de JPG, GIF o PNG permitido. Tamaño máximo de 800K</p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-0" />
+                    <div class="card-body">
+                      <form  >
+            
+                        <div class="" >
+                            <h5 class="text-center" >Formulario de Actualizar Usuario</h5> 
+                             <hr class="" >
+                        </div>
+          
+                        <div class="mb-3">
+                          <label for="Email" class="form-label">Email</label>
+                          <input type="text" class="form-control" id="Email" >
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="Contraseña" class="form-label">Contraseña</label>
+                          <input type="text" class="form-control" id="Contraseña" >
+                        </div>
+            
+            
+                        <div class="mb-3">
+                          <label for="TipoUsuario" class="form-label">Tipo de Usuario</label>
+                          <input type="text" class="form-control" id="TipoUsuario">
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="TipoDocumento" class="form-label">Tipo de Documento</label>
+                          <input type="text" class="form-control" id="TipoDocumento">
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="NumeroDocumento" class="form-label">NumeroDocumento</label>
+                          <input type="number" class="form-control" id="NumeroDocumento">
+                        </div>
+                        <div class="mb-3">
+                          <label for="Nombres" class="form-label">Nombres</label>
+                          <input type="text" class="form-control" id="Nombres">
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="Apellidos" class="form-label">Apellidos</label>
+                          <input type="text" class="form-control" id="Apellidos">
+                        </div>
+                        
+                        
+            
+                        <button type="button" id="editar" class="btn btn-success ">Actualizar</button>
+                        <a href="index.html" class="btn btn-primary ms-5 ">Regresar</a>
+                  
+                      </form>
+                    </div>
+                    <!-- /Account -->
+                  </div>
+                  <div class="card">
+                    <h5 class="card-header">Eliminar Cuenta</h5>
+                    <div class="card-body">
+                      <div class="mb-3 col-12 mb-0">
+                        <div class="alert alert-warning">
+                          <h6 class="alert-heading fw-bold mb-1">Estas seguro de Eliminar, tu cuenta?</h6>
+                          <p class="mb-0">Una vez que eliminas tu cuenta, no hay vuelta atrás. Por favor asegúrese.</p>
+                        </div>
+                      </div>
+                      <form id="formAccountDeactivation" onsubmit="return false">
+                        <div class="form-check mb-3">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="accountActivation"
+                            id="accountActivation"
+                          />
+                          <label class="form-check-label" for="accountActivation"
+                            >Confirmar Desactivacion de Cuenta</label
+                          >
+                        </div>
+                        <button type="submit" class="btn btn-danger deactivate-account">Eliminar Cuenta</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- / Content -->
 
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
                 <div class="mb-2 mb-md-0">
-                 CFGARCIA-DESING ©
+                  ©
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
-                   ||Plataforma de Administracion y Reservas||
-                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">De Lugares de Alojamiento</a>
+                  , made with ❤️ by
+                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
                 </div>
                 <div>
-                  
+                  <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                  <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
 
+                  <a
+                    href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
+                    target="_blank"
+                    class="footer-link me-4"
+                    >Documentation</a
+                  >
+
+                  <a
+                    href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
+                    target="_blank"
+                    class="footer-link me-4"
+                    >Support</a
+                  >
                 </div>
               </div>
             </footer>
@@ -374,27 +457,25 @@
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
-   
-    <script src="../js//postRegistroReservas.js"></script>
 
+    
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
     <script src="../assets/vendor/libs/popper/popper.js"></script>
     <script src="../assets/vendor/js/bootstrap.js"></script>
     <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-    
+
     <script src="../assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="../assets/js/dashboards-analytics.js"></script>
+    <script src="../assets/js/pages-account-settings-account.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
