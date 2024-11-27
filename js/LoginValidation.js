@@ -34,9 +34,9 @@
               if (userType === "Administrador") {
                   window.location.href = "../html/PerfilUsuario.html";
               } else if (userType === "Empleado") {
-                  window.location.href = "../html/dashboard_empleado.html";
+                  window.location.href = "../html/PerfilUsuarioEmpleado.html";
               } else if (userType === "Cliente") {
-                  window.location.href = "../html/dashboard_cliente.html";
+                  window.location.href = "../html/PerfilUsuario,html";
               }
           } else {
               errorMessage.textContent = "Credenciales incorrectas. Por favor, verifica tus datos.";

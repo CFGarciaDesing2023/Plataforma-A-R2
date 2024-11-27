@@ -48,7 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
                    <td class="text-center" >${user.Descripcion}</td>
                    <td class="text-center" >${user.PrecioNoche}</td>
                    <td class="text-center" >${user.Estado}</td>
-                   <td> <button id="Reservar"  value=${user.AlojamientoID} class="btn btn-warning" >Reservar</button> </td>
+                   <td><a href="../html/RegistroReservas.html" class="btn btn-warning">
+        <button id="Reservar" value="${user.AlojamientoID}">Reservar</button>
+    </a> </td>
   
                `;
  
