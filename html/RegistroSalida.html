@@ -1,17 +1,5 @@
 <!DOCTYPE html>
 
-<!-- =========================================================
-* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
-==============================================================
-
-* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
-* Created by: ThemeSelection
-* License: You must have a valid license purchased in order to legally use the theme for your project.
-* Copyright ThemeSelection (https://themeselection.com)
-
-=========================================================
- -->
-<!-- beautify ignore:start -->
 <html
   lang="en"
   class="light-style layout-menu-fixed"
@@ -33,7 +21,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
-
+    <link rel="stylesheet" href="../assets/css/RSalida.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -382,95 +370,91 @@
           </nav>
 
           <!-- / Navbar -->
+<!-- Content wrapper -->
+<hr class="separator">
+<h5 class="pb-1 mb-4 text-center text-primary">Registro Salida</h5>
+<div class="row g-4">
+  <div id="Limpieza" class="col-sm d-flex flex-column align-items-center">
+    <input type="text" disabled class="form-control text-center" placeholder="En Limpieza o Mantenimiento" aria-label="State">
+    <p class="text-center">2</p>
+  </div>
+  <div class="col-sm d-flex flex-column align-items-center">
+    <input type="text" disabled class="form-control text-center" placeholder="Ocupado" aria-label="State">
+    <p class="text-center">2</p>
+  </div>
+  <div class="col-sm d-flex flex-column align-items-center">
+    <input type="text" disabled class="form-control text-center" placeholder="Libre" aria-label="Zip">
+    <p class="text-center">2</p>
+  </div>
+</div>
 
-          <!-- Content wrapper -->
-          <hr>
-          <h5 class="pb-1 mb-4 text-center">Registro Salida</h5>
-          <div class="row g-10">
-            <div id="Limpieza"  class="col-sm">
-              <input type="text" disabled="true" class="form-control text-center"  placeholder="En Limpieza o Mantenimiento" aria-label="State">
-              <p class="text-center">2</p>
-            </div>
-            <div class="col-sm">
-              <input type="text" disabled="true" class="form-control text-center" placeholder="Ocupado" aria-label="State">
-              <p class="text-center">2</p>
-            </div>
-            <div class="col-sm">
-              <input type="text" disabled="true"  class="form-control text-center" placeholder="Libre" aria-label="Zip">
-              <p class="text-center">2</p>
-            </div>
-            <style>
-               #Limpieza{
-                align-content: center;
-                align-items: center;
-                
-              }
-            </style>
-          </div>
-           <!-- Style variation -->
-           
-           <div class="row">
-            <div class="col-md-6 col-xl-4">
-              <div class="card bg-dark text-white mb-3">
-                <div class="card-header">
-                <div class="card-body">101</div>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA/hJREFUeF7tmz2vTUEUhp+LSiI+QiIRlAqFSkFEQ0kQohR+ABqhFP9A0GiQaAgSQSNCIwofiUahRCIiiGg0Ps8k58TNdc5es2fP3DXnnHcnt5qZ9fE+s9aePSd3Bj2uCsy4epdzBMB5EwiAADgr4OxeFSAAzgo4u1cFCICzAs7uVQEC4KyAs3tVgAA4K+DsXhUgAM4KOLtXBQiAswLO7lUBAuCsgLN7VYAAOCvg7F4VIADOCji7VwWMAYA/RoyC2AFijHgC0EFga6kAWAoVHheAwgJb5scVwB7gJLARWGolmTD+Hfja//sA3AGuAZ8TbDUuGUcAu4C7uYWItPcAuAjcipxvThtHAE+ArWZmZSe8AE4Bj7q6GUcAoTUs65p4pvWhNR0CvqXaG0cA1rE4VYvUde+AvcDLFAMCkKLa8DUHe4eCG23NCUBbxUbP/wFsA561MSkAbdSy534CNgHh6Br1zCeAw0A4Qm4G1vSjew88B+4BV6IiBusdEJOT5WolsBbYAOzo9ffw3bHKWtQfD7nsjpwb9S9KXRMOwp8B1hlBhZfZ6QgQXeOJ1Wb2vMXAiX4eMet3Ag9jJsbsli4JnwOOxgQya8554FjDmi7xtAzlv+lb+tW6wjD0qt+KflsOSwJIEX8QbxMETwAhvtCWnkZcgRyJqOZiLSi0ncsWfWN8VALeAELYocXcBxY05PC496W83dKgVAW8jej5VmzhnbB+yKQaAISwzvYu644brXK59ZVcAkCO3T/Ia1gV1AJgCfAGaHofhGuKq007rQSAm8B+a3tHjodbxwNz5tYCIIR1CQibZNRzwTqElACQo/0MEhrWhmoCEK4frjcAuA3sm+8K+AksjNzh1rRfwKKKKyCciF43JBGurcOH58inRAVME4DQ/7806PsRWD3fAKapBQVtO7XEEhUwTS/hKgFMyzF00Fmqq4AQWI42VPuHWNUAclRBzVcRs9+rVVZACHBSL+PmHmqqBZAKoebr6GEnyqoBhIAn4QeZpqN89QAGwY/TT5LWF/pYvAPaJNFmbqcd18ZR5NxO8ZT4EIuMO3lap4STvY5e2CkeAehORADmaBizqbrL/s+CO4CcyUyircYNEbNbLMKTKFrOnAQgp5oJtgQgQbScSwQgp5oJtgQgQbScSwQgp5oJtgQgQbScS4oDiDnK5kyoNlvWMV0AChMTgMICW+YFwFKo8LgAFBbYMi8AlkKFxwWgsMCWeQGwFCo8LgCFBbbMC4ClUOFxASgssGVeACyFCo8XB1A4/uk2P+0Xae70BcAZgQAIgLMCzu5VAQLgrICze1WAADgr4OxeFSAAzgo4u1cFCICzAs7uVQEC4KyAs3tVgDOAv5U2ymGw7WRbAAAAAElFTkSuQmCC"/>
-                  <h5 class="card-title text-white">Doble</h5>
-                  <p class="card-text">En Limpieza.</p>
-                </div>
-              </div>
-            </div>
-             <div class="col-md-6 col-xl-4">
-              <div class="card bg-danger text-white mb-3">
-                <div class="card-header">
-                <div class="card-body">102</div>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA/hJREFUeF7tmz2vTUEUhp+LSiI+QiIRlAqFSkFEQ0kQohR+ABqhFP9A0GiQaAgSQSNCIwofiUahRCIiiGg0Ps8k58TNdc5es2fP3DXnnHcnt5qZ9fE+s9aePSd3Bj2uCsy4epdzBMB5EwiAADgr4OxeFSAAzgo4u1cFCICzAs7uVQEC4KyAs3tVgAA4K+DsXhUgAM4KOLtXBQiAswLO7lUBAuCsgLN7VYAAOCvg7F4VIADOCji7VwWMAYA/RoyC2AFijHgC0EFga6kAWAoVHheAwgJb5scVwB7gJLARWGolmTD+Hfja//sA3AGuAZ8TbDUuGUcAu4C7uYWItPcAuAjcipxvThtHAE+ArWZmZSe8AE4Bj7q6GUcAoTUs65p4pvWhNR0CvqXaG0cA1rE4VYvUde+AvcDLFAMCkKLa8DUHe4eCG23NCUBbxUbP/wFsA561MSkAbdSy534CNgHh6Br1zCeAw0A4Qm4G1vSjew88B+4BV6IiBusdEJOT5WolsBbYAOzo9ffw3bHKWtQfD7nsjpwb9S9KXRMOwp8B1hlBhZfZ6QgQXeOJ1Wb2vMXAiX4eMet3Ag9jJsbsli4JnwOOxgQya8554FjDmi7xtAzlv+lb+tW6wjD0qt+KflsOSwJIEX8QbxMETwAhvtCWnkZcgRyJqOZiLSi0ncsWfWN8VALeAELYocXcBxY05PC496W83dKgVAW8jej5VmzhnbB+yKQaAISwzvYu644brXK59ZVcAkCO3T/Ia1gV1AJgCfAGaHofhGuKq007rQSAm8B+a3tHjodbxwNz5tYCIIR1CQibZNRzwTqElACQo/0MEhrWhmoCEK4frjcAuA3sm+8K+AksjNzh1rRfwKKKKyCciF43JBGurcOH58inRAVME4DQ/7806PsRWD3fAKapBQVtO7XEEhUwTS/hKgFMyzF00Fmqq4AQWI42VPuHWNUAclRBzVcRs9+rVVZACHBSL+PmHmqqBZAKoebr6GEnyqoBhIAn4QeZpqN89QAGwY/TT5LWF/pYvAPaJNFmbqcd18ZR5NxO8ZT4EIuMO3lap4STvY5e2CkeAehORADmaBizqbrL/s+CO4CcyUyircYNEbNbLMKTKFrOnAQgp5oJtgQgQbScSwQgp5oJtgQgQbScSwQgp5oJtgQgQbScS4oDiDnK5kyoNlvWMV0AChMTgMICW+YFwFKo8LgAFBbYMi8AlkKFxwWgsMCWeQGwFCo8LgCFBbbMC4ClUOFxASgssGVeACyFCo8XB1A4/uk2P+0Xae70BcAZgQAIgLMCzu5VAQLgrICze1WAADgr4OxeFSAAzgo4u1cFCICzAs7uVQEC4KyAs3tVgDOAv5U2ymGw7WRbAAAAAElFTkSuQmCC"/>
-                  <h5 class="card-title text-white">Doble</h5>
-                  <p class="card-text">Ocupado.</p>
-                </div>
-              </div>
-            </div>
-             <div class="col-md-6 col-xl-4">
-              <div class="card bg-success text-white mb-3">
-                <div class="card-header">
-                <div class="card-body">103</div>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA/hJREFUeF7tmz2vTUEUhp+LSiI+QiIRlAqFSkFEQ0kQohR+ABqhFP9A0GiQaAgSQSNCIwofiUahRCIiiGg0Ps8k58TNdc5es2fP3DXnnHcnt5qZ9fE+s9aePSd3Bj2uCsy4epdzBMB5EwiAADgr4OxeFSAAzgo4u1cFCICzAs7uVQEC4KyAs3tVgAA4K+DsXhUgAM4KOLtXBQiAswLO7lUBAuCsgLN7VYAAOCvg7F4VIADOCji7VwWMAYA/RoyC2AFijHgC0EFga6kAWAoVHheAwgJb5scVwB7gJLARWGolmTD+Hfja//sA3AGuAZ8TbDUuGUcAu4C7uYWItPcAuAjcipxvThtHAE+ArWZmZSe8AE4Bj7q6GUcAoTUs65p4pvWhNR0CvqXaG0cA1rE4VYvUde+AvcDLFAMCkKLa8DUHe4eCG23NCUBbxUbP/wFsA561MSkAbdSy534CNgHh6Br1zCeAw0A4Qm4G1vSjew88B+4BV6IiBusdEJOT5WolsBbYAOzo9ffw3bHKWtQfD7nsjpwb9S9KXRMOwp8B1hlBhZfZ6QgQXeOJ1Wb2vMXAiX4eMet3Ag9jJsbsli4JnwOOxgQya8554FjDmi7xtAzlv+lb+tW6wjD0qt+KflsOSwJIEX8QbxMETwAhvtCWnkZcgRyJqOZiLSi0ncsWfWN8VALeAELYocXcBxY05PC496W83dKgVAW8jej5VmzhnbB+yKQaAISwzvYu644brXK59ZVcAkCO3T/Ia1gV1AJgCfAGaHofhGuKq007rQSAm8B+a3tHjodbxwNz5tYCIIR1CQibZNRzwTqElACQo/0MEhrWhmoCEK4frjcAuA3sm+8K+AksjNzh1rRfwKKKKyCciF43JBGurcOH58inRAVME4DQ/7806PsRWD3fAKapBQVtO7XEEhUwTS/hKgFMyzF00Fmqq4AQWI42VPuHWNUAclRBzVcRs9+rVVZACHBSL+PmHmqqBZAKoebr6GEnyqoBhIAn4QeZpqN89QAGwY/TT5LWF/pYvAPaJNFmbqcd18ZR5NxO8ZT4EIuMO3lap4STvY5e2CkeAehORADmaBizqbrL/s+CO4CcyUyircYNEbNbLMKTKFrOnAQgp5oJtgQgQbScSwQgp5oJtgQgQbScSwQgp5oJtgQgQbScS4oDiDnK5kyoNlvWMV0AChMTgMICW+YFwFKo8LgAFBbYMi8AlkKFxwWgsMCWeQGwFCo8LgCFBbbMC4ClUOFxASgssGVeACyFCo8XB1A4/uk2P+0Xae70BcAZgQAIgLMCzu5VAQLgrICze1WAADgr4OxeFSAAzgo4u1cFCICzAs7uVQEC4KyAs3tVgDOAv5U2ymGw7WRbAAAAAElFTkSuQmCC"/>
-                  <h5 class="card-title text-white">Doble</h5>
-                  <p class="card-text">Disponible.</p>
-                </div>
-              </div>
-            </div>
-             <div class="col-md-6 col-xl-4">
-              <div class="card bg-warning text-white mb-3">
-                <div class="card-header">
-                <div class="card-body">104</div>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA/hJREFUeF7tmz2vTUEUhp+LSiI+QiIRlAqFSkFEQ0kQohR+ABqhFP9A0GiQaAgSQSNCIwofiUahRCIiiGg0Ps8k58TNdc5es2fP3DXnnHcnt5qZ9fE+s9aePSd3Bj2uCsy4epdzBMB5EwiAADgr4OxeFSAAzgo4u1cFCICzAs7uVQEC4KyAs3tVgAA4K+DsXhUgAM4KOLtXBQiAswLO7lUBAuCsgLN7VYAAOCvg7F4VIADOCji7VwWMAYA/RoyC2AFijHgC0EFga6kAWAoVHheAwgJb5scVwB7gJLARWGolmTD+Hfja//sA3AGuAZ8TbDUuGUcAu4C7uYWItPcAuAjcipxvThtHAE+ArWZmZSe8AE4Bj7q6GUcAoTUs65p4pvWhNR0CvqXaG0cA1rE4VYvUde+AvcDLFAMCkKLa8DUHe4eCG23NCUBbxUbP/wFsA561MSkAbdSy534CNgHh6Br1zCeAw0A4Qm4G1vSjew88B+4BV6IiBusdEJOT5WolsBbYAOzo9ffw3bHKWtQfD7nsjpwb9S9KXRMOwp8B1hlBhZfZ6QgQXeOJ1Wb2vMXAiX4eMet3Ag9jJsbsli4JnwOOxgQya8554FjDmi7xtAzlv+lb+tW6wjD0qt+KflsOSwJIEX8QbxMETwAhvtCWnkZcgRyJqOZiLSi0ncsWfWN8VALeAELYocXcBxY05PC496W83dKgVAW8jej5VmzhnbB+yKQaAISwzvYu644brXK59ZVcAkCO3T/Ia1gV1AJgCfAGaHofhGuKq007rQSAm8B+a3tHjodbxwNz5tYCIIR1CQibZNRzwTqElACQo/0MEhrWhmoCEK4frjcAuA3sm+8K+AksjNzh1rRfwKKKKyCciF43JBGurcOH58inRAVME4DQ/7806PsRWD3fAKapBQVtO7XEEhUwTS/hKgFMyzF00Fmqq4AQWI42VPuHWNUAclRBzVcRs9+rVVZACHBSL+PmHmqqBZAKoebr6GEnyqoBhIAn4QeZpqN89QAGwY/TT5LWF/pYvAPaJNFmbqcd18ZR5NxO8ZT4EIuMO3lap4STvY5e2CkeAehORADmaBizqbrL/s+CO4CcyUyircYNEbNbLMKTKFrOnAQgp5oJtgQgQbScSwQgp5oJtgQgQbScSwQgp5oJtgQgQbScS4oDiDnK5kyoNlvWMV0AChMTgMICW+YFwFKo8LgAFBbYMi8AlkKFxwWgsMCWeQGwFCo8LgCFBbbMC4ClUOFxASgssGVeACyFCo8XB1A4/uk2P+0Xae70BcAZgQAIgLMCzu5VAQLgrICze1WAADgr4OxeFSAAzgo4u1cFCICzAs7uVQEC4KyAs3tVgDOAv5U2ymGw7WRbAAAAAElFTkSuQmCC"/>
-                  <h5 class="card-title text-white">Doble</h5>
-                  <p class="card-text">En Mantenimiento.</p>
-                </div>
-              </div>
-            </div>
-             <div class="col-md-6 col-xl-4">
-               <div class="card bg-danger text-white mb-3">
-                 <div class="card-header">
-                 <div class="card-body">105</div>
-                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA/hJREFUeF7tmz2vTUEUhp+LSiI+QiIRlAqFSkFEQ0kQohR+ABqhFP9A0GiQaAgSQSNCIwofiUahRCIiiGg0Ps8k58TNdc5es2fP3DXnnHcnt5qZ9fE+s9aePSd3Bj2uCsy4epdzBMB5EwiAADgr4OxeFSAAzgo4u1cFCICzAs7uVQEC4KyAs3tVgAA4K+DsXhUgAM4KOLtXBQiAswLO7lUBAuCsgLN7VYAAOCvg7F4VIADOCji7VwWMAYA/RoyC2AFijHgC0EFga6kAWAoVHheAwgJb5scVwB7gJLARWGolmTD+Hfja//sA3AGuAZ8TbDUuGUcAu4C7uYWItPcAuAjcipxvThtHAE+ArWZmZSe8AE4Bj7q6GUcAoTUs65p4pvWhNR0CvqXaG0cA1rE4VYvUde+AvcDLFAMCkKLa8DUHe4eCG23NCUBbxUbP/wFsA561MSkAbdSy534CNgHh6Br1zCeAw0A4Qm4G1vSjew88B+4BV6IiBusdEJOT5WolsBbYAOzo9ffw3bHKWtQfD7nsjpwb9S9KXRMOwp8B1hlBhZfZ6QgQXeOJ1Wb2vMXAiX4eMet3Ag9jJsbsli4JnwOOxgQya8554FjDmi7xtAzlv+lb+tW6wjD0qt+KflsOSwJIEX8QbxMETwAhvtCWnkZcgRyJqOZiLSi0ncsWfWN8VALeAELYocXcBxY05PC496W83dKgVAW8jej5VmzhnbB+yKQaAISwzvYu644brXK59ZVcAkCO3T/Ia1gV1AJgCfAGaHofhGuKq007rQSAm8B+a3tHjodbxwNz5tYCIIR1CQibZNRzwTqElACQo/0MEhrWhmoCEK4frjcAuA3sm+8K+AksjNzh1rRfwKKKKyCciF43JBGurcOH58inRAVME4DQ/7806PsRWD3fAKapBQVtO7XEEhUwTS/hKgFMyzF00Fmqq4AQWI42VPuHWNUAclRBzVcRs9+rVVZACHBSL+PmHmqqBZAKoebr6GEnyqoBhIAn4QeZpqN89QAGwY/TT5LWF/pYvAPaJNFmbqcd18ZR5NxO8ZT4EIuMO3lap4STvY5e2CkeAehORADmaBizqbrL/s+CO4CcyUyircYNEbNbLMKTKFrOnAQgp5oJtgQgQbScSwQgp5oJtgQgQbScSwQgp5oJtgQgQbScS4oDiDnK5kyoNlvWMV0AChMTgMICW+YFwFKo8LgAFBbYMi8AlkKFxwWgsMCWeQGwFCo8LgCFBbbMC4ClUOFxASgssGVeACyFCo8XB1A4/uk2P+0Xae70BcAZgQAIgLMCzu5VAQLgrICze1WAADgr4OxeFSAAzgo4u1cFCICzAs7uVQEC4KyAs3tVgDOAv5U2ymGw7WRbAAAAAElFTkSuQmCC"/>
-                   <h5 class="card-title text-white">Doble</h5>
-                   <p class="card-text">Ocupado.</p>
-                 </div>
-               </div>
-             </div>
-             <div class="col-md-6 col-xl-4">
-              <div class="card bg-success text-white mb-3">
-                <div class="card-header">
-                <div class="card-body">106</div>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA/hJREFUeF7tmz2vTUEUhp+LSiI+QiIRlAqFSkFEQ0kQohR+ABqhFP9A0GiQaAgSQSNCIwofiUahRCIiiGg0Ps8k58TNdc5es2fP3DXnnHcnt5qZ9fE+s9aePSd3Bj2uCsy4epdzBMB5EwiAADgr4OxeFSAAzgo4u1cFCICzAs7uVQEC4KyAs3tVgAA4K+DsXhUgAM4KOLtXBQiAswLO7lUBAuCsgLN7VYAAOCvg7F4VIADOCji7VwWMAYA/RoyC2AFijHgC0EFga6kAWAoVHheAwgJb5scVwB7gJLARWGolmTD+Hfja//sA3AGuAZ8TbDUuGUcAu4C7uYWItPcAuAjcipxvThtHAE+ArWZmZSe8AE4Bj7q6GUcAoTUs65p4pvWhNR0CvqXaG0cA1rE4VYvUde+AvcDLFAMCkKLa8DUHe4eCG23NCUBbxUbP/wFsA561MSkAbdSy534CNgHh6Br1zCeAw0A4Qm4G1vSjew88B+4BV6IiBusdEJOT5WolsBbYAOzo9ffw3bHKWtQfD7nsjpwb9S9KXRMOwp8B1hlBhZfZ6QgQXeOJ1Wb2vMXAiX4eMet3Ag9jJsbsli4JnwOOxgQya8554FjDmi7xtAzlv+lb+tW6wjD0qt+KflsOSwJIEX8QbxMETwAhvtCWnkZcgRyJqOZiLSi0ncsWfWN8VALeAELYocXcBxY05PC496W83dKgVAW8jej5VmzhnbB+yKQaAISwzvYu644brXK59ZVcAkCO3T/Ia1gV1AJgCfAGaHofhGuKq007rQSAm8B+a3tHjodbxwNz5tYCIIR1CQibZNRzwTqElACQo/0MEhrWhmoCEK4frjcAuA3sm+8K+AksjNzh1rRfwKKKKyCciF43JBGurcOH58inRAVME4DQ/7806PsRWD3fAKapBQVtO7XEEhUwTS/hKgFMyzF00Fmqq4AQWI42VPuHWNUAclRBzVcRs9+rVVZACHBSL+PmHmqqBZAKoebr6GEnyqoBhIAn4QeZpqN89QAGwY/TT5LWF/pYvAPaJNFmbqcd18ZR5NxO8ZT4EIuMO3lap4STvY5e2CkeAehORADmaBizqbrL/s+CO4CcyUyircYNEbNbLMKTKFrOnAQgp5oJtgQgQbScSwQgp5oJtgQgQbScSwQgp5oJtgQgQbScS4oDiDnK5kyoNlvWMV0AChMTgMICW+YFwFKo8LgAFBbYMi8AlkKFxwWgsMCWeQGwFCo8LgCFBbbMC4ClUOFxASgssGVeACyFCo8XB1A4/uk2P+0Xae70BcAZgQAIgLMCzu5VAQLgrICze1WAADgr4OxeFSAAzgo4u1cFCICzAs7uVQEC4KyAs3tVgDOAv5U2ymGw7WRbAAAAAElFTkSuQmCC"/>
-                  <h5 class="card-title text-white">Doble</h5>
-                  <p class="card-text">Disponible.</p>
-                </div>
-              </div>
-            </div>
-           </div>
+<!-- Style variation -->
+<div class="row g-4">
+  <div class="col-md-6 col-xl-4">
+    <div class="card bg-dark text-white shadow-lg">
+      <div class="card-header">
+        <div class="card-body">101</div>
+      </div>
+      <img class="card-img-top" src="data:image/png;base64,..."/>
+      <div class="card-body">
+        <h5 class="card-title">Doble</h5>
+        <p class="card-text">En Limpieza.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-xl-4">
+    <div class="card bg-danger text-white shadow-lg">
+      <div class="card-header">
+        <div class="card-body">102</div>
+      </div>
+      <img class="card-img-top" src="data:image/png;base64,..."/>
+      <div class="card-body">
+        <h5 class="card-title">Doble</h5>
+        <p class="card-text">Ocupado.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-xl-4">
+    <div class="card bg-success text-white shadow-lg">
+      <div class="card-header">
+        <div class="card-body">103</div>
+      </div>
+      <img class="card-img-top" src="data:image/png;base64,..."/>
+      <div class="card-body">
+        <h5 class="card-title">Doble</h5>
+        <p class="card-text">Disponible.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-xl-4">
+    <div class="card bg-warning text-white shadow-lg">
+      <div class="card-header">
+        <div class="card-body">104</div>
+      </div>
+      <img class="card-img-top" src="data:image/png;base64,..."/>
+      <div class="card-body">
+        <h5 class="card-title">Doble</h5>
+        <p class="card-text">En Mantenimiento.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-xl-4">
+    <div class="card bg-danger text-white shadow-lg">
+      <div class="card-header">
+        <div class="card-body">105</div>
+      </div>
+      <img class="card-img-top" src="data:image/png;base64,..."/>
+      <div class="card-body">
+        <h5 class="card-title">Doble</h5>
+        <p class="card-text">En Reparación.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">

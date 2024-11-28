@@ -1,0 +1,90 @@
+/* Estilo global */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --light-bg: #f8f9fa;
+    --card-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    --transition-speed: 0.3s;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-bg);
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  /* Separadores */
+  .separator {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor de tarjetas */
+  .card {
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    border-radius: 8px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 30px;
+  }
+  
+  /* Alineación y estilo de las cajas de texto */
+  input.form-control {
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  p.text-center {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para las tarjetas de color */
+  .bg-dark {
+    background-color: #343a40 !important;
+  }
+  
+  .bg-danger {
+    background-color: #dc3545 !important;
+  }
+  
+  .bg-success {
+    background-color: #28a745 !important;
+  }
+  
+  .bg-warning {
+    background-color: #ffc107 !important;
+  }
+  
+  /* Estilos de las imágenes dentro de las tarjetas */
+  .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Layout responsivo */
+  @media (max-width: 768px) {
+    .row.g-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+    }
+  }
+  
