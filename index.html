@@ -86,134 +86,116 @@
     
       <div class="display-fluid table-responsive">
         <table class="table" id="tablaDatos">
-          <thead style="background-color: #007bff; color: rgb(255, 255, 255);">
+          <thead>
             <tr>
-              <th class="text-center" style="padding: 12px; text-align: center; font-weight: bold;">AlojamientoID</th>
-              <th class="text-center" style="padding: 12px; text-align: center; font-weight: bold;">TipoAlojamiento</th>
-              <th class="text-center" style="padding: 12px; text-align: center; font-weight: bold;">Nombre</th>
-              <th class="text-center" style="padding: 12px; text-align: center; font-weight: bold;">Ubicacion</th>
-              <th class="text-center" style="padding: 12px; text-align: center; font-weight: bold;">HabitacionID</th>
-              <th class="text-center" style="padding: 12px; text-align: center; font-weight: bold;">TipoHabitacion</th>
-              <th class="text-center" style="padding: 12px; text-align: center; font-weight: bold;">Descripcion</th>
-              <th class="text-center" style="padding: 12px; text-align: center; font-weight: bold;">PrecioNoche</th>
-              <th class="text-center" style="padding: 12px; text-align: center; font-weight: bold;">Estado</th>
+                <th class="text-center" >AlojamientoID</th>
+                <th class="text-center" >TipoAlojamiento</th>
+                <th class="text-center" >Nombre</th>
+                <th class="text-center" >Ubicacion</th>
+                <th class="text-center" >HabitacionID</th>
+                <th class="text-center" >TipoHabitacion</th>
+                <th class="text-center" >Descripcion</th>
+                <th class="text-center" >PrecioNoche</th>
+                <th class="text-center" >Estado</th>
             </tr>
-          </thead>
-          <tbody id="cuerpoTabla">
-            <tr>
-              <td style="padding: 12px; text-align: center;">1</td>
-              <td style="padding: 12px; text-align: center;">Hotel</td>
-              <td style="padding: 12px; text-align: center;">Playa</td>
-              <td style="padding: 12px; text-align: center;">Cancún</td>
-              <td style="padding: 12px; text-align: center;">101</td>
-              <td style="padding: 12px; text-align: center;">Suite</td>
-              <td style="padding: 12px; text-align: center;">Vista al mar</td>
-              <td style="padding: 12px; text-align: center; color: #FFD700;">150</td> <!-- Amarillo para el precio -->
-              <td style="padding: 12px; text-align: center; font-weight: bold;">Disponible</td> <!-- Rojo para el estado -->
-            </tr>
-            <tr>
-              <td style="padding: 12px; text-align: center;">2</td>
-              <td style="padding: 12px; text-align: center;">Departamento</td>
-              <td style="padding: 12px; text-align: center;">Lago</td>
-              <td style="padding: 12px; text-align: center;">Ciudad de México</td>
-              <td style="padding: 12px; text-align: center;">102</td>
-              <td style="padding: 12px; text-align: center;">Individual</td>
-              <td style="padding: 12px; text-align: center;">Cerca del centro</td>
-              <td style="padding: 12px; text-align: center; color: #FFD700;">80</td> <!-- Amarillo para el precio -->
-              <td style="padding: 12px; text-align: center; font-weight: bold; color: #FF6347;">Ocupado</td> <!-- Rojo para el estado -->
-            </tr>
-          </tbody>
-          <style>
-            /* Contenedor de la tabla con scroll horizontal */
-            .table-wrapper {
-                overflow-x: auto; /* Scroll horizontal si es necesario */
-                width: 100%;
-                margin: 20px 0; /* Espaciado superior e inferior */
-                border-radius: 10px; /* Bordes redondeados del contenedor */
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-                background-color: #fff; /* Fondo blanco */
-            }
+        </thead>
+
+        <tbody id="cuerpoTabla"></tbody>
         
-            /* Tabla moderna */
-            .table {
-                border-spacing: 0;
-                width: 100%;
-                font-size: 14px;
-                color: #333; /* Color de texto principal */
-                border-collapse: separate; /* Permite bordes redondeados */
-            }
-        
-            /* Cabecera de la tabla */
-            .table th {
-                background-color: #0078d7; /* Azul moderno */
-                color: white;
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 13px;
-                text-align: left;
-                padding: 12px;
-                border-top-left-radius: 10px; /* Bordes redondeados en las esquinas */
-                border-top-right-radius: 10px;
-            }
-        
-            .table th:first-child {
-                border-top-left-radius: 10px; /* Esquina superior izquierda */
-            }
-        
-            .table th:last-child {
-                border-top-right-radius: 10px; /* Esquina superior derecha */
-            }
-        
-            /* Filas de la tabla */
-            .table td {
-                padding: 12px;
-                border-bottom: 1px solid #eaeaea; /* Línea suave entre filas */
-                background-color: #f9f9f9; /* Fondo ligero */
-            }
-        
-            /* Alternancia de colores en filas */
-            .table tr:nth-child(odd) td {
-                background-color: #ffffff; /* Alterna con blanco */
-            }
-        
-            .table tr:hover td {
-                background-color: #eef5ff; /* Color destacado en hover */
-            }
-        
-            /* Columna de operaciones */
-            .table .col-operaciones {
-                text-align: center;
-                min-width: 150px;
-            }
-        
-            /* Botones en la columna de operaciones */
-            .table .col-operaciones button {
-                padding: 6px 10px;
-                font-size: 12px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                margin-right: 5px;
-                transition: all 0.3s ease;
-            }
-        
-            .table .col-operaciones button:hover {
-                background-color: #0056b3; /* Azul oscuro al pasar el cursor */
-                color: white;
-            }
-        
-            .table .col-operaciones button:first-child {
-                background-color: #0078d7; /* Azul moderno */
-                color: white;
-            }
-        
-            .table .col-operaciones button:last-child {
-                background-color: #ff4d4d; /* Rojo claro */
-                color: white;
-            }
-        </style>
-        
-        </table>
+        <style>
+          /* Contenedor de la tabla con scroll horizontal */
+          .table-wrapper {
+              overflow-x: auto; /* Scroll horizontal si es necesario */
+              width: 100%;
+              margin: 20px 0; /* Espaciado superior e inferior */
+              border-radius: 10px; /* Bordes redondeados del contenedor */
+              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+              background-color: #fff; /* Fondo blanco */
+          }
+      
+          /* Tabla moderna */
+          .table {
+              border-spacing: 0;
+              width: 100%;
+              font-size: 14px;
+              color: #333; /* Color de texto principal */
+              border-collapse: separate; /* Permite bordes redondeados */
+          }
+      
+          /* Cabecera de la tabla */
+          .table th {
+              background-color: #0078d7; /* Azul moderno */
+              color: white;
+              text-transform: uppercase;
+              font-weight: 600;
+              font-size: 13px;
+              text-align: left;
+              padding: 12px;
+              border-top-left-radius: 10px; /* Bordes redondeados en las esquinas */
+              border-top-right-radius: 10px;
+          }
+      
+          .table th:first-child {
+              border-top-left-radius: 10px; /* Esquina superior izquierda */
+          }
+      
+          .table th:last-child {
+              border-top-right-radius: 10px; /* Esquina superior derecha */
+          }
+      
+          /* Filas de la tabla */
+          .table td {
+              padding: 12px;
+              border-bottom: 1px solid #eaeaea; /* Línea suave entre filas */
+              background-color: #f9f9f9; /* Fondo ligero */
+          }
+      
+          /* Alternancia de colores en filas */
+          .table tr:nth-child(odd) td {
+              background-color: #ffffff; /* Alterna con blanco */
+          }
+      
+          .table tr:hover td {
+              background-color: #eef5ff; /* Color destacado en hover */
+          }
+      
+          /* Columna de operaciones */
+          .table .col-operaciones {
+              text-align: center;
+              min-width: 150px;
+          }
+      
+          /* Botones en la columna de operaciones */
+          .table .col-operaciones button {
+              padding: 6px 10px;
+              font-size: 12px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              margin-right: 5px;
+              transition: all 0.3s ease;
+          }
+      
+          .table .col-operaciones button:hover {
+              background-color: #0056b3; /* Azul oscuro al pasar el cursor */
+              color: white;
+          }
+      
+          .table .col-operaciones button:first-child {
+              background-color: #0078d7; /* Azul moderno */
+              color: white;
+          }
+      
+          .table .col-operaciones button:last-child {
+              background-color: #ff4d4d; /* Rojo claro */
+              color: white;
+          }
+      </style>
+      
+
+    </table>
+          
+       
       </div>
       
       
